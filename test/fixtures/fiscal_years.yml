@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fiscal_year: 1
+  receipts_current_dollars: 1.5
+  outlays_current_dollars: 1.5
+  surplus_deficit_current_dollars: 1.5
+  receipts_constant: 1.5
+  outlays_constant: 1.5
+  surplus_deficit_constant: 1.5
+  gdp_receipts: 1.5
+  gdp_outlays: 1.5
+  gdp_surplus_deficit: 1.5
+
+two:
+  fiscal_year: 1
+  receipts_current_dollars: 1.5
+  outlays_current_dollars: 1.5
+  surplus_deficit_current_dollars: 1.5
+  receipts_constant: 1.5
+  outlays_constant: 1.5
+  surplus_deficit_constant: 1.5
+  gdp_receipts: 1.5
+  gdp_outlays: 1.5
+  gdp_surplus_deficit: 1.5

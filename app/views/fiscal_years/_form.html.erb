@@ -1,0 +1,57 @@
+<%= form_for(@fiscal_year) do |f| %>
+  <% if @fiscal_year.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fiscal_year.errors.count, "error") %> prohibited this fiscal_year from being saved:</h2>
+
+      <ul>
+      <% @fiscal_year.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fiscal_year %><br>
+    <%= f.number_field :fiscal_year %>
+  </div>
+  <div class="field">
+    <%= f.label :receipts_current_dollars %><br>
+    <%= f.text_field :receipts_current_dollars %>
+  </div>
+  <div class="field">
+    <%= f.label :outlays_current_dollars %><br>
+    <%= f.text_field :outlays_current_dollars %>
+  </div>
+  <div class="field">
+    <%= f.label :surplus_deficit_current_dollars %><br>
+    <%= f.text_field :surplus_deficit_current_dollars %>
+  </div>
+  <div class="field">
+    <%= f.label :receipts_constant %><br>
+    <%= f.text_field :receipts_constant %>
+  </div>
+  <div class="field">
+    <%= f.label :outlays_constant %><br>
+    <%= f.text_field :outlays_constant %>
+  </div>
+  <div class="field">
+    <%= f.label :surplus_deficit_constant %><br>
+    <%= f.text_field :surplus_deficit_constant %>
+  </div>
+  <div class="field">
+    <%= f.label :gdp_receipts %><br>
+    <%= f.text_field :gdp_receipts %>
+  </div>
+  <div class="field">
+    <%= f.label :gdp_outlays %><br>
+    <%= f.text_field :gdp_outlays %>
+  </div>
+  <div class="field">
+    <%= f.label :gdp_surplus_deficit %><br>
+    <%= f.text_field :gdp_surplus_deficit %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

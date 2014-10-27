@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fiscal year:</strong>
+  <%= @fiscal_year.fiscal_year %>
+</p>
+
+<p>
+  <strong>Receipts current dollars:</strong>
+  <%= @fiscal_year.receipts_current_dollars %>
+</p>
+
+<p>
+  <strong>Outlays current dollars:</strong>
+  <%= @fiscal_year.outlays_current_dollars %>
+</p>
+
+<p>
+  <strong>Surplus deficit current dollars:</strong>
+  <%= @fiscal_year.surplus_deficit_current_dollars %>
+</p>
+
+<p>
+  <strong>Receipts constant:</strong>
+  <%= @fiscal_year.receipts_constant %>
+</p>
+
+<p>
+  <strong>Outlays constant:</strong>
+  <%= @fiscal_year.outlays_constant %>
+</p>
+
+<p>
+  <strong>Surplus deficit constant:</strong>
+  <%= @fiscal_year.surplus_deficit_constant %>
+</p>
+
+<p>
+  <strong>Gdp receipts:</strong>
+  <%= @fiscal_year.gdp_receipts %>
+</p>
+
+<p>
+  <strong>Gdp outlays:</strong>
+  <%= @fiscal_year.gdp_outlays %>
+</p>
+
+<p>
+  <strong>Gdp surplus deficit:</strong>
+  <%= @fiscal_year.gdp_surplus_deficit %>
+</p>
+
+<%= link_to 'Edit', edit_fiscal_year_path(@fiscal_year) %> |
+<%= link_to 'Back', fiscal_years_path %>
