@@ -13,7 +13,24 @@ def fetch_excel_data
       db_column1 = ex.cell(line,'A')                   #Column A in spreadsheet
       db_column2 = ex.cell(line,'B')
       db_column3 = ex.cell(line,'C')
+      db_column4 = ex.cell(line,'D')
+      db_column5 = ex.cell(line,'E')
+      db_column6 = ex.cell(line,'F')
+      db_column7 = ex.cell(line,'G')
+      db_column8 = ex.cell(line,'H')
+      db_column9 = ex.cell(line,'I')
+      db_column10 = ex.cell(line,'J')
 
-      x = Class.create(:db_column1 => db_column1, :db_column2 => db_column2, :db_column3 => db_column3)
+      x = FiscalYear.create(
+        :db_column1 => db_column1,
+        :db_column2 => db_column2,
+        :db_column2 => db_column3,
+        :db_column2 => db_column4,
+        :db_column2 => db_column5,
+        :db_column2 => db_column6,
+        :db_column2 => db_column7,
+        :db_column2 => db_column8,
+        :db_column2 => db_column9,
+        :db_column2 => db_column10)
 
 end
