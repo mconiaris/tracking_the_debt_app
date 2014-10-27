@@ -13,27 +13,30 @@ def fetch_excel_data
   ex = Roo::Excel.new("public/fed_receipt_sum_historical.xls")
   ex.default_sheet = ex.sheets[0] #Mention the sheet number (0 is the first sheet, 1 is second sheet, etc.)
   2.upto(500) do | line |         #Start and end of rows you want to include
-    db_column1 = ex.cell(line,'A')  #Column A in spreadsheet
-    db_column2 = ex.cell(line,'B')
-    db_column3 = ex.cell(line,'C')
-    db_column4 = ex.cell(line,'D')
-    db_column5 = ex.cell(line,'E')
-    db_column6 = ex.cell(line,'F')
-    db_column7 = ex.cell(line,'G')
-    db_column8 = ex.cell(line,'H')
-    db_column9 = ex.cell(line,'I')
-    db_column10 = ex.cell(line,'J')
+    fiscal_year                     = ex.cell(line,'A')  #Column A in spreadsheet
+    receipts_current_dollars        = ex.cell(line,'B')
+    outlays_current_dollars         = ex.cell(line,'C')
+    surplus_deficit_current_dollars = ex.cell(line,'D')
+    receipts_constant               = ex.cell(line,'E')
+    outlays_constant                = ex.cell(line,'F')
+    surplus_deficit_constant        = ex.cell(line,'G')
+    gdp_receipts                    = ex.cell(line,'H')
+    gdp_outlays                     = ex.cell(line,'I')
+    gdp_surplus_deficit             = ex.cell(line,'J')
 
     x = FiscalYear.create(
-      :db_column1 => fiscal_year,
-      :db_column2 => receipts_current_dollars,
-      :db_column2 => outlays_current_dollars,
-      :db_column2 => surplus_deficit_current_dollars,
-      :db_column2 => receipts_constant,
-      :db_column2 => outlays_constant,
-      :db_column2 => surplus_deficit_constant,
-      :db_column2 => gdp_receipts,
-      :db_column2 => gdp_outlays,
-      :db_column2 => gdp_surplus_deficit)
+      :fiscal_year                      => fiscal_year,
+      :receipts_current_dollars         => receipts_current_dollars,
+      :outlays_current_dollars          => outlays_current_dollars,
+      :surplus_deficit_current_dollars  => surplus_deficit_current_dollars,
+      :receipts_constant                => receipts_constant,
+      :outlays_constant                 => outlays_constant,
+      :surplus_deficit_constant         => surplus_deficit_constant,
+      :gdp_receipts                     => gdp_receipts,
+      :gdp_outlays                      => gdp_outlays,
+      :gdp_surplus_deficit              => gdp_surplus_deficit
+    )
   end
 end
+
+fetch_excel_data();
