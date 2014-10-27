@@ -22,15 +22,15 @@ def fetch_excel_data
       db_column10 = ex.cell(line,'J')
 
       x = FiscalYear.create(
-        :db_column1 => db_column1,
-        :db_column2 => db_column2,
-        :db_column2 => db_column3,
-        :db_column2 => db_column4,
-        :db_column2 => db_column5,
-        :db_column2 => db_column6,
-        :db_column2 => db_column7,
-        :db_column2 => db_column8,
-        :db_column2 => db_column9,
-        :db_column2 => db_column10)
+        :db_column1 => fiscal_year,
+        :db_column2 => receipts_current_dollars,
+        :db_column2 => outlays_current_dollars,
+        :db_column2 => surplus_deficit_current_dollars,
+        :db_column2 => receipts_constant,
+        :db_column2 => outlays_constant,
+        :db_column2 => surplus_deficit_constant,
+        :db_column2 => gdp_receipts,
+        :db_column2 => gdp_outlays,
+        :db_column2 => gdp_surplus_deficit)
 
 end
