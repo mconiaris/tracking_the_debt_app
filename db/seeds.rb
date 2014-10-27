@@ -12,7 +12,7 @@
 def fetch_excel_data
   ex = Roo::Excel.new("public/fed_receipt_sum_historical.xls")
   ex.default_sheet = ex.sheets[0] #Mention the sheet number (0 is the first sheet, 1 is second sheet, etc.)
-  2.upto(500) do | line |         #Start and end of rows you want to include
+  2.upto(80) do | line |         #Start and end of rows you want to include
     fiscal_year                     = ex.cell(line,'A')  #Column A in spreadsheet
     receipts_current_dollars        = ex.cell(line,'B')
     outlays_current_dollars         = ex.cell(line,'C')
