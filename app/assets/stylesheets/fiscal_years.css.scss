@@ -1,3 +1,111 @@
 // Place all the styles related to the FiscalYears controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+header {
+  text-align: center;
+  background-color: #FF5050;
+  border: 1px solid #c0c0c0;
+  overflow: hidden;
+  padding: 0.2em;
+  margin: 1px;
+  font-family: courier, helvetica, serif, arial, 'Times New Roman';
+  font-size: 4em;
+  font-weight: bold;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  background-color: #CCFFFF;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0em;
+  padding: 0.3em;
+} nav ul li {
+  float: left; margin: 0 20px 0 0;
+
+}
+
+/*form ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+body {
+  background-color: #FFFFCC;
+}
+
+div {
+  margin: 1.5em;
+}
+
+article {
+  margin-top: 2.5em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 0.9em;
+  color: gray;
+}
+
+h3 a:link {
+  color: gray;
+}
+
+h5 {
+  font-size: 0.5em;
+}
+
+p {
+  margin: 0.1;
+}
+
+
+img {
+  border: 1px solid black;
+  padding: 2px;
+  float: right;
+  width: 250px;
+}
+
+button {
+  background-color: #CCFFCC;
+}
+
+input {
+  display: inline-block;
+}
+
+textarea {
+  list-style: none;
+  width: 36.5em;
+  height: 20em;
+}
+*/
+footer {
+  text-align: center;
+}
+
+
