@@ -39,4 +39,30 @@
                 labels: [ "Fiscal Year", "Receipts", "Outlays" ]
               });
 </script>
+<!-- This below is overriding the above -->
+<script type="text/javascript">
+  g = new Dygraph(
+
+    // containing div
+    document.getElementById("graphdiv"),
+
+    // CSV or path to a CSV file.
+    <%= surplus_deficit_current_dollars %>,
+              {
+                labels: [ "Fiscal Year", "Surplus/Deficit" ]
+              });
+</script>
+<!-- This below is overriding the above -->
+<script type="text/javascript">
+  g = new Dygraph(
+
+    // containing div
+    document.getElementById("graphdiv"),
+
+    // CSV or path to a CSV file.
+    <%= surplus_deficit_constant_dollars %>,
+              {
+                labels: [ "Fiscal Year", "Surplus/Deficit" ]
+              });
+</script>
 
