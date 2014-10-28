@@ -62,7 +62,7 @@ class FiscalYearsController < ApplicationController
   end
 
   def home
-
+    @fiscal_years = all_current_dollars
   end
 
   private
