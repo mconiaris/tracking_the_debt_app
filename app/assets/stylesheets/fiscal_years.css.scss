@@ -10,7 +10,18 @@ header {
   padding: 0.2em;
   margin: 1px;
   font-family: courier, helvetica, serif, arial, 'Times New Roman';
-  font-size: 4em;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+p.header {
+  text-align: center;
+  background-color: #FF5050;
+  border: 1px solid #c0c0c0;
+  overflow: hidden;
+  margin: 1px;
+  font-family: courier, helvetica, serif, arial, 'Times New Roman';
+  font-size: 1.5em;
   font-weight: bold;
 }
 

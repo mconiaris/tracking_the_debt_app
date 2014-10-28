@@ -12,26 +12,17 @@
 </head>
 <a href="/">
   <header>Tracking The Debt</header>
+  <p class=header>Comparing U.S. Receipts, Outlays and Deficits Since 1940</p>
 </a>
 <body>
 <nav>
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href='/documents/new'>Create a Document</a></li>
-      <li><a href="/documents?index_start=0">Look at Documents</a></li>
-      <li>
-        <% if session[:access_token] %>
-          <a href="/logout">Logout</a>
-        <% else %>
-          <a id="sign_in" href="<%= @url %>">Login with Google</a>
-        <% end %>
-      </li>
+      <li><a href='/fiscal_years'>Historical Tables</a></li>
     </ul>
   </nav>
-<h1>This is layouts/application.html</h1>
 <%= yield %>
-
 </body>
 <footer>
   <h6>@ Michael Coniaris Awesomeness</h6>
