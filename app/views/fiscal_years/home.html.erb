@@ -26,3 +26,17 @@
                 labels: [ "Fiscal Year", "Receipts", "Outlays" ]
               });
 </script>
+<!-- This below is overriding the above -->
+<script type="text/javascript">
+  g = new Dygraph(
+
+    // containing div
+    document.getElementById("graphdiv"),
+
+    // CSV or path to a CSV file.
+    <%= gdp_dollars %>,
+              {
+                labels: [ "Fiscal Year", "Receipts", "Outlays" ]
+              });
+</script>
+
