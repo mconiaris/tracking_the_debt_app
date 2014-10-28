@@ -9,7 +9,12 @@
     // CSV or path to a CSV file.
     <%= current_dollars %>,
               {
-                labels: [ "Fiscal Year", "Receipts", "Outlays" ]
+                labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+      drawPoints: true,
+      xlabel:"Fiscal Year",
+      ylabel:"Percentage Surplus or Deficit",
+      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nIn Current Dollars: 1940-2019"
+    }
               });
 </script>
 
@@ -23,7 +28,12 @@
     // CSV or path to a CSV file.
     <%= constant_dollars %>,
               {
-                labels: [ "Fiscal Year", "Receipts", "Outlays" ]
+                labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+      drawPoints: true,
+      xlabel:"Fiscal Year",
+      ylabel:"Percentage Surplus or Deficit",
+      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nIn Constant (FY 2009) Dollars: 1940-2019"
+    }
               });
 </script>
 <!-- This below is overriding the above -->
@@ -36,7 +46,12 @@
     // CSV or path to a CSV file.
     <%= gdp_dollars %>,
               {
-                labels: [ "Fiscal Year", "Receipts", "Outlays" ]
+                labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+      drawPoints: true,
+      xlabel:"Fiscal Year",
+      ylabel:"Percentage Surplus or Deficit",
+      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nAs a Percentage of GDP: 1940-2019"
+    }
               });
 </script>
 <!-- This below is overriding the above -->
@@ -49,7 +64,12 @@
     // CSV or path to a CSV file.
     <%= surplus_deficit_current_dollars %>,
               {
-                labels: [ "Fiscal Year", "Surplus/Deficit" ]
+                labels: [ "Fiscal Year", "Surplus/Deficit" ],
+      drawPoints: true,
+      xlabel:"Fiscal Year",
+      ylabel:"Percentage Surplus or Deficit",
+      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nAs a Percentage of GDP: 1940-2019"
+    }
               });
 </script>
 <!-- This below is overriding the above -->
@@ -62,7 +82,34 @@
     // CSV or path to a CSV file.
     <%= surplus_deficit_constant_dollars %>,
               {
-                labels: [ "Fiscal Year", "Surplus/Deficit" ]
+                labels: [ "Fiscal Year", "Surplus/Deficit" ],
+      drawPoints: true,
+      xlabel:"Fiscal Year",
+      ylabel:"Percentage Surplus or Deficit",
+      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nAs a Percentage of GDP: 1940-2019"
+    }
               });
 </script>
+<!-- This below is overriding the above -->
+<script type="text/javascript">
+  g = new Dygraph(
+
+    // containing div
+    document.getElementById("graphdiv"),
+
+    // CSV or path to a CSV file.
+    <%= surplus_deficit_gdp_dollars %>,
+    {
+      labels: [ "Fiscal Year", "Surplus/Deficit" ],
+      drawPoints: true,
+      xlabel:"Fiscal Year",
+      ylabel:"Percentage Surplus or Deficit",
+      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nAs a Percentage of GDP: 1940-2019",
+      titleHeight: 25,
+      pointSize: 2
+    }
+  );
+</script>
+
+
 
