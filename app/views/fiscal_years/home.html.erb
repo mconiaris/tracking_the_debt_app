@@ -1,4 +1,4 @@
-<h1>This is fiscal_years home.html</h1>
+<h2>Summary of Receipts, Outlays, and Surpluses or Deficits</h2>
 <div id="graphdiv"></div>
 <script type="text/javascript">
   g = new Dygraph(
@@ -13,7 +13,12 @@
       drawPoints: true,
       xlabel:"Fiscal Year",
       ylabel:"Percentage Surplus or Deficit",
-      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nIn Current Dollars: 1940-2019"
+      title: "In Current Dollars: 1940-2019",
+      titleHeight: 25,
+      pointSize: 2,
+      // TODO: If statement that turns surplus green
+      colors: ["green", "red"],
+      axisLabelFontSize: 12
     }
   );
 </script>
@@ -34,7 +39,12 @@
       drawPoints: true,
       xlabel:"Fiscal Year",
       ylabel:"Percentage Surplus or Deficit",
-      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nIn Constant (FY 2009) Dollars: 1940-2019"
+      title: "In Constant (FY 2009) Dollars: 1940-2019",
+      titleHeight: 25,
+      pointSize: 2,
+      // TODO: If statement that turns surplus green
+      colors: ["green", "red"],
+      axisLabelFontSize: 12
     }
   );
 </script>
@@ -56,7 +66,12 @@
       drawPoints: true,
       xlabel:"Fiscal Year",
       ylabel:"Percentage Surplus or Deficit",
-      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nAs a Percentage of GDP: 1940-2019"
+      title: "As a Percentage of GDP: 1940-2019",
+      titleHeight: 25,
+      pointSize: 2,
+      // TODO: If statement that turns surplus green
+      colors: ["green", "red"],
+      axisLabelFontSize: 12
     }
   );
 </script>
@@ -78,7 +93,12 @@
       drawPoints: true,
       xlabel:"Fiscal Year",
       ylabel:"Percentage Surplus or Deficit",
-      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nAs a Percentage of GDP: 1940-2019"
+      title: "As a Percentage of GDP: 1940-2019",
+      titleHeight: 25,
+      pointSize: 2,
+      // TODO: If statement that turns surplus green
+      colors: ["red"],
+      axisLabelFontSize: 12
     }
   );
 </script>
@@ -99,7 +119,12 @@
       drawPoints: true,
       xlabel:"Fiscal Year",
       ylabel:"Percentage Surplus or Deficit",
-      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nAs a Percentage of GDP: 1940-2019"
+      title: "As a Percentage of GDP: 1940-2019",
+      titleHeight: 25,
+      pointSize: 2,
+      // TODO: If statement that turns surplus green
+      colors: ["red"],
+      axisLabelFontSize: 12
     }
   );
 </script>
@@ -120,7 +145,7 @@
       drawPoints: true,
       xlabel:"Fiscal Year",
       ylabel:"Percentage Surplus or Deficit",
-      title: "Summary of Receipts, Outlays, and Surpluses or Deficits\nAs a Percentage of GDP: 1940-2019",
+      title: "As a Percentage of GDP: 1940-2019",
       titleHeight: 25,
       pointSize: 2,
       // TODO: If statement that turns surplus green
