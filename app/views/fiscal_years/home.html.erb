@@ -8,7 +8,7 @@
 
     // CSV or path to a CSV file.
     "Fiscal Year,Receipts, Outlays\n" +
-    "1940,6.5,9.5\n" +
+    <%= "#{data_to_csv(@fiscal_years)}" %> +
     "1941,8.7,13.7\n" +
     "1942,14.6,35.1\n" +
     "1943,24.0,78.6\n" +
