@@ -1,6 +1,6 @@
 module FiscalYearsHelper
 
-  def current_dollars(data)
+  def current_dollars
 
     @current_dollars = [
       [1940,6.5,9.5],
@@ -86,7 +86,7 @@ module FiscalYearsHelper
     ]
   end
 
-  def constant_dollars(data)
+  def constant_dollars
 
     @constant_dollars = [
       [1940,96.3,139.2],
@@ -170,5 +170,8 @@ module FiscalYearsHelper
       [2018,3421.2,3772.1],
       [2019,3509.2,3926.6]
     ]
+  end
+
+  def gdp_dollars
   end
 end

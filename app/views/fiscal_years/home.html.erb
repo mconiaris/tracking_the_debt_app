@@ -7,7 +7,7 @@
     document.getElementById("graphdiv"),
 
     // CSV or path to a CSV file.
-    <%= current_dollars(@fiscal_years) %>,
+    <%= current_dollars %>,
               {
                 labels: [ "Fiscal Year", "Receipts", "Outlays" ]
               });
@@ -21,7 +21,7 @@
     document.getElementById("graphdiv"),
 
     // CSV or path to a CSV file.
-    <%= constant_dollars(@fiscal_years) %>,
+    <%= constant_dollars %>,
               {
                 labels: [ "Fiscal Year", "Receipts", "Outlays" ]
               });
