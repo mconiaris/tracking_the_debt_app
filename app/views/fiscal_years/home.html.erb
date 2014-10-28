@@ -7,17 +7,8 @@
     document.getElementById("graphdiv"),
 
     // CSV or path to a CSV file.
-    "Fiscal Year,Receipts, Outlays\n" +
-    <%= "#{data_to_csv(@fiscal_years)}" %> +
-    "1941,8.7,13.7\n" +
-    "1942,14.6,35.1\n" +
-    "1943,24.0,78.6\n" +
-    "1944,43.7,91.3\n" +
-    "1945,45.2,92.7\n" +
-    "1946,39.3,55.2\n" +
-    "1947,38.5,34.5\n" +
-    "1948,41.6,29.8\n" +
-    "1949,39.4,38.8\n" +
-    "1950,39.4,42.6"
-  );
+    <%= data_to_csv(@fiscal_years) %>,
+              {
+                labels: [ "Fiscal Year", "Receipts", "Outlays" ]
+              });
 </script>
