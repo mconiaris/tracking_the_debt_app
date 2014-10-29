@@ -1,4 +1,3 @@
-<h2>Summary of Receipts, Outlays, and Surpluses or Deficits</h2>
 <nav>
   <ul id="receipts">
     <li id="main">Receipts & Outlays:</li><br/>
@@ -12,10 +11,11 @@
     <li id="constant">Constant (2009) Dollars</li>
     <li id="gdp">As Percentage of GDP</li>
   </ul>
-  <div id="graphdiv">
-  </div>
 </nav>
 
+<h2>Summary of Receipts, Outlays, and Surpluses or Deficits</h2>
+  <div id="graphdiv">
+  </div>
 
 <script>
 $(document).ready(function() {
@@ -176,36 +176,7 @@ $(document).ready(function() {
 
   });
 });
-
-
-
-
-
-
-
-
-
-// g = new Dygraph(
-
-//   // containing div
-//   document.getElementById("graphdiv"),
-
-//   // CSV or path to a CSV file.
-//   <%= surplus_deficit_gdp_dollars %>,
-//   {
-//     labels: [ "Fiscal Year", "Surplus/Deficit" ],
-//     drawPoints: true,
-//     xlabel:"Fiscal Year",
-//     ylabel:"Percentage Surplus or Deficit",
-//     title: "As a Percentage of GDP: 1940-2019",
-//     titleHeight: 25,
-//     pointSize: 2,
-//     // TODO: If statement that turns surplus green
-//     colors: ["red"],
-//     axisLabelFontSize: 12
-//   }
-// );
-// </script>
+</script>
 
 
 
