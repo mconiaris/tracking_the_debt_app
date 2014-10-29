@@ -1,20 +1,34 @@
 <h2>Summary of Receipts, Outlays, and Surpluses or Deficits</h2>
 <nav>
-  <ul>
-    <li id="receipts-main">Receipts & Outlays:</li>
-    <li id="receipts-current">Current Dollars</li>
-    <li id="receipts-constant">Constant (2009) Dollars</li>
-    <li id="receipts-gdp">As Percentage of GDP</li>
+  <ul id="receipts">
+    <li id="main">Receipts & Outlays:</li>
+    <li id="current">Current Dollars</li>
+    <li id="constant">Constant (2009) Dollars</li>
+    <li id="gdp">As Percentage of GDP</li>
   </ul>
-  <ul>
-    <li id="receipts-main">Surplus or Deficit:</li>
-    <li id="receipts-current">Current Dollars</li>
-    <li id="receipts-constant">Constant (2009) Dollars</li>
-    <li id="receipts-gdp">As Percentage of GDP</li>
+  <ul id="deficit">
+    <li id="main">Surplus or Deficit:</li>
+    <li id="current">Current Dollars</li>
+    <li id="constant">Constant (2009) Dollars</li>
+    <li id="gdp">As Percentage of GDP</li>
   </ul>
   <div id="graphdiv">
   </div>
 </nav>
+
+<script>
+$("#receipts li").on("click", function(e) {
+  e.preventDefault();
+  console.log($(this).text() + " clicked");
+});
+</script>
+
+<script>
+$("#deficit li").on("click", function(e) {
+  e.preventDefault();
+  console.log($(this).text() + " clicked");
+});
+</script>
 
 <script type="text/javascript">
   g = new Dygraph(
