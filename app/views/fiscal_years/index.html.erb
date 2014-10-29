@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th>Fiscal year</th>
-      <th>Receipts current dollars</th>
+      <th>Receipts (current dollars)</th>
       <th>Outlays current dollars</th>
       <th>Surplus deficit current dollars</th>
       <th>Receipts constant</th>
@@ -31,8 +31,12 @@
         <td><%= fiscal_year.gdp_outlays %></td>
         <td><%= fiscal_year.gdp_surplus_deficit %></td>
         <td><%= link_to 'Show', fiscal_year %></td>
-        <td><%= link_to 'Edit', edit_fiscal_year_path(fiscal_year) %></td>
-        <td><%= link_to 'Destroy', fiscal_year, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if session[:access_token] %>
+          <td><%= link_to 'Edit', edit_fiscal_year_path(fiscal_year) %></td>
+        <% end %>
+        <% if session[:access_token] %>
+          <td><%= link_to 'Destroy', fiscal_year, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
