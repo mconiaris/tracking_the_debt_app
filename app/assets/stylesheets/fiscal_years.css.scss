@@ -7,7 +7,7 @@ http://sass-lang.com/*/
 
 header {
   text-align: center;
-  background-color: #FF5050;
+  background-color: #FFCC66;
   border: 1px solid #c0c0c0;
   overflow: hidden;
   padding: 0.2em;
@@ -21,6 +21,10 @@ header h4 {
 
 header p {
   font-size: 1.5em;
+}
+
+body {
+  background-color: #FFCCCC;
 }
 
 
@@ -41,29 +45,29 @@ div#graphdiv {
   margin-right: auto;
 }
 
+nav {
+  background-color: #FFCC99;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
 nav ul {
   list-style: none;
   overflow: hidden;
   position: relative;
-  background-color: #CCFFFF;
-  border-top-style: solid;
-  border-bottom-style: solid;
   text-align: center;
   font-size: 1.2em;
   margin: 0em;
   padding: 0.3em;
 } nav ul li {
-  float: left; margin: 0 20px 0 0;
-
+  float: left; margin: 0 30px 0 30px;
 }
 
-body {
-  background-color: #FFFFCC;
+nav p {
+  font-size: 1.5em;
+  padding: 0em;
 }
 
-button {
-  background-color: #CCFFCC;
-}
 
 footer {
   text-align: center;
