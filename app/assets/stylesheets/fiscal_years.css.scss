@@ -7,20 +7,30 @@ http://sass-lang.com/*/
 
 header {
   text-align: center;
-  background-color: #FFCC66;
+  background-color: #FFE7BA;
   border: 1px solid #c0c0c0;
+  line-height: 0.1em;
   overflow: hidden;
+  color: #333;
   padding: 0.2em;
   font-family: verdana, helvetica, serif, arial, 'Times New Roman';
 }
 
+header:hover {
+  font-weight: bold;
+}
+
 header h4 {
   font-size: 5em;
+  font-weight: normal;
+  line-height: 0.1em;
 }
 
 header p {
   font-size: 1.5em;
+  line-height: 0.1em;
 }
+
 
 body {
   background-color: #FFCCCC;
@@ -88,6 +98,9 @@ nav p {
   padding: 0em;
 }
 
+ul#main-nav {
+  font-size: 1.5em;
+}
 
 article {
   margin-left: 5em;
