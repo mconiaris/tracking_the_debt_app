@@ -65,6 +65,9 @@ class FiscalYearsController < ApplicationController
     @fiscal_years = all_current_dollars
   end
 
+  def about
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_fiscal_year

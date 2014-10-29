@@ -51,6 +51,14 @@ nav {
   border-bottom-style: solid;
 }
 
+nav#choices {
+  border-top-style: none;
+}
+
+nav#choices p {
+  text-decoration: underline;
+}
+
 nav ul {
   list-style: none;
   overflow: hidden;
