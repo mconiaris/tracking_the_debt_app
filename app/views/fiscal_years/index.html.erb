@@ -44,4 +44,6 @@
 
 <br>
 
-<%= link_to 'New Fiscal year', new_fiscal_year_path %>
+<% if session[:access_token] %>
+  <%= link_to 'New Fiscal year', new_fiscal_year_path %>
+<% end %>
