@@ -1,49 +1,52 @@
-<h1>Summary of Receipts, Outlays, and Surpluses or Deficits</h1>
+<article>
+  <h1>Summary of Receipts, Outlays, </h1>
+  <h1>and Surpluses or Deficits</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Fiscal year</th>
-      <th>Receipts (current dollars)</th>
-      <th>Outlays (current dollars)</th>
-      <th>Surplus deficit (current dollars)</th>
-      <th>Receipts (2009 dollars)</th>
-      <th>Outlays (2009 dollars)</th>
-      <th>Surplus/Deficit (2009 dollars)</th>
-      <th>GDP receipts</th>
-      <th>GDP outlays</th>
-      <th>GDP surplus deficit</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @fiscal_years.each do |fiscal_year| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= fiscal_year.fiscal_year %></td>
-        <td><%= fiscal_year.receipts_current_dollars %></td>
-        <td><%= fiscal_year.outlays_current_dollars %></td>
-        <td><%= fiscal_year.surplus_deficit_current_dollars %></td>
-        <td><%= fiscal_year.receipts_constant %></td>
-        <td><%= fiscal_year.outlays_constant %></td>
-        <td><%= fiscal_year.surplus_deficit_constant %></td>
-        <td><%= fiscal_year.gdp_receipts %></td>
-        <td><%= fiscal_year.gdp_outlays %></td>
-        <td><%= fiscal_year.gdp_surplus_deficit %></td>
-        <td><%= link_to 'Show', fiscal_year %></td>
-        <% if session[:access_token] %>
-          <td><%= link_to 'Edit', edit_fiscal_year_path(fiscal_year) %></td>
-        <% end %>
-        <% if session[:access_token] %>
-          <td><%= link_to 'Destroy', fiscal_year, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
+        <th>Fiscal year</th>
+        <th>Receipts (current dollars)</th>
+        <th>Outlays (current dollars)</th>
+        <th>Surplus deficit (current dollars)</th>
+        <th>Receipts (2009 dollars)</th>
+        <th>Outlays (2009 dollars)</th>
+        <th>Surplus/Deficit (2009 dollars)</th>
+        <th>GDP receipts</th>
+        <th>GDP outlays</th>
+        <th>GDP surplus deficit</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @fiscal_years.each do |fiscal_year| %>
+        <tr>
+          <td><%= fiscal_year.fiscal_year %></td>
+          <td><%= fiscal_year.receipts_current_dollars %></td>
+          <td><%= fiscal_year.outlays_current_dollars %></td>
+          <td><%= fiscal_year.surplus_deficit_current_dollars %></td>
+          <td><%= fiscal_year.receipts_constant %></td>
+          <td><%= fiscal_year.outlays_constant %></td>
+          <td><%= fiscal_year.surplus_deficit_constant %></td>
+          <td><%= fiscal_year.gdp_receipts %></td>
+          <td><%= fiscal_year.gdp_outlays %></td>
+          <td><%= fiscal_year.gdp_surplus_deficit %></td>
+          <td><%= link_to 'Show', fiscal_year %></td>
+          <% if session[:access_token] %>
+            <td><%= link_to 'Edit', edit_fiscal_year_path(fiscal_year) %></td>
+          <% end %>
+          <% if session[:access_token] %>
+            <td><%= link_to 'Destroy', fiscal_year, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<% if session[:access_token] %>
-  <%= link_to 'New Fiscal year', new_fiscal_year_path %>
-<% end %>
+  <br>
+
+  <% if session[:access_token] %>
+    <%= link_to 'New Fiscal year', new_fiscal_year_path %>
+  <% end %>
+</article>
