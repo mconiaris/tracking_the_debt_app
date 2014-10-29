@@ -51,6 +51,8 @@
     <%= @fiscal_year.gdp_surplus_deficit %>
   </p>
 
-  <%= link_to 'Edit', edit_fiscal_year_path(@fiscal_year) %> |
+  <% if session[:access_token] %>
+    <%= link_to 'Edit', edit_fiscal_year_path(@fiscal_year) %> |
+  <% end %>
   <%= link_to 'Back', fiscal_years_path %>
 </article>
