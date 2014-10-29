@@ -1,4 +1,4 @@
-<nav>
+<nav id="choices">
   <ul id="receipts">
     <li id="main">Receipts & Outlays:</li><br/>
     <li id="current">Current Dollars</li>
@@ -20,6 +20,12 @@
 <script>
 $(document).ready(function() {
   console.log( "document ready" );
+
+  $("#choices li").hover(function() {
+    $(this).css('font-weight','bold')
+  }, function() {$(this).css('font-weight','normal')}
+  );
+
   $("#receipts li#current").on("click", function(e) {
     e.preventDefault();
     console.log("Receipts " + $(this).text() + " clicked (single handler");
