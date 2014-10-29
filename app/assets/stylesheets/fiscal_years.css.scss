@@ -29,12 +29,21 @@ body {
 
 a:link, a:visited {
   text-decoration: none;
-  color: black;
+  /*color: black;*/
 }
 
 a:hover {
   text-decoration: none;
   font-weight: bold;
+  color: #666;
+}
+
+#choices li:hover {
+  font-weight: bold;
+}
+
+#choices li {
+  cursor: pointer;
 }
 
 div#graphdiv {
@@ -67,7 +76,7 @@ nav ul {
   margin: 0em;
   padding: 0.2em;
 } nav ul li {
-  float: left; margin: 0 30px 0 30px;
+  margin: 0 30px;
 }
 
 nav p {
@@ -95,3 +104,6 @@ footer {
 }
 
 
+nav li {
+  display: inline;
+}
