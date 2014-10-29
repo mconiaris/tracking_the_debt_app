@@ -1,13 +1,13 @@
 <h2>Summary of Receipts, Outlays, and Surpluses or Deficits</h2>
 <nav>
   <ul id="receipts">
-    <li id="main">Receipts & Outlays:</li>
+    <li id="main">Receipts & Outlays:</li><br/>
     <li id="current">Current Dollars</li>
     <li id="constant">Constant (2009) Dollars</li>
     <li id="gdp">As Percentage of GDP</li>
   </ul>
   <ul id="deficit">
-    <li id="main">Surplus or Deficit:</li>
+    <li id="main">Surpluses or Deficits:</li><br/>
     <li id="current">Current Dollars</li>
     <li id="constant">Constant (2009) Dollars</li>
     <li id="gdp">As Percentage of GDP</li>
@@ -18,6 +18,8 @@
 
 
 <script>
+$(document).ready(function() {
+  console.log( "document ready" );
   $("#receipts li#current").on("click", function(e) {
     e.preventDefault();
     console.log("Receipts " + $(this).text() + " clicked (single handler");
@@ -172,6 +174,7 @@
     );
 
   });
+});
 
 
 
