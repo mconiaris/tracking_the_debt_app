@@ -1,6 +1,9 @@
-// Place all the styles related to the FiscalYears controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*Place all the styles related to the
+FiscalYears controller here.
+They will automatically be included in
+application.css.
+You can use Sass (SCSS) here:
+http://sass-lang.com/*/
 
 header {
   text-align: center;
@@ -14,10 +17,8 @@ header {
   font-weight: bold;
 }
 
-p.header {
+header.p {
   text-align: center;
-  background-color: #FF5050;
-  border: 1px solid #c0c0c0;
   overflow: hidden;
   margin: 1px;
   font-family: courier, helvetica, serif, arial, 'Times New Roman';
