@@ -22,7 +22,7 @@ $(document).ready(function() {
   // }, function() {$(this).css('font-weight','normal')}
   // );
 
-  $("#receipts li#current").on("click", function(e) {
+  $("#choices li#current").on("click", function(e) {
     e.preventDefault();
     console.log("Receipts " + $(this).text() + " clicked (single handler");
     g = new Dygraph(
@@ -46,10 +46,10 @@ $(document).ready(function() {
       }
     );
   });
-  $("#receipts li#current").trigger( "click" );
+  $("#choices li#current").trigger( "click" );
 
 
-  $("#receipts li#constant").on("click", function(e) {
+  $("#choices li#constant").on("click", function(e) {
     e.preventDefault();
     console.log("Receipts " + $(this).text() + " clicked (single handler");
     g = new Dygraph(
@@ -75,7 +75,7 @@ $(document).ready(function() {
 
   });
 
-  $("#receipts li#gdp").on("click", function(e) {
+  $("#choices li#gdp").on("click", function(e) {
     e.preventDefault();
     console.log("Receipts " + $(this).text() + " clicked (single handler");
     g = new Dygraph(
@@ -101,7 +101,7 @@ $(document).ready(function() {
   });
 
 
-  $("#deficit li#current").on("click", function(e) {
+  $("#choices li#current").on("click", function(e) {
     e.preventDefault();
     console.log("Deficits " + $(this).text() + " clicked");
     g = new Dygraph(
@@ -127,7 +127,7 @@ $(document).ready(function() {
 
   });
 
-  $("#deficit li#constant").on("click", function(e) {
+  $("#choices li#constant").on("click", function(e) {
     e.preventDefault();
     console.log("Deficits " + $(this).text() + " clicked");
     g = new Dygraph(
@@ -153,7 +153,7 @@ $(document).ready(function() {
 
   });
 
-  $("#deficit li#gdp").on("click", function(e) {
+  $("#choices li#gdp").on("click", function(e) {
     e.preventDefault();
     console.log("Deficits " + $(this).text() + " clicked");
     new Dygraph(
