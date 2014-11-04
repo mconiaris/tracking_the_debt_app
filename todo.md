@@ -1,6 +1,19 @@
 To Do Items for this App:
+- decrease header size
+- make map larger. Resize to witdth of screen
+- one line nav bar
+- make choices more obvious (checkboxes instead of links?)
+- add footer with instruction (double tap to return to screen, hold and select for detail)
 - Make small screen version of my project. Send to Liz.
 - add teases and annotations to pieces of data (bullet points or balloons which popped up with anecdotal facts or history).
+
+On Show View:
+- back button should go on top of screen
+- need simple breadcrumb navigation
+- show column should be on the left side and should read "view". Make it hyperlink color?
+
+About Page:
+- add some padding
 
 
 Feedback to conider:
