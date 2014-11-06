@@ -1,5 +1,4 @@
 To Do Items for this App:
-- decrease header size
 - make map larger. Resize to witdth of screen
 - one line nav bar
 - make choices more obvious (checkboxes instead of links?)
@@ -12,8 +11,6 @@ On Show View:
 - need simple breadcrumb navigation
 - show column should be on the left side and should read "view". Make it hyperlink color?
 
-About Page:
-- add some padding
 
 
 Feedback to conider:
