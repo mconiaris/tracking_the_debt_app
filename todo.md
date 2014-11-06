@@ -1,4 +1,5 @@
 To Do Items for this App:
+- add tests for controllers and views
 - make map larger. Resize to witdth of screen
 - one line nav bar
 - make choices more obvious (checkboxes instead of links?)
