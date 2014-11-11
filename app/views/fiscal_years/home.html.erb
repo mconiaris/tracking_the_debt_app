@@ -1,11 +1,11 @@
 <nav id="nav-choices">
   <select id="choices">
-    <option value="current">Receipts & Outlays (Current Dollars)</li>
-    <option value="constant">Receipts & Outlays (2009 Dollars)</li>
-    <option value="gdp">Receipts & Outlays as Percentage of GDP</li>
-    <option value="current">Surpluses or Deficits (Current Dollars)</li>
-    <option value="constant">Surpluses or Deficits (2009 Dollars)</li>
-    <option value="gdp">Surpluses or Deficits as Percentage of GDP</li>
+    <option value="current-receipts">Receipts & Outlays (Current Dollars)</li>
+    <option value="constant-receipts">Receipts & Outlays (2009 Dollars)</li>
+    <option value="gdp-receipts">Receipts & Outlays as Percentage of GDP</li>
+    <option value="current-surpluses">Surpluses or Deficits (Current Dollars)</li>
+    <option value="constant-surpluses">Surpluses or Deficits (2009 Dollars)</li>
+    <option value="gdp-surpluses">Surpluses or Deficits as Percentage of GDP</li>
   </select>
 </nav>
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
   console.log( "document ready" );
 
 
-  // retrieve the jQuery wrapped dom object identified by the selector '#mySel'
+  // retrieve the jQuery wrapped dom object identified by the selector '#choices'
   var sel = $('#choices');
   // assign a change listener to it
   sel.change(function(){ //inside the listener
