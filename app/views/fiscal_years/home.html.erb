@@ -1,4 +1,4 @@
-<nav id="choices">
+<nav id="nav-choices">
   <select id="choices">
     <option value="current">Receipts & Outlays (Current Dollars)</li>
     <option value="constant">Receipts & Outlays (2009 Dollars)</li>
@@ -17,12 +17,25 @@
 $(document).ready(function() {
   console.log( "document ready" );
 
+
+  // retrieve the jQuery wrapped dom object identified by the selector '#mySel'
+  var sel = $('#choices');
+  // assign a change listener to it
+  sel.change(function(){ //inside the listener
+    // retrieve the value of the object firing the event (referenced by this)
+    var value = $(this).val();
+    // print it in the logs
+    console.log(value); // crashes in IE, if console not open
+    // make the text of all label elements be the value
+    $('label').text(value);
+  }); // close the change listener
+
   // $("#choices li").hover(function() {
   //   $(this).css('font-weight','bold')
   // }, function() {$(this).css('font-weight','normal')}
   // );
 
-  $("#choices li#current").on("click", function(e) {
+  $("#choices option#current").on("click", function(e) {
     e.preventDefault();
     console.log("Receipts " + $(this).text() + " clicked (single handler");
     g = new Dygraph(
