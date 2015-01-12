@@ -28,9 +28,9 @@ $(document).ready(function() {
     console.log(value + " selected."); // crashes in IE, if console not open
     // make the text of all label elements be the value
     $('label').text(value);
-    var choice = $('select').prop('selectedIndex', 3);
+    // Same as above. Different syntax.
+    var choice = $("#choices option:selected").val();
     console.log(choice + " chosen.");
-    console.dir(choice);
   }); // close the change listener
 
 
