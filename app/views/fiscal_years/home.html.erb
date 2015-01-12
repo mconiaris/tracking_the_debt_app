@@ -39,6 +39,26 @@ $(document).ready(function() {
   $('#choices').change(function() {
     if($('#choices option:selected').val() == "current-receipts") {
       console.log("current-receipts");
+      g = new Dygraph(
+
+      // containing div
+      document.getElementById("graphdiv"),
+
+      // CSV or path to a CSV file.
+      <%= current_dollars %>,
+      {
+        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+        drawPoints: true,
+        xlabel:"Fiscal Year",
+        ylabel:"Percentage Surplus or Deficit",
+        title: "In Current Dollars: 1940-2019",
+        titleHeight: 25,
+        pointSize: 2,
+        // TODO: If statement that turns surplus green
+        colors: ["green", "red"],
+        axisLabelFontSize: 12
+      }
+    );
     }
     else {
       console.log("Not current-receipts");
