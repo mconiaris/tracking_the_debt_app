@@ -25,7 +25,7 @@ $(document).ready(function() {
     // retrieve the value of the object firing the event (referenced by this)
     var value = $(this).val();
     // print it in the logs
-    console.log(value); // crashes in IE, if console not open
+    console.log(value + " selected."); // crashes in IE, if console not open
     // make the text of all label elements be the value
     $('label').text(value);
   }); // close the change listener
