@@ -36,6 +36,16 @@ $(document).ready(function() {
 
   // $("#choices option#current").on("click", function(e)
 
+  $('#choices').change(function() {
+    if($('#choices option:selected').val() == "current-receipts") {
+      console.log("current-receipts");
+    }
+    else {
+      console.log("Not current-receipts");
+    }
+  });
+
+
   $("#choices option#current").on("click", function(e) {
     e.preventDefault();
     console.log("Receipts " + $(this).text() + " clicked (single handler");
