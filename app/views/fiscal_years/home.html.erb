@@ -62,62 +62,13 @@ $(document).ready(function() {
     }
     else {
       console.log("Not current-receipts");
+
     }
   });
 
 
-  $("#choices option#current").on("click", function(e) {
-    e.preventDefault();
-    console.log("Receipts " + $(this).text() + " clicked (single handler");
-    g = new Dygraph(
-
-      // containing div
-      document.getElementById("graphdiv"),
-
-      // CSV or path to a CSV file.
-      <%= current_dollars %>,
-      {
-        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-        drawPoints: true,
-        xlabel:"Fiscal Year",
-        ylabel:"Percentage Surplus or Deficit",
-        title: "In Current Dollars: 1940-2019",
-        titleHeight: 25,
-        pointSize: 2,
-        // TODO: If statement that turns surplus green
-        colors: ["green", "red"],
-        axisLabelFontSize: 12
-      }
-    );
-  });
-  $("#choices li#current").trigger( "click" );
 
 
-  $("#choices li#constant").on("click", function(e) {
-    e.preventDefault();
-    console.log("Receipts " + $(this).text() + " clicked (single handler");
-    g = new Dygraph(
-
-      // containing div
-      document.getElementById("graphdiv"),
-
-      // CSV or path to a CSV file.
-      <%= constant_dollars %>,
-      {
-        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-        drawPoints: true,
-        xlabel:"Fiscal Year",
-        ylabel:"Percentage Surplus or Deficit",
-        title: "In Constant (FY 2009) Dollars: 1940-2019",
-        titleHeight: 25,
-        pointSize: 2,
-        // TODO: If statement that turns surplus green
-        colors: ["green", "red"],
-        axisLabelFontSize: 12
-      }
-    );
-
-  });
 
   $("#choices li#gdp").on("click", function(e) {
     e.preventDefault();
@@ -170,7 +121,12 @@ $(document).ready(function() {
     );
 
   });
+});
+</script>
 
+
+<!-- Refactor below script: -->
+<script>
   $("#choices li#constant").on("click", function(e) {
     e.preventDefault();
     console.log("Deficits " + $(this).text() + " clicked");
@@ -221,7 +177,6 @@ $(document).ready(function() {
     );
 
   });
-});
 </script>
 
 
