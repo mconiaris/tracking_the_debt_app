@@ -63,10 +63,13 @@ $(document).ready(function() {
       console.log("current-receipts");
       g.user_attrs_.title = "In Current Dollars: 1940-2019";
       g.drawGraph_();
-
+    } else if ($('#choices option:selected').val() == "constant-receipts") {
+      console.log("constant-receipts");
+      g.user_attrs_.title = "constant-receipts";
+      g.drawGraph_();
     } else {
       console.log("Not current-receipts");
-      g.user_attrs_.title = "In Constant Dollars";
+      g.user_attrs_.title = "Not current-receipts";
       g.drawGraph_();
     }
   });
