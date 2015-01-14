@@ -67,6 +67,10 @@ $(document).ready(function() {
       console.log("constant-receipts");
       g.user_attrs_.title = "constant-receipts";
       g.drawGraph_();
+    } else if ($('#choices option:selected').val() == "gdp-receipts") {
+      console.log("gdp-receipts");
+      g.user_attrs_.title = "gdp-receipts";
+      g.drawGraph_();
     } else {
       console.log("Not current-receipts");
       g.user_attrs_.title = "Not current-receipts";
