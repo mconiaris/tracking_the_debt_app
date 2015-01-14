@@ -79,6 +79,10 @@ $(document).ready(function() {
       console.log("constant-surpluses");
       g.user_attrs_.title = "constant-surpluses";
       g.drawGraph_();
+    } else if ($('#choices option:selected').val() == "gdp-surpluses") {
+      console.log("gdp-surpluses");
+      g.user_attrs_.title = "gdp-surpluses";
+      g.drawGraph_();
     } else {
       console.log("Not current-receipts");
       g.user_attrs_.title = "Not current-receipts";
