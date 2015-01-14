@@ -36,9 +36,19 @@ $(document).ready(function() {
 
   // $("#choices option#current").on("click", function(e)
 
+
   $('#choices').change(function() {
     if($('#choices option:selected').val() == "current-receipts") {
       console.log("current-receipts");
+
+    } else {
+      console.log("Not current-receipts");
+
+    }
+  });
+
+
+
       g = new Dygraph(
 
       // containing div
@@ -59,12 +69,9 @@ $(document).ready(function() {
         axisLabelFontSize: 12
       }
     );
-    }
-    else {
-      console.log("Not current-receipts");
 
-    }
-  });
+
+
 
 
 
