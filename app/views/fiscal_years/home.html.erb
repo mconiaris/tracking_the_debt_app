@@ -59,15 +59,15 @@ $(document).ready(function() {
 
   $('#choices').change(function() {
 
-
-
-
     if($('#choices option:selected').val() == "current-receipts") {
       console.log("current-receipts");
+      g.user_attrs_.title = "In Current Dollars: 1940-2019";
+      g.drawGraph_();
 
     } else {
       console.log("Not current-receipts");
       g.user_attrs_.title = "In Constant Dollars";
+      g.drawGraph_();
     }
   });
 
