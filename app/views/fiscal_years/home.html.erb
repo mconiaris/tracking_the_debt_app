@@ -74,6 +74,7 @@ $(document).ready(function() {
     } else if ($('#choices option:selected').val() == "gdp-receipts") {
       console.log("gdp-receipts");
       g.user_attrs_.title = "Receipts & Outlays as a Percentage of GDP: 1940-2019";
+      g.updateOptions({file: <%= gdp_dollars %>})
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "current-surpluses") {
       console.log("current-surpluses");
@@ -95,30 +96,6 @@ $(document).ready(function() {
 
 
 
-  $("#choices li#gdp").on("click", function(e) {
-    e.preventDefault();
-    console.log("Receipts " + $(this).text() + " clicked (single handler");
-    g = new Dygraph(
-
-      // containing div
-      document.getElementById("graphdiv"),
-
-      // CSV or path to a CSV file.
-      <%= gdp_dollars %>,
-      {
-        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-        drawPoints: true,
-        xlabel:"Fiscal Year",
-        ylabel:"Percentage Surplus or Deficit",
-        title: "As a Percentage of GDP: 1940-2019",
-        titleHeight: 25,
-        pointSize: 2,
-        // TODO: If statement that turns surplus green
-        colors: ["green", "red"],
-        axisLabelFontSize: 12
-      }
-    );
-  });
 
 
   $("#choices li#current").on("click", function(e) {
