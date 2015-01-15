@@ -80,14 +80,17 @@ $(document).ready(function() {
       console.log("current-surpluses");
       g.user_attrs_.title = "Surplues or Deficits in Current Dollars: 1940-2019";
       g.user_attrs_.ylabel = "Percentage Surplus or Deficit"
+      g.updateOptions({file: <%= surplus_deficit_current_dollars %>})
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "constant-surpluses") {
       console.log("constant-surpluses");
       g.user_attrs_.title = "Surplues or Deficits in Constant (2009) Dollars: 1940-2019";
+      g.updateOptions({file: <%= XXX %>})
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "gdp-surpluses") {
       console.log("gdp-surpluses");
       g.user_attrs_.title = "Surplues or Deficits as a Percentage of GDP: 1940-2019";
+      g.updateOptions({file: <%= XXX %>})
       g.drawGraph_();
     } else {
       console.log("Option selected not configured. Keeping existing graph.");
