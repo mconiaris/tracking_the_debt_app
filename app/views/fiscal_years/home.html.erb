@@ -67,8 +67,7 @@ $(document).ready(function() {
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "constant-receipts") {
       console.log("constant-receipts");
-      g.user_attrs_.title = "constant-receipts";
-      // Revise this:
+      g.user_attrs_.title = "In Constant (2009) Dollars: 1940-2019";
       g.updateOptions({file: <%= gdp_dollars %>})
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "gdp-receipts") {
