@@ -63,12 +63,13 @@ $(document).ready(function() {
     if($('#choices option:selected').val() == "current-receipts") {
       console.log("current-receipts");
       g.user_attrs_.title = "In Current Dollars: 1940-2019";
-      g.user_attrs_.ylabel = "In Billions of Dollars"
+      g.user_attrs_.ylabel = "In Billions of Dollars";
+      g.updateOptions({file: <%= current_dollars %>})
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "constant-receipts") {
       console.log("constant-receipts");
       g.user_attrs_.title = "In Constant (2009) Dollars: 1940-2019";
-      g.updateOptions({file: <%= gdp_dollars %>})
+      g.updateOptions({file: <%= constant_dollars %>})
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "gdp-receipts") {
       console.log("gdp-receipts");
