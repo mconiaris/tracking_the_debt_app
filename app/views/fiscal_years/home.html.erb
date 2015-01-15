@@ -90,7 +90,7 @@ $(document).ready(function() {
     } else if ($('#choices option:selected').val() == "gdp-surpluses") {
       console.log("gdp-surpluses");
       g.user_attrs_.title = "Surplues or Deficits as a Percentage of GDP: 1940-2019";
-      g.updateOptions({file: <%= XXX %>})
+      g.updateOptions({file: <%= surplus_deficit_gdp_dollars %>})
       g.drawGraph_();
     } else {
       console.log("Option selected not configured. Keeping existing graph.");
@@ -100,60 +100,6 @@ $(document).ready(function() {
 
 </script>
 
-
-<!-- Refactor below script: -->
-<script>
-  $("#choices li#constant").on("click", function(e) {
-    e.preventDefault();
-    console.log("Deficits " + $(this).text() + " clicked");
-    g = new Dygraph(
-
-      // containing div
-      document.getElementById("graphdiv"),
-
-      // CSV or path to a CSV file.
-      <%= surplus_deficit_constant_dollars %>,
-      {
-        labels: [ "Fiscal Year", "Surplus/Deficit" ],
-        drawPoints: true,
-        xlabel:"Fiscal Year",
-        ylabel:"Percentage Surplus or Deficit",
-        title: "As a Percentage of GDP: 1940-2019",
-        titleHeight: 25,
-        pointSize: 2,
-        // TODO: If statement that turns surplus green
-        colors: ["red"],
-        axisLabelFontSize: 12
-      }
-    );
-
-  });
-
-  $("#choices li#gdp").on("click", function(e) {
-    e.preventDefault();
-    console.log("Deficits " + $(this).text() + " clicked");
-    new Dygraph(
-      // containing div
-      document.getElementById("graphdiv"),
-
-      // CSV or path to a CSV file.
-      <%= surplus_deficit_gdp_dollars %>,
-      {
-        labels: [ "Fiscal Year", "Surplus/Deficit" ],
-        drawPoints: true,
-        xlabel:"Fiscal Year",
-        ylabel:"Percentage Surplus or Deficit",
-        title: "As a Percentage of GDP: 1940-2019",
-        titleHeight: 25,
-        pointSize: 2,
-        // TODO: If statement that turns surplus green
-        colors: ["red"],
-        axisLabelFontSize: 12
-      }
-    );
-
-  });
-</script>
 
 
 
