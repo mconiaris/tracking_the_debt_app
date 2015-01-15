@@ -64,31 +64,39 @@ $(document).ready(function() {
       console.log("current-receipts");
       g.user_attrs_.title = "Receipts & Outlays Current Dollars: 1940-2019";
       g.user_attrs_.ylabel = "In Billions of Dollars";
+      g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
       g.updateOptions({file: <%= current_dollars %>})
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "constant-receipts") {
       console.log("constant-receipts");
       g.user_attrs_.title = "Receipts & Outlays in Constant (2009) Dollars: 1940-2019";
+      g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
       g.updateOptions({file: <%= constant_dollars %>})
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "gdp-receipts") {
       console.log("gdp-receipts");
       g.user_attrs_.title = "Receipts & Outlays as a Percentage of GDP: 1940-2019";
+      g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
       g.updateOptions({file: <%= gdp_dollars %>})
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "current-surpluses") {
       console.log("current-surpluses");
       g.user_attrs_.title = "Surplues or Deficits in Current Dollars: 1940-2019";
-      g.user_attrs_.ylabel = "Percentage Surplus or Deficit"
-      g.updateOptions({file: <%= surplus_deficit_current_dollars %>})
+      g.user_attrs_.ylabel = "Percentage Surplus or Deficit";
+      g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
+      g.updateOptions({file: <%= surplus_deficit_current_dollars %>});
+
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "constant-surpluses") {
       console.log("constant-surpluses");
       g.user_attrs_.title = "Surplues or Deficits in Constant (2009) Dollars: 1940-2019";
+      g.updateOptions({file: <%= surplus_deficit_constant_dollars %>})
+      g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "gdp-surpluses") {
       console.log("gdp-surpluses");
       g.user_attrs_.title = "Surplues or Deficits as a Percentage of GDP: 1940-2019";
+      g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
       g.drawGraph_();
     } else {
       console.log("Option selected not configured. Keeping existing graph.");
