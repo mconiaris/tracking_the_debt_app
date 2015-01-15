@@ -68,6 +68,8 @@ $(document).ready(function() {
     } else if ($('#choices option:selected').val() == "constant-receipts") {
       console.log("constant-receipts");
       g.user_attrs_.title = "constant-receipts";
+      // Revise this:
+      g.updateOptions({file: <%= gdp_dollars %>})
       g.drawGraph_();
     } else if ($('#choices option:selected').val() == "gdp-receipts") {
       console.log("gdp-receipts");
