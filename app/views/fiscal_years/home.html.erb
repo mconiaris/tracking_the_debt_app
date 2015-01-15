@@ -20,24 +20,24 @@ $(document).ready(function() {
   // Load default graph
   g = new Dygraph(
 
-        // containing div
-        document.getElementById("graphdiv"),
+    // containing div
+    document.getElementById("graphdiv"),
 
-        // CSV or path to a CSV file.
-        <%= current_dollars %>,
-        {
-          labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-          drawPoints: true,
-          xlabel:"Fiscal Year",
-          ylabel:"In Billions of Dollars",
-          title: "Receipts & Outlays in Current Dollars: 1940-2019",
-          titleHeight: 25,
-          pointSize: 2,
-          // TODO: If statement that turns surplus green
-          colors: ["green", "red"],
-          axisLabelFontSize: 12
-        }
-      );
+    // CSV or path to a CSV file.
+    <%= current_dollars %>,
+    {
+      labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+      drawPoints: true,
+      xlabel:"Fiscal Year",
+      ylabel:"In Billions of Dollars",
+      title: "Receipts & Outlays in Current Dollars: 1940-2019",
+      titleHeight: 25,
+      pointSize: 2,
+      // TODO: If statement that turns surplus green
+      colors: ["green", "red"],
+      axisLabelFontSize: 12
+    }
+  );
 
   // retrieve the jQuery wrapped dom object identified by the selector '#choices'
   var sel = $('#choices');
@@ -104,91 +104,7 @@ $(document).ready(function() {
     }
   });
 
-
-
-
-
-  $("#choices li#current").on("click", function(e) {
-    e.preventDefault();
-    console.log("Deficits " + $(this).text() + " clicked");
-    g = new Dygraph(
-
-      // containing div
-      document.getElementById("graphdiv"),
-
-      // CSV or path to a CSV file.
-      <%= surplus_deficit_current_dollars %>,
-      {
-        labels: [ "Fiscal Year", "Surplus/Deficit" ],
-        drawPoints: true,
-        xlabel:"Fiscal Year",
-        ylabel:"Percentage Surplus or Deficit",
-        title: "As a Percentage of GDP: 1940-2019",
-        titleHeight: 25,
-        pointSize: 2,
-        // TODO: If statement that turns surplus green
-        colors: ["red"],
-        axisLabelFontSize: 12
-      }
-    );
-
-  });
 });
-</script>
-
-
-<!-- Refactor below script: -->
-<script>
-  $("#choices li#constant").on("click", function(e) {
-    e.preventDefault();
-    console.log("Deficits " + $(this).text() + " clicked");
-    g = new Dygraph(
-
-      // containing div
-      document.getElementById("graphdiv"),
-
-      // CSV or path to a CSV file.
-      <%= surplus_deficit_constant_dollars %>,
-      {
-        labels: [ "Fiscal Year", "Surplus/Deficit" ],
-        drawPoints: true,
-        xlabel:"Fiscal Year",
-        ylabel:"Percentage Surplus or Deficit",
-        title: "As a Percentage of GDP: 1940-2019",
-        titleHeight: 25,
-        pointSize: 2,
-        // TODO: If statement that turns surplus green
-        colors: ["red"],
-        axisLabelFontSize: 12
-      }
-    );
-
-  });
-
-  $("#choices li#gdp").on("click", function(e) {
-    e.preventDefault();
-    console.log("Deficits " + $(this).text() + " clicked");
-    new Dygraph(
-      // containing div
-      document.getElementById("graphdiv"),
-
-      // CSV or path to a CSV file.
-      <%= surplus_deficit_gdp_dollars %>,
-      {
-        labels: [ "Fiscal Year", "Surplus/Deficit" ],
-        drawPoints: true,
-        xlabel:"Fiscal Year",
-        ylabel:"Percentage Surplus or Deficit",
-        title: "As a Percentage of GDP: 1940-2019",
-        titleHeight: 25,
-        pointSize: 2,
-        // TODO: If statement that turns surplus green
-        colors: ["red"],
-        axisLabelFontSize: 12
-      }
-    );
-
-  });
 </script>
 
 
