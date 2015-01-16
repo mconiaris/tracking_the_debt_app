@@ -1,3 +1,4 @@
+<!-- Create drop down menu for graph choices. -->
 <nav id="nav-choices">
   <select id="choices">
     <option value="current-receipts">Receipts & Outlays (Current Dollars)</li>
@@ -13,6 +14,7 @@
   <div id="graphdiv">
   </div>
 
+<!-- Creates a default dygraph, and an event listener responding to the drop down menu above, which loads the graph the user desires. -->
 <script>
 $(document).ready(function() {
   console.log( "document ready" );
@@ -23,7 +25,7 @@ $(document).ready(function() {
     // containing div
     document.getElementById("graphdiv"),
 
-    // CSV or path to a CSV file.
+    // CSV or path to a CSV file. Loaded through  fiscal years helper
     <%= current_dollars %>,
     {
       labels: [ "Fiscal Year", "Receipts", "Outlays" ],
@@ -49,9 +51,6 @@ $(document).ready(function() {
     console.log(value + " selected."); // crashes in IE, if console not open
     // make the text of all label elements be the value
     $('label').text(value);
-    // Same as above. Different syntax.
-    var choice = $("#choices option:selected").val();
-    console.log(choice + " chosen.");
   }); // close the change listener
 
 
