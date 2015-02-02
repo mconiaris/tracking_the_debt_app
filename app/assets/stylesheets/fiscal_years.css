@@ -70,6 +70,7 @@ nav {
   background-color: #FFCC99;
   border-top-style: solid;
   border-bottom-style: solid;
+  text-align: center;
 }
 
 nav p {
@@ -83,6 +84,11 @@ nav#choices {
 nav#choices p {
   text-decoration: underline;
 }
+
+select#choices {
+  background-color: #FFE7BA;
+}
+
 
 nav ul {
   list-style: none;
