@@ -25,12 +25,8 @@ header h1 {
   line-height: 0.1em;
 }
 
-header:hover {
-  font-weight: bold;
-}
-
 header p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 0.1em;
 }
 
@@ -49,6 +45,10 @@ a:hover {
   text-decoration: none;
   font-weight: bold;
   color: #666;
+}
+
+a header:hover {
+  font-weight: normal;
 }
 
 #choices li:hover {
