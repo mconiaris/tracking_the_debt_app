@@ -101,12 +101,12 @@ li#chart-header {
 }
 
 select#choices {
-  font-size: 1.3em;
+  font-size: 1em;
   background-color: #FFE7BA;
 }
 
-h4#chart-header {
-  font-size: 1.3em;
+li#chart-header {
+  font-size: 1em;
 }
 
 
@@ -140,7 +140,7 @@ h2 {
   text-align: center;
 }
 
-tbody {
+body {
   text-align: right;
 }
 
