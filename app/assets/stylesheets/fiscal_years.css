@@ -87,9 +87,18 @@ nav#choices p {
   text-decoration: underline;
 }
 
+li#chart-header {
+  margin-right: 0px;
+
+}
+
 select#choices {
   font-size: 1.3em;
   background-color: #FFE7BA;
+}
+
+h4#chart-header {
+  font-size: 1.3em;
 }
 
 
