@@ -77,8 +77,10 @@ nav p {
   line-height: 0.1em;
 }
 
-nav#choices {
+nav#nav-choices {
   border-top-style: none;
+  border-bottom-style: none;
+  background-color: white;
 }
 
 nav#choices p {
