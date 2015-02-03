@@ -1,4 +1,4 @@
-#Tracking the Debt App
+#Tracking the Debt App v0.3
 
 ##What This Is
 This is my final project for [General Assembly](https://generalassemb.ly/new-york-city) August 2014 [Web Development Immersive](https://generalassemb.ly/education/web-development-immersive). It is meant to be a quick and simple demonstration of what I have learned, while giving me some needed additional front-end development experience.
