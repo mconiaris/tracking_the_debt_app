@@ -1,7 +1,5 @@
 To Do Items for this App:
 - add tests for controllers and views
-- make map larger. Resize to witdth of screen
-- one line nav bar
 - make choices more obvious (checkboxes instead of links?)
 - add footer with instruction (double tap to return to screen, hold and select for detail)
 - Make small screen version of my project. Send to Liz.
