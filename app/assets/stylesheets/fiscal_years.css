@@ -66,6 +66,10 @@ div#graphdiv {
   margin-right: auto;
 }
 
+div#instruction-text {
+  text-align: center;
+}
+
 nav {
   background-color: #FFCC99;
   border-top-style: solid;
