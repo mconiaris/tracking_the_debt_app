@@ -83,13 +83,21 @@ nav#nav-choices {
   background-color: white;
 }
 
+nav#nav-choices ul {
+  padding: 0px;
+}
+
+nav#nav-choices ul li {
+  margin: 0px;
+}
+
 nav#choices p {
   text-decoration: underline;
 }
 
 li#chart-header {
-  margin-right: 0px;
-
+  margin: 0px auto;
+  font-size: 1.5em;
 }
 
 select#choices {
