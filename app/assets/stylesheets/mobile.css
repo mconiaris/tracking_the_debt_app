@@ -6,6 +6,10 @@ header p {
   font-size: 0.7em;
 }
 
+nav ul li {
+  margin: 0 10px;
+}
+
 
 /*body {
   background-color: #fff;
