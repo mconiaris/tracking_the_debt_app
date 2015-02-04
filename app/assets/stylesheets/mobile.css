@@ -10,6 +10,11 @@ nav ul li {
   margin: 0 10px;
 }
 
+div#graphdiv {
+  /*set size here?*/
+  /*May have to restructure dygraph property*/
+}
+
 
 /*body {
   background-color: #fff;
