@@ -1,13 +1,25 @@
 header h1 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 header p {
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 
 nav ul li {
   margin: 0 10px;
+}
+
+ul#main-nav {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+select#choices {
+font-size: 0.9em;
 }
 
 div#graphdiv {
