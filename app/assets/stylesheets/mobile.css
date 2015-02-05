@@ -1,3 +1,7 @@
+body {
+  width: 37em;
+}
+
 header h1 {
   font-size: 2.5em;
 }
@@ -18,13 +22,13 @@ h2 {
   font-size: 1.3em;
 }
 
-select#choices {
-font-size: 0.9em;
+div#graphdiv {
+  width: 70px;
+  margin-top: 1.5em;
 }
 
-div#graphdiv {
-  /*set size here?*/
-  /*May have to restructure dygraph property*/
+select#choices {
+font-size: 0.9em;
 }
 
 
