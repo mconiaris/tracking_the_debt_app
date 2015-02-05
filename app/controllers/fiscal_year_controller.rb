@@ -1,2 +1,0 @@
-class FiscalYearController < ApplicationController
-end
