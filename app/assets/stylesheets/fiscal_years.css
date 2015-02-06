@@ -157,3 +157,11 @@ footer {
 nav li {
   display: inline;
 }
+
+
+/***********************
+About Page
+***********************/
+article {
+  text-align: left;
+}
