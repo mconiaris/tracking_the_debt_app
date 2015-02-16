@@ -174,3 +174,7 @@ Historial Tables Page
 td {
   text-align: right;
 }
+
+td#fiscal-year {
+  text-align: left;
+}
