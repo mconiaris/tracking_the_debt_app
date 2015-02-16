@@ -178,3 +178,7 @@ td {
 td#fiscal-year {
   text-align: left;
 }
+
+th {
+  padding: 0.5em;
+}
