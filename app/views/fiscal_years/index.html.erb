@@ -5,7 +5,6 @@
   <table>
     <thead>
       <tr>
-        <th>Detailed Data</th>
         <th>Fiscal year</th>
         <th>Receipts (current dollars)</th>
         <th>Outlays (current dollars)</th>
@@ -23,8 +22,7 @@
     <tbody>
       <% @fiscal_years.each do |fiscal_year| %>
         <tr>
-          <td><%= link_to 'Show', fiscal_year %></td>
-          <td><%= fiscal_year.fiscal_year %></td>
+          <td><%= link_to fiscal_year.fiscal_year, fiscal_year %></td>
           <td><%= fiscal_year.receipts_current_dollars %></td>
           <td><%= fiscal_year.outlays_current_dollars %></td>
           <td><%= fiscal_year.surplus_deficit_current_dollars %></td>
