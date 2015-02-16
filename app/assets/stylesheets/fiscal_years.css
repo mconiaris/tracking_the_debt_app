@@ -166,3 +166,11 @@ article {
   text-align: left;
   margin: auto 9em;
 }
+
+/***********************
+Historial Tables Page
+***********************/
+
+td {
+  text-align: right;
+}
