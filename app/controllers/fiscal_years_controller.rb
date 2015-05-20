@@ -101,24 +101,3 @@ class FiscalYearsController < ApplicationController
       params.require(:fiscal_year).permit(:fiscal_year, :receipts_current_dollars, :outlays_current_dollars, :surplus_deficit_current_dollars, :receipts_constant, :outlays_constant, :surplus_deficit_constant, :gdp_receipts, :gdp_outlays, :gdp_surplus_deficit)
     end
 end
-
-RSpec.describe FiscalYearsController, :type => :controller do
-  describe "index page" do
-    it "renders the index template" do
-      get :index
-      expect(response).to render_template("index")
-    end
-  end
-  describe "home page" do
-    it "renders the home template" do
-      get :home
-      expect(response).to render_template("home")
-    end
-  end
-  describe "about page" do
-    it "renders the about template" do
-      get :about
-      expect(response).to render_template("about")
-    end
-  end
-end
