@@ -66,11 +66,11 @@ RSpec.describe FiscalYearsController, :type => :controller do
   end
 
   # TODO: Un-comment tests to research & make pass
-  describe "GET new" do
-    # it "assigns a new fiscal_year as @fiscal_year" do
-    #   get :new, {}, valid_session
-    #   expect(assigns(:fiscal_year)).to be_a_new(FiscalYear)
-    # end
+  xdescribe "GET new" do
+    it "assigns a new fiscal_year as @fiscal_year" do
+      get :new, {}, valid_session
+      expect(assigns(:fiscal_year)).to be_a_new(FiscalYear)
+    end
   end
 
   describe "GET edit" do
@@ -81,7 +81,7 @@ RSpec.describe FiscalYearsController, :type => :controller do
     end
   end
 
-  describe "POST create" do
+  xdescribe "POST create" do
     describe "with valid params" do
       it "creates a new FiscalYear" do
         expect {
@@ -114,7 +114,7 @@ RSpec.describe FiscalYearsController, :type => :controller do
     end
   end
 
-  describe "PUT update" do
+  xdescribe "PUT update" do
     describe "with valid params" do
       let(:new_attributes) {
         skip("Add a hash of attributes valid for your model")
@@ -155,7 +155,7 @@ RSpec.describe FiscalYearsController, :type => :controller do
     end
   end
 
-  describe "DELETE destroy" do
+  xdescribe "DELETE destroy" do
     it "destroys the requested fiscal_year" do
       fiscal_year = FiscalYear.create! valid_attributes
       expect {
