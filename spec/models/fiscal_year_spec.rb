@@ -24,11 +24,4 @@ RSpec.describe FiscalYear, :type => :model do
   it { should validate_presence_of(:gdp_receipts) }
   it { should validate_presence_of(:gdp_outlays) }
   it { should validate_presence_of(:gdp_surplus_deficit) }
-  it { should validate_presence_of(:fiscal_year) }
-  it { should validate_presence_of(:fiscal_year) }
-  it { should validate_presence_of(:fiscal_year) }
-  it { should validate_presence_of(:fiscal_year) }
-  it { should validate_presence_of(:fiscal_year) }
-  it { should validate_presence_of(:fiscal_year) }
-  it { should validate_presence_of(:fiscal_year) }
 end
