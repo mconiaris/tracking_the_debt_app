@@ -23,9 +23,18 @@ RSpec.describe FiscalYearsController, :type => :controller do
   # This should return the minimal set of attributes required to create a valid
   # FiscalYear. As you add validations to FiscalYear, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
-  }
+  let(:valid_attributes) {{
+    :fiscal_year => 2012,
+    :receipts_current_dollars => 2450.2,
+    :outlays_current_dollars => 3537.1,
+    :surplus_deficit_current_dollars => -1087.0,
+    :receipts_constant => 2331.0,
+    :outlays_constant => 3365.2,
+    :surplus_deficit_constant => -1034.1,
+    :gdp_receipts => 15.2,
+    :gdp_outlays => 22.0,
+    :gdp_surplus_deficit => -6.8
+  }}
 
   let(:invalid_attributes) {
     skip("Add a hash of attributes invalid for your model")
