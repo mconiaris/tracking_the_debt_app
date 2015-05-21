@@ -102,12 +102,29 @@ RSpec.describe FiscalYearsHelper, :type => :helper do
     it "surplus_deficit_constant_dollars[40].size returns 2" do
       expect(helper.surplus_deficit_constant_dollars[40].size).to eq(2)
     end
-    it "surplus_deficit_constant_dollars[40][0] returns 1970" do
+    it "surplus_deficit_constant_dollars[40][0] returns 1980" do
       expect(helper.surplus_deficit_constant_dollars[40][0]).to eq(1980)
     end
     it "surplus_deficit_constant_dollars[61][1] returns 156.9" do
       expect(helper.surplus_deficit_constant_dollars[61][1]).to eq(156.9)
     end
   end
-      # binding.pry
+
+  describe "#surplus_deficit_gdp_dollars" do
+    it "returns an array" do
+      expect(helper.surplus_deficit_gdp_dollars.class).to eq(Array)
+    end
+    it "array's size is 80" do
+      expect(helper.surplus_deficit_gdp_dollars.size).to eq(80)
+    end
+    it "surplus_deficit_gdp_dollars[50].size returns 2" do
+      expect(helper.surplus_deficit_gdp_dollars[50].size).to eq(2)
+    end
+    it "surplus_deficit_gdp_dollars[50][0] returns 1990" do
+      expect(helper.surplus_deficit_gdp_dollars[50][0]).to eq(1990)
+    end
+    it "surplus_deficit_gdp_dollars[71][1] returns -8.4" do
+      expect(helper.surplus_deficit_gdp_dollars[71][1]).to eq(-8.4)
+    end
+  end
 end
