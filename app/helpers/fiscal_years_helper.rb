@@ -511,14 +511,4 @@ module FiscalYearsHelper
       [2019,-2.3]
     ]
   end
-
-  # Changes title of page
-  def full_title(page_title = '')
-    base_title = "Tracking the Debt"
-    if page_title.empty?
-      base_title
-    else
-      "#{page_title} | #{base_title}"
-    end
-  end
 end

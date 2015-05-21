@@ -173,6 +173,7 @@ RSpec.describe FiscalYearsController, :type => :controller do
   describe "GET home" do
     it "renders the home template" do
       get :home
+      assert_response :success
       expect(response).to render_template("home")
     end
   end
@@ -180,6 +181,7 @@ RSpec.describe FiscalYearsController, :type => :controller do
   describe "GET about" do
     it "renders the about template" do
       get :about
+      assert_response :success
       expect(response).to render_template("about")
     end
   end
