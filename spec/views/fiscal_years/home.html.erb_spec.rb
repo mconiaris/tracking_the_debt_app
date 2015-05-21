@@ -20,7 +20,9 @@ RSpec.describe "fiscal_years/home", :type => :view do
     ])
   end
 
-  it "renders a list of fiscal_years" do
+  it "to render 'Select a chart:' in the page" do
     render
+    expect(rendered).to match /Select a chart:/
   end
+  # TODO: write test to confirm 'Home is in the <title> tag'
 end
