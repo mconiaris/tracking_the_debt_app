@@ -40,7 +40,7 @@ RSpec.describe FiscalYearsHelper, :type => :helper do
       expect(helper.constant_dollars.size).to eq(80)
     end
     it "constant_dollars[10].size returns 3" do
-      expect(helper.constant_dollars[0].size).to eq(3)
+      expect(helper.constant_dollars[10].size).to eq(3)
     end
     it "constant_dollars[10][0] returns 1950" do
       expect(helper.constant_dollars[10][0]).to eq(1950)
@@ -61,7 +61,7 @@ RSpec.describe FiscalYearsHelper, :type => :helper do
       expect(helper.gdp_dollars.size).to eq(80)
     end
     it "gdp_dollars[20].size returns 3" do
-      expect(helper.gdp_dollars[0].size).to eq(3)
+      expect(helper.gdp_dollars[20].size).to eq(3)
     end
     it "gdp_dollars[20][0] returns 1960" do
       expect(helper.gdp_dollars[20][0]).to eq(1960)
@@ -82,13 +82,31 @@ RSpec.describe FiscalYearsHelper, :type => :helper do
       expect(helper.surplus_deficit_current_dollars.size).to eq(80)
     end
     it "surplus_deficit_current_dollars[30].size returns 2" do
-      expect(helper.surplus_deficit_current_dollars[0].size).to eq(2)
+      expect(helper.surplus_deficit_current_dollars[30].size).to eq(2)
     end
     it "surplus_deficit_current_dollars[30][0] returns 1970" do
       expect(helper.surplus_deficit_current_dollars[30][0]).to eq(1970)
     end
-    it "surplus_deficit_current_dollars[51][1] returns 16.7" do
+    it "surplus_deficit_current_dollars[51][1] returns -269.2" do
       expect(helper.surplus_deficit_current_dollars[51][1]).to eq(-269.2)
+    end
+  end
+
+  describe "#surplus_deficit_constant_dollars" do
+    it "returns an array" do
+      expect(helper.surplus_deficit_constant_dollars.class).to eq(Array)
+    end
+    it "array's size is 80" do
+      expect(helper.surplus_deficit_constant_dollars.size).to eq(80)
+    end
+    it "surplus_deficit_constant_dollars[40].size returns 2" do
+      expect(helper.surplus_deficit_constant_dollars[40].size).to eq(2)
+    end
+    it "surplus_deficit_constant_dollars[40][0] returns 1970" do
+      expect(helper.surplus_deficit_constant_dollars[40][0]).to eq(1980)
+    end
+    it "surplus_deficit_constant_dollars[61][1] returns 156.9" do
+      expect(helper.surplus_deficit_constant_dollars[61][1]).to eq(156.9)
     end
   end
       # binding.pry
