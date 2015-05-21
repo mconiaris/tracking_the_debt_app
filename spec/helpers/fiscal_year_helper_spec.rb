@@ -11,5 +11,9 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe FiscalYearsHelper, :type => :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "#current_dollars" do
+    it "returns an array" do
+      expect(helper.current_dollars.class).to eq(Array)
+    end
+  end
 end
