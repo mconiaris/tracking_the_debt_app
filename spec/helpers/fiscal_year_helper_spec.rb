@@ -15,5 +15,12 @@ RSpec.describe FiscalYearsHelper, :type => :helper do
     it "returns an array" do
       expect(helper.current_dollars.class).to eq(Array)
     end
+    it "array's size is 80" do
+      expect(helper.current_dollars.size).to eq(80)
+    end
+    it "current_dollars[0].size returns 3" do
+      expect(helper.current_dollars[0].size).to eq(3)
+    end
+      # binding.pry
   end
 end
