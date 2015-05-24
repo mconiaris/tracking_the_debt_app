@@ -22,4 +22,24 @@
  *
  *= require_tree .
  *= require_self
+
+TODO: Blank out require_tree and require_self and
+styling errors
+TODO: research mixins and css variables;
  */
+
+ /* mixins, variables, etc. */
+@mixin box_sizing {
+  -moz-box-sizing:      border-box;
+  -webkit-box-sizing:   border-box;
+  box-sizing:           border-box;
+}
+
+/* miscellaneous */
+.debug.dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
