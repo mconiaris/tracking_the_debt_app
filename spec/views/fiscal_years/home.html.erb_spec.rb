@@ -18,11 +18,14 @@ RSpec.describe "fiscal_years/home", :type => :view do
         :gdp_surplus_deficit => -6.8
       })
     ])
+    render
   end
 
+  # TODO: write test to confirm 'Home is in the <title> tag'
   it "to render 'Select a chart:' in the page" do
-    render
     expect(rendered).to match /Select a chart:/
   end
-  # TODO: write test to confirm 'Home is in the <title> tag'
+  it "has '2012' the page" do
+    expect(rendered).to match /2012/
+  end
 end
