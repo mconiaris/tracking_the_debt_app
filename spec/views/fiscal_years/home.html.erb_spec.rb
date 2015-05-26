@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-# TODO: Un-comment tests to research & make pass
 RSpec.describe "fiscal_years/home", :type => :view do
 
   before(:each) do
@@ -21,11 +20,15 @@ RSpec.describe "fiscal_years/home", :type => :view do
     render
   end
 
-  # TODO: write test to confirm 'Home is in the <title> tag'
-  it "to render 'Select a chart:' in the page" do
+  # Test to confirm 'Home is in the <title> tag'
+  it "to render 'Home' in the page" do
+    render :template => "layouts/application.html.erb"
+    expect(rendered).to match /Home/
+  end
+  it "to render 'Select a chart:' in the home view" do
     expect(rendered).to match /Select a chart:/
   end
-  it "has '2012' the page" do
+  it "has '2012' in the home view" do
     expect(rendered).to match /2012/
   end
 end
