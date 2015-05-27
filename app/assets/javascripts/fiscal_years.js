@@ -5,7 +5,7 @@
   // Load default graph
     // containing div
     // CSV or path to a CSV file. Loaded through  fiscal years helper
-    data = [
+    current_dollars = [
       [1940,6.5,9.5],
       [1941,8.7,13.7],
       [1942,14.6,35.1],
@@ -87,6 +87,8 @@
       [2018,4029.9,4443.1],
       [2019,4226.1,4728.8]
     ]
+
+
 $(document).ready(function() {
   console.log( "fiscal_years.js ready" );
 
@@ -94,7 +96,7 @@ $(document).ready(function() {
 
     document.getElementById("graphdiv"),
 
-    data,
+    current_dollars,
     {
       labels: [ "Fiscal Year", "Receipts", "Outlays" ],
       drawPoints: true,
