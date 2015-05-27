@@ -171,6 +171,89 @@
       [2019,3509.2,3926.6]
     ]
 
+    gdp_dollars = [
+      [1940,6.7,9.6],
+      [1941,7.5,11.7],
+      [1942,9.9,23.8],
+      [1943,13.0,42.6],
+      [1944,20.5,42.7],
+      [1945,19.9,41.0],
+      [1946,17.2,24.2],
+      [1947,16.1,14.4],
+      [1948,15.8,11.3],
+      [1949,14.2,14.0],
+      [1950,14.1,15.3],
+      [1951,15.8,13.9],
+      [1952,18.5,18.9],
+      [1953,18.2,19.9],
+      [1954,18.0,18.3],
+      [1955,16.1,16.8],
+      [1956,17.0,16.1],
+      [1957,17.2,16.5],
+      [1958,16.8,17.4],
+      [1959,15.7,18.2],
+      [1960,17.3,17.2],
+      [1961,17.2,17.8],
+      [1962,17.0,18.2],
+      [1963,17.2,18.0],
+      [1964,17.0,17.9],
+      [1965,16.4,16.6],
+      [1966,16.7,17.2],
+      [1967,17.8,18.8],
+      [1968,17.0,19.8],
+      [1969,19.0,18.7],
+      [1970,18.4,18.6],
+      [1971,16.7,18.8],
+      [1972,17.0,18.9],
+      [1973,17.0,18.1],
+      [1974,17.7,18.1],
+      [1975,17.3,20.6],
+      [1976,16.6,20.8],
+      [1977,17.5,20.2],
+      [1978,17.5,20.1],
+      [1979,18.0,19.6],
+      [1980,18.5,21.1],
+      [1981,19.1,21.6],
+      [1982,18.6,22.5],
+      [1983,17.0,22.8],
+      [1984,16.9,21.5],
+      [1985,17.2,22.2],
+      [1986,17.0,21.8],
+      [1987,17.9,21.0],
+      [1988,17.6,20.6],
+      [1989,17.8,20.5],
+      [1990,17.4,21.2],
+      [1991,17.3,21.7],
+      [1992,17.0,21.5],
+      [1993,17.0,20.7],
+      [1994,17.5,20.3],
+      [1995,17.8,20.0],
+      [1996,18.2,19.6],
+      [1997,18.6,18.9],
+      [1998,19.2,18.5],
+      [1999,19.2,17.9],
+      [2000,19.9,17.6],
+      [2001,18.8,17.6],
+      [2002,17.0,18.5],
+      [2003,15.7,19.1],
+      [2004,15.6,19.0],
+      [2005,16.7,19.2],
+      [2006,17.6,19.4],
+      [2007,17.9,19.0],
+      [2008,17.1,20.2],
+      [2009,14.6,24.4],
+      [2010,14.6,23.4],
+      [2011,15.0,23.4],
+      [2012,15.2,22.0],
+      [2013,16.7,20.8],
+      [2014,17.3,21.1],
+      [2015,18.3,21.4],
+      [2016,18.6,21.4],
+      [2017,18.9,21.1],
+      [2018,19.0,20.9],
+      [2019,19.0,21.3]
+    ]
+
 
 $(document).ready(function() {
   console.log( "fiscal_years.js ready" );
@@ -227,13 +310,13 @@ $(document).ready(function() {
       g.drawGraph_();
       // Receipts & Outlays as Percentage of GDP
     } else if ($('#choices option:selected').val() == "gdp-receipts") {
-  //     console.log("#choices option:selected equals " + $('#choices option:selected').val());
-  //     g.user_attrs_.title = "Receipts & Outlays as a Percentage of GDP: 1940-2019";
-  //     g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
-  //     g.updateOptions({file: <%= gdp_dollars %>})
-  //     g.drawGraph_();
+      console.log("#choices option:selected equals " + $('#choices option:selected').val());
+      g.user_attrs_.title = "Receipts & Outlays as a Percentage of GDP: 1940-2019";
+      g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
+      g.updateOptions({file: gdp_dollars })
+      g.drawGraph_();
   //     // Surpluses or Deficits (Current Dollars)
-  //   } else if ($('#choices option:selected').val() == "current-surpluses") {
+    } else if ($('#choices option:selected').val() == "current-surpluses") {
   //     console.log("#choices option:selected equals " + $('#choices option:selected').val());
   //     g.user_attrs_.title = "Surpluses or Deficits in Current Dollars: 1940-2019";
   //     g.user_attrs_.ylabel = "Percentage Surplus or Deficit";
