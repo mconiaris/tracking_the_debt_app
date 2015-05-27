@@ -219,14 +219,14 @@ $(document).ready(function() {
       g.updateOptions({file: current_dollars })
       g.drawGraph_();
   //     // Receipts & Outlays (2009 Dollars)
-  //   } else if ($('#choices option:selected').val() == "constant-receipts") {
-  //     console.log("#choices option:selected equals " + $('#choices option:selected').val());
-  //     g.user_attrs_.title = "Receipts & Outlays in Constant (2009) Dollars: 1940-2019";
-  //     g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
-  //     g.updateOptions({file: <%= constant_dollars %>})
-  //     g.drawGraph_();
-  //     // Receipts & Outlays as Percentage of GDP
-  //   } else if ($('#choices option:selected').val() == "gdp-receipts") {
+    } else if ($('#choices option:selected').val() == "constant-receipts") {
+      console.log("#choices option:selected equals " + $('#choices option:selected').val());
+      g.user_attrs_.title = "Receipts & Outlays in Constant (2009) Dollars: 1940-2019";
+      g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
+      g.updateOptions({file: constant_dollars })
+      g.drawGraph_();
+      // Receipts & Outlays as Percentage of GDP
+    } else if ($('#choices option:selected').val() == "gdp-receipts") {
   //     console.log("#choices option:selected equals " + $('#choices option:selected').val());
   //     g.user_attrs_.title = "Receipts & Outlays as a Percentage of GDP: 1940-2019";
   //     g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
