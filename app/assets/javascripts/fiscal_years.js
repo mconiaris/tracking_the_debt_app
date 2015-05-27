@@ -3,7 +3,7 @@
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
-
+// TODO: Find a cleaner way to bring the variables into the Dygraph
 
 // Load default graph
 // containing div
