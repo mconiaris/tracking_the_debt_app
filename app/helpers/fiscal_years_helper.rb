@@ -173,7 +173,7 @@ module FiscalYearsHelper
   end
 
   def gdp_dollars
-    @constant_dollars = [
+    @gdp_dollars = [
       [1940,6.7,9.6],
       [1941,7.5,11.7],
       [1942,9.9,23.8],

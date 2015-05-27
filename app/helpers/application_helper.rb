@@ -9,4 +9,9 @@ module ApplicationHelper
       "#{page_title} | #{base_title}"
     end
   end
+
+  # This loads specific Javascript files when called.
+  def javascript(*files)
+    content_for(:head) { javascript_include_tag(*files) }
+  end
 end
