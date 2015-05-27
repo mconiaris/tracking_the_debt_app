@@ -5,13 +5,9 @@ $(document).ready(function() {
   console.log( "fiscal_years.js ready" );
 
   // Load default graph
-  g = new Dygraph(
-
     // containing div
-    document.getElementById("graphdiv"),
-
     // CSV or path to a CSV file. Loaded through  fiscal years helper
-    [
+    data = [
       [1940,6.5,9.5],
       [1941,8.7,13.7],
       [1942,14.6,35.1],
@@ -92,7 +88,12 @@ $(document).ready(function() {
       [2017,3810.8,4268.6],
       [2018,4029.9,4443.1],
       [2019,4226.1,4728.8]
-    ],
+    ]
+  g = new Dygraph(
+
+    document.getElementById("graphdiv"),
+
+    data,
     {
       labels: [ "Fiscal Year", "Receipts", "Outlays" ],
       drawPoints: true,
