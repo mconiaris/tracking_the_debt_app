@@ -254,7 +254,7 @@
       [2019,19.0,21.3]
     ]
 
-    surplus_deficit_current = [
+    surplus_deficit_current_dollars = [
       [1940,-2.9],
       [1941,-4.9],
       [1942,-20.5],
@@ -337,6 +337,89 @@
       [2019,-502.7]
     ]
 
+    surplus_deficit_constant_dollars = [
+      [1940,-42.9],
+      [1941,-66.6],
+      [1942,-238.4],
+      [1943,-570.1],
+      [1944,-538.6],
+      [1945,-570.9],
+      [1946,-189.7],
+      [1947,42.8],
+      [1948,118.6],
+      [1949,6.0],
+      [1950,-31.0],
+      [1951,60.7],
+      [1952,-15.1],
+      [1953,-60.2],
+      [1954,-10.4],
+      [1955,-26.0],
+      [1956,32.8],
+      [1957,27.1],
+      [1958,-20.7],
+      [1959,-92.5],
+      [1960,2.1],
+      [1961,-23.1],
+      [1962,-49.6],
+      [1963,-31.7],
+      [1964,-38.7],
+      [1965,-9.1],
+      [1966,-23.2],
+      [1967,-53.1],
+      [1968,-149.0],
+      [1969,18.1],
+      [1970,-15.0],
+      [1971,-113.5],
+      [1972,-108.0],
+      [1973,-65.8],
+      [1974,-25.0],
+      [1975,-197.6],
+      [1976,-255.5],
+      [1977,-173.3],
+      [1978,-179.8],
+      [1979,-114.0],
+      [1980,-187.0],
+      [1981,-180.0],
+      [1982,-271.3],
+      [1983,-419.9],
+      [1984,-358.9],
+      [1985,-398.0],
+      [1986,-403.9],
+      [1987,-265.9],
+      [1988,-266.6],
+      [1989,-252.6],
+      [1990,-355.0],
+      [1991,-413.3],
+      [1992,-429.6],
+      [1993,-366.6],
+      [1994,-286.7],
+      [1995,-224.8],
+      [1996,-144.2],
+      [1997,-28.8],
+      [1998,90.3],
+      [1999,161.7],
+      [2000,296.7],
+      [2001,156.9],
+      [2002,-189.8],
+      [2003,-441.9],
+      [2004,-470.4],
+      [2005,-350.6],
+      [2006,-264.2],
+      [2007,-166.7],
+      [2008,-459.5],
+      [2009,-1412.7],
+      [2010,-1279.3],
+      [2011,-1259.7],
+      [2012,-1034.1],
+      [2013,-636.1],
+      [2014,-598.5],
+      [2015,-510.3],
+      [2016,-471.0],
+      [2017,-397.4],
+      [2018,-350.9],
+      [2019,-417.4]
+    ]
+
 $(document).ready(function() {
   console.log( "fiscal_years.js ready" );
 
@@ -408,13 +491,13 @@ $(document).ready(function() {
       g.drawGraph_();
       // Surpluses or Deficits (2009 Dollars)
     } else if ($('#choices option:selected').val() == "constant-surpluses") {
-  //     console.log("#choices option:selected equals " + $('#choices option:selected').val());
-  //     g.user_attrs_.title = "Surpluses or Deficits in Constant (2009) Dollars: 1940-2019";
-  //     g.updateOptions({file: <%= surplus_deficit_constant_dollars %>});
-  //     g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
-  //     g.drawGraph_();
-  //     // Surpluses or Deficits as Percentage of GDP
-  //   } else if ($('#choices option:selected').val() == "gdp-surpluses") {
+      console.log("#choices option:selected equals " + $('#choices option:selected').val());
+      g.user_attrs_.title = "Surpluses or Deficits in Constant (2009) Dollars: 1940-2019";
+      g.updateOptions({file: surplus_deficit_constant_dollars });
+      g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
+      g.drawGraph_();
+      // Surpluses or Deficits as Percentage of GDP
+    } else if ($('#choices option:selected').val() == "gdp-surpluses") {
   //     console.log("#choices option:selected equals " + $('#choices option:selected').val());
   //     g.user_attrs_.title = "Surpluses or Deficits as a Percentage of GDP: 1940-2019";
   //     g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
