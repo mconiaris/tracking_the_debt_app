@@ -1,8 +1,6 @@
 // # Place all the behaviors and hooks related to the matching controller here.
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
-$(document).ready(function() {
-  console.log( "fiscal_years.js ready" );
 
   // Load default graph
     // containing div
@@ -89,6 +87,9 @@ $(document).ready(function() {
       [2018,4029.9,4443.1],
       [2019,4226.1,4728.8]
     ]
+$(document).ready(function() {
+  console.log( "fiscal_years.js ready" );
+
   g = new Dygraph(
 
     document.getElementById("graphdiv"),
