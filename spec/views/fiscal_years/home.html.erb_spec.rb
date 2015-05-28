@@ -28,7 +28,7 @@ RSpec.describe "fiscal_years/home", :type => :view do
   it "to render 'Select a chart:' in the home view" do
     expect(rendered).to match /Select a chart:/
   end
-  it "has '2012' in the home view" do
-    expect(rendered).to match /2012/
+  it "current_dollars[72][0] equals 2012" do
+    expect(view.current_dollars[72][0]).to match(2012)
   end
 end
