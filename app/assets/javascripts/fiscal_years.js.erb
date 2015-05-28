@@ -326,7 +326,7 @@ $(document).ready(function() {
       g.user_attrs_.title = "Surpluses or Deficits in Current Dollars: 1940-2019";
       g.user_attrs_.ylabel = "Percentage Surplus or Deficit";
       g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
-      g.updateOptions({file: surplus_deficit_current_dollars });
+      g.updateOptions({file: <%= surplus_deficit_current_dollars %> });
 
       g.drawGraph_();
       // Surpluses or Deficits (2009 Dollars)
