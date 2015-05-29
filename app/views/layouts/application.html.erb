@@ -3,7 +3,7 @@
 <head>
   <title><%= full_title(yield(:page_title)) %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" rel="stylesheet" type="text/css" media="all">
+  <%= stylesheet_link_tag "http://necolas.github.io/normalize.css/3.0.2/normalize.css" %>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= javascript_include_tag 'http://dygraphs.com/1.0.1/dygraph-combined.js' %>
