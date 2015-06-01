@@ -20,9 +20,9 @@
  * It is generally better to create a new
  * file per style scope.
  *
+ *= require_self
+ *= require_tree .
  */
-
-/*Use Bootstrap settings*/
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
