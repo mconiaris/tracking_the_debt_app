@@ -5,9 +5,40 @@ application.css.
 You can use Sass (SCSS) here:
 http://sass-lang.com/*/
 
-/*Make Webkit stuff go away*/
+
+/* Header */
 
 header {
+  text-align: center;
+}
+
+/* Main Navigation */
+
+.nav-pills > li {
+    float: none;
+    display: inline-block;
+    *display: inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-pills {
+    text-align: center;
+}
+
+
+/* Yield to Graph */
+div.graph {
+  text-align: center;
+}
+
+div#graphdiv {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Make Webkit stuff go away*/
+
+/*header {
   text-align: center;
   background-color: #FFE7BA;
   border: 1px solid #c0c0c0;
@@ -22,7 +53,7 @@ header {
 header h1 {
   font-size: 5em;
   font-weight: normal;
-  line-height: 0.1em;
+  line-height: 1em;
 }
 
 header p {
@@ -38,7 +69,6 @@ body {
 
 a:link, a:visited {
   text-decoration: none;
-  /*color: black;*/
 }
 
 a:hover {
@@ -156,21 +186,21 @@ footer {
 
 nav li {
   display: inline;
-}
+}*/
 
 
 /***********************
 About Page
 ***********************/
-article {
+/*article {
   text-align: left;
   margin: auto 9em;
-}
+}*/
 
 /***********************
 Historial Tables Page
 ***********************/
-
+/*
 td {
   text-align: right;
   padding-right: 1em;
@@ -183,4 +213,4 @@ td#fiscal-year {
 
 th {
   padding: 0.5em;
-}
+}*/
