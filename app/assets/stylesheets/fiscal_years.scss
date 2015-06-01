@@ -5,9 +5,10 @@ application.css.
 You can use Sass (SCSS) here:
 http://sass-lang.com/*/
 
+
 /*Make Webkit stuff go away*/
 
-header {
+/*header {
   text-align: center;
   background-color: #FFE7BA;
   border: 1px solid #c0c0c0;
@@ -38,7 +39,6 @@ body {
 
 a:link, a:visited {
   text-decoration: none;
-  /*color: black;*/
 }
 
 a:hover {
@@ -156,21 +156,21 @@ footer {
 
 nav li {
   display: inline;
-}
+}*/
 
 
 /***********************
 About Page
 ***********************/
-article {
+/*article {
   text-align: left;
   margin: auto 9em;
-}
+}*/
 
 /***********************
 Historial Tables Page
 ***********************/
-
+/*
 td {
   text-align: right;
   padding-right: 1em;
@@ -183,4 +183,4 @@ td#fiscal-year {
 
 th {
   padding: 0.5em;
-}
+}*/
