@@ -6,6 +6,22 @@ You can use Sass (SCSS) here:
 http://sass-lang.com/*/
 
 
+/* Main Navigation */
+
+.nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-pills {
+    text-align:center;
+}
+
+
+
+
 /*Make Webkit stuff go away*/
 
 /*header {
