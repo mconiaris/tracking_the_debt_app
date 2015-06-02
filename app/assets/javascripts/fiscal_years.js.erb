@@ -34,8 +34,8 @@ $(document).ready(function() {
 
   $(".dropdown-menu li a").click(function(){
 
-    console.log(this.text);
-    console.log(this.id);
+    console.log(".dropdown-menu li a equals '" + this.text + "'");
+    console.log(".dropdown-menu li a equals '" + this.id + "'");
 
     if(this.id == "current-receipts") {
       console.log("#choices option:selected equals " + $('#choices option:selected').val());
@@ -85,6 +85,5 @@ $(document).ready(function() {
       console.log("Option selected not configured. Keeping existing graph.");
     }
    });
-
 });
 
