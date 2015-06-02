@@ -32,6 +32,16 @@ $(document).ready(function() {
     }
   );
 
+  $(".dropdown-menu li a").click(function(){
+
+    console.log(this.text);
+    console.log(this.id);
+   });
+
+
+
+
+
   // retrieve the jQuery wrapped dom object identified by the selector '#choices'
   var sel = $('#choices');
   // assign a change listener to it
@@ -97,12 +107,6 @@ $(document).ready(function() {
       console.log("Option selected not configured. Keeping existing graph.");
     }
   });
-
-  $(".dropdown-menu li a").click(function(){
-
-    console.log(this.text);
-    console.log(this.id);
-   });
 
 });
 
