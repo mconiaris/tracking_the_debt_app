@@ -1,9 +1,26 @@
 <% provide(:page_title, "Home") %>
 <% javascript current_dollars, 'fiscal_years.js' %>
 
+
+<!-- # TODO: Set div structure to work with Bootstrap -->
+
 <div class="graph">
   <h2>Summary of Receipts, Outlays, and Surpluses or Deficits</h2>
   <!-- Create drop down menu for graph choices. -->
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="nav-choices" data-toggle="dropdown" aria-expanded="true">Select a chart:
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Receipts & Outlays (Current Dollars)</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Receipts & Outlays (2009 Dollars)</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Receipts & Outlays as Percentage of GDP</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Surpluses or Deficits (Current Dollars)</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Surpluses or Deficits (2009 Dollars)</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Surpluses or Deficits as Percentage of GDP</a></li>
+    </ul>
+  </div>
+
   <nav id="nav-choices">
     <ul>
       <li id="chart-header">
