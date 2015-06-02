@@ -35,10 +35,9 @@ $(document).ready(function() {
   $(".dropdown-menu li a").click(function(){
 
     console.log(".dropdown-menu li a equals '" + this.text + "'");
-    console.log(".dropdown-menu li a equals '" + this.id + "'");
+    console.log(".dropdown-menu li a id equals '" + this.id + "'");
 
     if(this.id == "current-receipts") {
-      console.log("#choices option:selected equals " + $('#choices option:selected').val());
       g.user_attrs_.title = "Receipts & Outlays Current Dollars: 1940-2019";
       g.user_attrs_.ylabel = "In Billions of Dollars";
       g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
@@ -46,21 +45,18 @@ $(document).ready(function() {
       g.drawGraph_();
   //     // Receipts & Outlays (2009 Dollars)
     } else if (this.id == "constant-receipts") {
-      console.log("#choices option:selected equals " + $('#choices option:selected').val());
       g.user_attrs_.title = "Receipts & Outlays in Constant (2009) Dollars: 1940-2019";
       g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
       g.updateOptions({file: <%= constant_dollars %> })
       g.drawGraph_();
       // Receipts & Outlays as Percentage of GDP
     } else if (this.id == "gdp-receipts") {
-      console.log("#choices option:selected equals " + $('#choices option:selected').val());
       g.user_attrs_.title = "Receipts & Outlays as a Percentage of GDP: 1940-2019";
       g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
       g.updateOptions({file: <%= gdp_dollars %> })
       g.drawGraph_();
   //     // Surpluses or Deficits (Current Dollars)
     } else if (this.id == "current-surpluses") {
-      console.log("#choices option:selected equals " + $('#choices option:selected').val());
       g.user_attrs_.title = "Surpluses or Deficits in Current Dollars: 1940-2019";
       g.user_attrs_.ylabel = "Percentage Surplus or Deficit";
       g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
@@ -69,14 +65,12 @@ $(document).ready(function() {
       g.drawGraph_();
       // Surpluses or Deficits (2009 Dollars)
     } else if (this.id == "constant-surpluses") {
-      console.log("#choices option:selected equals " + $('#choices option:selected').val());
       g.user_attrs_.title = "Surpluses or Deficits in Constant (2009) Dollars: 1940-2019";
       g.updateOptions({file: <%= surplus_deficit_constant_dollars %> });
       g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
       g.drawGraph_();
       // Surpluses or Deficits as Percentage of GDP
     } else if (this.id == "gdp-surpluses") {
-      console.log("#choices option:selected equals " + $('#choices option:selected').val());
       g.user_attrs_.title = "Surpluses or Deficits as a Percentage of GDP: 1940-2019";
       g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
       g.updateOptions({file: <%= surplus_deficit_gdp_dollars %> });
