@@ -5,8 +5,10 @@ $(document).ready(function() {
 
   nav.addClass('active')
 
-  nav.click(function(){
+  nav.click(function(e){
     console.log(this.text + " pressed as a variable.")
+
+    console.log(nav.parent())
 
     nav.parent().removeClass('active');
 
@@ -14,7 +16,7 @@ $(document).ready(function() {
     if (!$parent.hasClass('active')) {
         $parent.addClass('active');
     }
-    // e.preventDefault();
+    e.preventDefault();
   });
 
 });
