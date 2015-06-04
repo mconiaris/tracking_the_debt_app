@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title><%= full_title(yield(:page_title)) %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,9 +20,9 @@
 
   <nav>
     <ul class="nav nav-pills" id="main-nav">
-      <li role="presentation" ><a href="/">Home</a></li>
-      <li role="presentation"><a href="/about">About</a></li>
-      <li role="presentation"><a href='/fiscal_years'>Historical Tables</a></li>
+      <li role="presentation" class="<%= 'active' if current_page?(root_path) %>"><a href="/">Home</a></li>
+      <li role="presentation" class="<%= 'active' if current_page?(about_path) %>"><a href="/about">About</a></li>
+      <li role="presentation" class="<%= 'active' if current_page?(fiscal_years_path) %>"><a href='/fiscal_years'>Historical Tables</a></li>
     </ul>
   </nav>
 

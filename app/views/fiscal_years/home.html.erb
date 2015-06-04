@@ -3,8 +3,9 @@
 
 
 <!-- # TODO: Set div structure to work with Bootstrap -->
+<!-- TODO: Fix dropdown menu center issue -->
 
-<div class="graph">
+<div class="container" id='graph'>
   <h2>Summary of Receipts, Outlays, and Surpluses or Deficits</h2>
   <!-- Create drop down menu for graph choices. -->
   <div class="dropdown">
@@ -32,13 +33,11 @@
       </li>
     </ul>
   </div>
-
   <div id="graphdiv"></div>
   <div id="instruction-text">
     <p>Mouse over to highlight individual values. Click and drag to zoom. <br/>Double-clicking will zoom you back out. Shift-drag will pan.</p>
   </div>
 </div>
-
 <%= yield(:head) %>
 
 
