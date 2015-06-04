@@ -8,8 +8,6 @@ $(document).ready(function() {
   nav.click(function(e){
     console.log(this.text + " pressed as a variable.")
 
-    console.log(nav.parent())
-
     nav.parent().removeClass('active');
 
     var $parent = $(this).parent();
