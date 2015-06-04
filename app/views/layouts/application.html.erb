@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'nav' %>
   <%= javascript_include_tag 'http://dygraphs.com/1.0.1/dygraph-combined.js' %>
   <%= csrf_meta_tags %>
 </head>
@@ -20,7 +21,7 @@
 
   <nav>
     <ul class="nav nav-pills" id="main-nav">
-      <li role="presentation" class="active"><a href="/">Home</a></li>
+      <li role="presentation" ><a href="/">Home</a></li>
       <li role="presentation"><a href="/about">About</a></li>
       <li role="presentation"><a href='/fiscal_years'>Historical Tables</a></li>
     </ul>
