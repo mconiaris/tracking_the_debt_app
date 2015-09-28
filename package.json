@@ -1,0 +1,26 @@
+{
+  "name": "tracking_the_debt_app",
+  "version": "2.0.0",
+  "description": "A data visualization Website that looks at the income and expenditures of the United States government.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mconiaris/tracking_the_debt_app.git"
+  },
+  "keywords": [
+    "deficit",
+    "debt",
+    "U.S.",
+    "governement",
+    "spending"
+  ],
+  "author": "Michael Coniaris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mconiaris/tracking_the_debt_app/issues"
+  },
+  "homepage": "https://github.com/mconiaris/tracking_the_debt_app#readme"
+}
