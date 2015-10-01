@@ -36,6 +36,11 @@ module.exports = function(grunt) {
         }
       }
     },
+    serve: {
+        options: {
+            port: 9000
+        }
+    },
     watch: {
       files: ['<%= jshint.files %>'],
       tasks: ['jshint', 'qunit']
