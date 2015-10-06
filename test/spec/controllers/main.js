@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('trackingTheDebtAppApp'));
+  beforeEach(module('trackingTheDebtApp'));
   // load the BoostrapUI module
   beforeEach(module('ui.bootstrap'));
 
