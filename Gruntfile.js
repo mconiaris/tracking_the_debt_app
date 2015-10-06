@@ -1,3 +1,12 @@
+// The Gruntfile is a javascript file that
+// is responsible for configuring your project
+// as well as any tasks or plugins that your
+// project requires. For instance, your
+// gruntfile might specify that your project
+// uses Uglify and that you want it to run
+// uglify on a particular directory at build
+// time.
+
 // Generated on 2015-10-06 using generator-angular 0.12.1
 'use strict';
 
