@@ -2,6 +2,11 @@
 // the Bower package manager of your projects
 // dependencies as well as other metadata.
 
+// Bower is a package manager. It will help us
+// to quickly find and install our favourite
+// CSS frameworks, javascript libraries and
+// plugins with just a few simple commands.
+
 {
   "name": "tracking-the-debt-app",
   "version": "0.0.0",
