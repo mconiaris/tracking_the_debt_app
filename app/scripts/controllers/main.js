@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the trackingTheDebtAppApp
  */
-angular.module('trackingTheDebtAppApp')
+angular.module('trackingTheDebtApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

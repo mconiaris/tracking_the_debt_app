@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('trackingTheDebtAppApp', [
+  .module('trackingTheDebtApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
