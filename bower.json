@@ -1,3 +1,7 @@
+// The bower.json file is used to inform
+// the Bower package manager of your projects
+// dependencies as well as other metadata.
+
 {
   "name": "tracking-the-debt-app",
   "version": "0.0.0",
