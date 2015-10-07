@@ -415,7 +415,15 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
-    }
+    },
+
+    open: {
+      dev: {
+          url: 'http://localhost:<%= connect.options.port %>',
+          app: 'Google Chrome'
+      }
+    },
+
   });
 
 
@@ -430,6 +438,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
+      'open:dev',
       'watch'
     ]);
   });
