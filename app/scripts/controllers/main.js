@@ -8,10 +8,7 @@
  * Controller of the trackingTheDebtAppApp
  */
 angular.module('trackingTheDebtApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope) {
+    // Testing this out to see if I can retrieve this value
+    $scope.page = 'home';
   });
