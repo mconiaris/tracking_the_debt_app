@@ -11,4 +11,6 @@ angular.module('trackingTheDebtApp')
   .controller('MainCtrl', function ($scope) {
     // Testing this out to see if I can retrieve this value
     $scope.page = 'home';
+    // TODO: Put Dygraphs here?
+    console.log($scope.page);
   });
