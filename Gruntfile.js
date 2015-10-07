@@ -86,7 +86,8 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          open: true,
+          // Open set to false so that my default brower is not opened
+          open: false,
           middleware: function (connect) {
             return [
               connect.static('.tmp'),
