@@ -7,7 +7,7 @@
 // Enable Javascript strict mode.
 "use strict";
 
-$(document).ready(function() {
+// $(document).ready(function() {
   console.log( "fiscal_years.js ready" );
 
   g = new Dygraph(
@@ -99,5 +99,5 @@ $(document).ready(function() {
   //   }
   // });
 
-});
+// });
 
