@@ -14,3 +14,4 @@ angular.module('trackingTheDebtApp')
     // TODO: Put Dygraphs here?
     console.log($scope.page);
   });
+
