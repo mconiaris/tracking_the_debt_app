@@ -1,6 +1,8 @@
 TODO List:
 1. Focus on Karma tests.
 2. Fix dependency issue that's coming up when running grunt test.
+3. Review angular-dygraphs documentation: https://github.com/cdjackson/angular-dygraphs
+4. Review Angular Dependency Injection: https://docs.angularjs.org/guide/di
 
 
 Research List:
