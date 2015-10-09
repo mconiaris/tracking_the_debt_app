@@ -10,6 +10,8 @@
 // $(document).ready(function() {
   console.log( "fiscal_years.js ready" );
 
+  var g;
+
   g = new Dygraph(
 
     document.getElementById("graphdiv"),
