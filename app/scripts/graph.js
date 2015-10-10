@@ -7,8 +7,8 @@
 // Enable Javascript strict mode.
 "use strict";
 
-$(document).ready(function() {
-  console.log( "fiscal_years.js ready" );
+var graph = (function() {
+  console.log( "graph.js ready" );
 
   var g;
 
@@ -34,6 +34,7 @@ $(document).ready(function() {
       axisLabelFontSize: 12
     }
   );
+  return graph;
 
   // // retrieve the jQuery wrapped dom object identified by the selector '#choices'
   // var sel = $('#choices');

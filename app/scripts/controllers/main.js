@@ -13,11 +13,19 @@ angular.module('trackingTheDebtApp')
     $scope.page = 'home';
     // TODO: Put Dygraphs here?
     console.log($scope.page);
+    $scope.graph = {
+      data: [
+      [new Date(2014,0,1), 10, 100],
+      [new Date(2014,1,1), 20, 80],
+      [new Date(2014,2,1), 50, 60],
+      [new Date(2014,3,1), 70, 80]
+      ],
+      opts: {
+        labels: ["x", "A", "B"]
+      }
+    };
 
-    $http.get('scripts/graph.js').success(function(data) {
-    $scope.graph = data;
-    console.log($scope.graph);
-  });
+    // var graph = $http.get('scripts/graph.js').success(function(data) {
+    // $scope.graph = data;
 
-  console.log($scope.graph);
-  });
+});
