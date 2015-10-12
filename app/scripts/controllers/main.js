@@ -9,10 +9,6 @@
  */
 var myApp = angular.module('trackingTheDebtApp')
   .controller('MainCtrl', function ($scope, $http) {
-    // Testing this out to see if I can retrieve this value
-    $scope.page = 'home';
-    // TODO: Put Dygraphs here?
-    console.log($scope.page);
     $scope.graph = {
       data: [
         [new Date(2014,0,1), 10, 100],
