@@ -10,7 +10,6 @@
  */
 angular
   .module('trackingTheDebtApp', [
-    'angular-dygraphs',
     'ngAnimate',
     'ngCookies',
     'ngResource',
