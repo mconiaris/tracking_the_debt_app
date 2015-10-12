@@ -8,11 +8,7 @@
  * Controller of the trackingTheDebtAppApp
  */
 var myApp = angular.module('trackingTheDebtApp')
-  .controller('MainCtrl', function ($scope, $http) {
-    // Testing this out to see if I can retrieve this value
-    $scope.page = 'home';
-    // TODO: Put Dygraphs here?
-    console.log($scope.page);
+  .controller('MainCtrl', function ($scope) {
     $scope.graph = {
       data: [
         [new Date(2014,0,1), 10, 100],
@@ -24,15 +20,11 @@ var myApp = angular.module('trackingTheDebtApp')
         labels: ["x", "A", "B"]
       }
     };
-    // var graph = $http.get('scripts/graph.js').success(function(data) {
-    // $scope.graph = data;
-
 });
 
 
 
 myApp.directive('graph', function() {
-  console.log('myApp.directive');
   return {
     restrict: 'E', // Use as element
     scope: { // Isolate scope
