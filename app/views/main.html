@@ -1,4 +1,16 @@
 <div class="jumbotron">
+  <p class=header>Charting U.S. Receipts, Outlays and Deficits From 1940 to the Present</p>
+  <p>Summary of Receipts, Outlays, and Surpluses or Deficits</p>
+  <!-- <div id="graphdiv"></div>
+  <ng-dygraphs ng-if="graph.data.length"
+  data="graph.data"
+  options="graph.options"
+  legend="graph.legend"
+  > -->
+  <div ng-controller="MainCtrl">
+    <graph data="graph.data" opts="graph.opts"></graph>
+  </div>
+  <p>Mouse over to highlight individual values. Click and drag to zoom. <br/>Double-clicking will zoom you back out. Shift-drag will pan.</p>
   <h1>'Allo, 'Allo!</h1>
   <p class="lead">
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
@@ -23,3 +35,4 @@
     <p>{{this.page}}</p>
 
 </div>
+
