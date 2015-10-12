@@ -8,7 +8,7 @@
  * Controller of the trackingTheDebtAppApp
  */
 var myApp = angular.module('trackingTheDebtApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('MainCtrl', function ($scope) {
     $scope.graph = {
       data: [
         [new Date(2014,0,1), 10, 100],
@@ -20,9 +20,6 @@ var myApp = angular.module('trackingTheDebtApp')
         labels: ["x", "A", "B"]
       }
     };
-    // var graph = $http.get('scripts/graph.js').success(function(data) {
-    // $scope.graph = data;
-
 });
 
 
