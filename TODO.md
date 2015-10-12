@@ -7,6 +7,7 @@ TODO List:
 - angular-dygraphs: https://github.com/cdjackson/angular-dygraphs
 - Call external JS: http://stackoverflow.com/questions/23697493/call-external-js-file-function-in-angular-js-controller
 - Rewatch Dependency Injection tutorial: https://www.youtube.com/watch?v=2EdP5iBSxTY
+- Dygraphs not working with ng-repeat: http://stackoverflow.com/questions/21468244/dygraphs-not-working-with-ng-repeat
 
 
 Research List:
