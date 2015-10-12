@@ -1,12 +1,12 @@
 TODO List:
-1. Focus on Karma tests.
-2. Fix dependency issue that's coming up when running grunt test.
-3. Review angular-dygraphs documentation: https://github.com/cdjackson/angular-dygraphs
-4. Review Angular Dependency Injection: https://docs.angularjs.org/guide/di
-5. Example code to make it work: http://plnkr.co/edit/us9abu9SkFqZVzNGkYQK?p=preview
-6. angular-dygraphs: https://github.com/cdjackson/angular-dygraphs
-7. Call external JS: http://stackoverflow.com/questions/23697493/call-external-js-file-function-in-angular-js-controller
-8. Rewatch Dependency Injection tutorial: https://www.youtube.com/watch?v=2EdP5iBSxTY
+- Focus on Karma tests.
+- Fix dependency issue that's coming up when running grunt test.
+- Review angular-dygraphs documentation: https://github.com/cdjackson/angular-dygraphs
+- Review Angular Dependency Injection: https://docs.angularjs.org/guide/di
+- Example code to make it work: http://plnkr.co/edit/us9abu9SkFqZVzNGkYQK?p=preview
+- angular-dygraphs: https://github.com/cdjackson/angular-dygraphs
+- Call external JS: http://stackoverflow.com/questions/23697493/call-external-js-file-function-in-angular-js-controller
+- Rewatch Dependency Injection tutorial: https://www.youtube.com/watch?v=2EdP5iBSxTY
 
 
 Research List:
