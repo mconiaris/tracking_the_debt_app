@@ -28,7 +28,6 @@ var myApp = angular.module('trackingTheDebtApp')
 
 
 myApp.directive('graph', function() {
-  console.log('myApp.directive');
   return {
     restrict: 'E', // Use as element
     scope: { // Isolate scope
