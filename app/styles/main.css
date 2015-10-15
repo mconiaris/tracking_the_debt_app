@@ -12,6 +12,10 @@ div.navbar {
 /*  background-color: #3399FF;
 */}
 
+div.graph-header {
+  text-align: center;
+}
+
 body {
   padding: 0;
   background-color: #E6E6C6;
