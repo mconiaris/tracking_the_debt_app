@@ -5,6 +5,13 @@
   padding: 0.2em 0;
 }
 
+div.navbar {
+  border-style: solid;
+  border-color: #004C00;
+  border-width: 1px;
+/*  background-color: #3399FF;
+*/}
+
 body {
   padding: 0;
   background-color: #E6E6C6;
@@ -87,7 +94,16 @@ body {
   }
 }
 
+div.graph.ng-scope {
+  border-style: solid;
+  border-color: #004C00;
+  border-width: 1px;
+}
+
 /*CSS for graph div created by controller*/
 div#graph {
   margin: auto;
+  border-style: solid;
+  border-color: #004C00;
+  border-width: 1px;
 }
