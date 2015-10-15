@@ -82,3 +82,8 @@ body {
     border-bottom: 0;
   }
 }
+
+/*CSS for graph div created by controller*/
+div#graph {
+  margin: auto;
+}
