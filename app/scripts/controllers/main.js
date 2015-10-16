@@ -9,6 +9,12 @@
  */
 var myApp = angular.module('trackingTheDebtApp')
   .controller('MainCtrl', function ($scope) {
+    $scope.message = "MainCtrl loaded";
+    console.log($scope.message);
+});
+
+
+myApp.controller('GraphCtrl', function ($scope) {
     $scope.graph = {
       data: [
       [1940,6.5,9.5],
@@ -101,7 +107,6 @@ var myApp = angular.module('trackingTheDebtApp')
       }
     };
 });
-
 
 
 myApp.directive('graph', function() {
