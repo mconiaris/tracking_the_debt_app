@@ -106,7 +106,7 @@ myApp.controller('GraphCtrl', function ($scope) {
       title: "Receipts & Outlays in Current Dollars: 1940-2019",
       }
     };
-    console.log("GraphCtrl loaded.")
+    console.log("GraphCtrl loaded");
 });
 
 
