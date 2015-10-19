@@ -13,11 +13,13 @@ var myApp = angular.module('trackingTheDebtApp')
     console.log($scope.message);
 });
 
-myApp.controller('GraphController', function ($scope) {
-  $scope.greeting = 'Hola!';
-});
 
-myApp.controller('GraphCtrl', function ($scope) {
+
+myApp.controller('GraphCtrl', ['$scope', function($scope) {
+
+  $scope.message = "GraphCtrl loaded.";
+  console.log($scope.message);
+
   $scope.graph = {
     data: [
     [1940,6.5,9.5],
@@ -103,14 +105,14 @@ myApp.controller('GraphCtrl', function ($scope) {
     ],
     opts: {
       labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-    drawPoints: true,
-    xlabel:"Fiscal Year",
-    ylabel:"In Billions of Dollars",
-    title: "Receipts & Outlays in Current Dollars: 1940-2019",
+      drawPoints: true,
+      xlabel:"Fiscal Year",
+      ylabel:"In Billions of Dollars",
+      title: "Receipts & Outlays in Current Dollars: 1940-2019",
     }
   };
-  console.log("GraphCtrl loaded");
-});
+  console.log($scope.graph);
+}]);
 
 
 myApp.directive('graph', function() {

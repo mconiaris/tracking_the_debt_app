@@ -3,12 +3,9 @@
   <h4>Summary of Receipts, Outlays, and Surpluses or Deficits</h4>
 </div>
 
-<div ng-controller="GraphController">
-  {{ greeting }}
-</div>
-
 <div class="jumbotron">
   <div ng-controller="GraphCtrl">
+    <button ng-click="currentDollars()">Current Dollars</button>
     <graph data="graph.data" opts="graph.opts"></graph>
   </div>
 </div>
