@@ -6,7 +6,10 @@
 <div ng-controller="GraphController">
   <button ng-click="currentDollars()">Current Dollars</button>
  <button ng-click="constantDollars()">Constant Dollars</button>
- <p>{{greeting}}</p></div>
+ <p>{{greeting}}</p>
+ <p>{{graph}}</p>
+ <graph data="graph.data" opts="graph.opts"></graph>
+</div>
 
 <div class="jumbotron">
   <div ng-controller="GraphCtrl">
