@@ -14,7 +14,18 @@ var myApp = angular.module('trackingTheDebtApp')
 });
 
 myApp.controller('GraphController', function ($scope) {
+
   $scope.greeting = 'Hola!';
+
+  $scope.constantDollars = function() {
+    $scope.greeting = 'constant dollars method called';
+  };
+
+  $scope.currentDollars = function() {
+    $scope.greeting = 'current dollars method called';
+
+  };
+
 });
 
 myApp.controller('GraphCtrl', function ($scope) {
