@@ -13,6 +13,9 @@ var myApp = angular.module('trackingTheDebtApp')
     console.log($scope.message);
 });
 
+myApp.controller('GraphController', function ($scope) {
+  $scope.greeting = 'Hola!';
+});
 
 myApp.controller('GraphCtrl', function ($scope) {
   $scope.graph = {
