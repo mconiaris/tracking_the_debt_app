@@ -112,6 +112,9 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     }
   };
   console.log($scope.graph);
+  $scope.currentDollars = function() {
+    console.log("currentDollars button pressed.");
+  };
 }]);
 
 
