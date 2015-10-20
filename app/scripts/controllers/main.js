@@ -112,6 +112,22 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     }
   };
   console.log($scope.graph);
+
+  $scope.currentDollars = function() {
+    console.log("currentDollars button pressed.");
+    $scope.graph = {
+        data: [
+            [1940,6.5,9.5],
+            [1941,8.7,13.7],
+            [1942,14.6,35.1],
+            [1943,24.0,78.6],
+        ],
+        opts: {
+            labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+        }
+    };
+    console.log($scope.graph);
+  };
 }]);
 
 
