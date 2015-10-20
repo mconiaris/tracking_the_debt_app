@@ -9,6 +9,7 @@ TODO List:
 - Rewatch Dependency Injection tutorial: https://www.youtube.com/watch?v=2EdP5iBSxTY
 - Dygraphs not working with ng-repeat: http://stackoverflow.com/questions/21468244/dygraphs-not-working-with-ng-repeat
 - Angular Dependency Injection: https://docs.angularjs.org/guide/di
+- Angular Dynamic Templates: http://onehungrymind.com/angularjs-dynamic-templates/
 
 
 Research List:
