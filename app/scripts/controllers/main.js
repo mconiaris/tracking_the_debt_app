@@ -144,7 +144,6 @@ myApp.directive('graph', function() {
 
       var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
       console.log(graph);
-
     }
-  };
+  }
 });
