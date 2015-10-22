@@ -17,7 +17,10 @@ var myApp = angular.module('trackingTheDebtApp')
 
 myApp.controller('GraphCtrl', ['$scope', function($scope) {
 
+  var s = this;
+
   $scope.message = "GraphCtrl loaded.";
+  s.message = "S message.";
   console.log($scope.message);
 
   $scope.graph = {
@@ -144,7 +147,6 @@ myApp.directive('graph', function() {
 
       var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
       console.log(graph);
-
     }
   };
 });

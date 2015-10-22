@@ -11,6 +11,8 @@ TODO List:
 - Angular Dependency Injection: https://docs.angularjs.org/guide/di
 - Angular Dynamic Templates: http://onehungrymind.com/angularjs-dynamic-templates/
 - Methods in AngularJS directive: http://stackoverflow.com/questions/16881478/how-to-call-a-method-defined-in-an-angularjs-directive
+- Practical guide to Angular Directives: http://www.sitepoint.com/practical-guide-angularjs-directives/
+- Directives and Controllers in Angular: https://lennilobel.wordpress.com/tag/calling-directive-from-controller/
 
 
 Research List:
