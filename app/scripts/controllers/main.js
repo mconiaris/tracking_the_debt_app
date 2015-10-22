@@ -143,6 +143,8 @@ myApp.directive('graph', function() {
     link: function(scope, elem, attrs) {
 
       var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
+      console.log(graph);
+
     }
   };
 });
