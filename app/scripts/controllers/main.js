@@ -140,6 +140,13 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
 }]);
 
 
+myApp.controller('ExampleController', ['$scope', function($scope) {
+  $scope.items = ['settings', 'home', 'other'];
+  $scope.selection = $scope.items[0];
+}]);
+
+
+
 myApp.directive('graph', function() {
   console.log("From directive.");
   return {
