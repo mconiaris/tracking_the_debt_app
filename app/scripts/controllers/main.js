@@ -147,23 +147,22 @@ myApp.controller('ExampleController', ['$scope', function($scope) {
       [1941,8.7,13.7],
       [1942,14.6,35.1],
       [1943,24.0,78.6],
-      ],
-      opts: {
-      labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-      },
+    ],
+    opts: {
+    labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+    },
   };
   currentDollars.name = 'Current Dollars';
 
   var constantDollars = $scope.graph = {
     data: [
-      [1940,6.5,9.5],
-      [1941,8.7,13.7],
-      [1942,14.6,35.1],
-      [1943,24.0,78.6],
-      ],
-      opts: {
-      labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-      },
+      [1940,96.3,139.2],
+      [1941,117.4,184.0],
+      [1942,170.2,408.6],
+    ],
+    opts: {
+    labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+    },
   };
   constantDollars.name = 'Constant Dollars';
 
