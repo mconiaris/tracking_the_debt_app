@@ -186,7 +186,7 @@ myApp.directive('graph', function() {
     template: "<div id=\"graph\"></div>", // We need a div to attach graph to
     link: function(scope, elem, attrs) {
 
-      var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
+      scope.graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
     }
   };
 });
