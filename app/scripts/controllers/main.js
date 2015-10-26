@@ -141,7 +141,34 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
 
 
 myApp.controller('ExampleController', ['$scope', function($scope) {
-  $scope.items = ['settings', 'home', 'other'];
+  var currentDollars = $scope.graph = {
+    data: [
+      [1940,6.5,9.5],
+      [1941,8.7,13.7],
+      [1942,14.6,35.1],
+      [1943,24.0,78.6],
+      ],
+      opts: {
+      labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+      },
+  };
+  currentDollars.name = 'Current Dollars';
+
+  var constantDollars = $scope.graph = {
+    data: [
+      [1940,6.5,9.5],
+      [1941,8.7,13.7],
+      [1942,14.6,35.1],
+      [1943,24.0,78.6],
+      ],
+      opts: {
+      labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+      },
+  };
+  constantDollars.name = 'Constant Dollars';
+
+
+  $scope.items = [currentDollars.name, constantDollars.name, 'settings', 'home', 'other'];
   $scope.selection = $scope.items[0];
 }]);
 
