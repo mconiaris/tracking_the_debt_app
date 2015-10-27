@@ -4,6 +4,7 @@ To Do Items for this App:
 - add footer with instruction (double tap to return to screen, hold and select for detail)
 - Make small screen version of my project. Send to Liz.
 - add teases and annotations to pieces of data (bullet points or balloons which popped up with anecdotal facts or history).
+- Difference between controller and link: http://jasonmore.net/angular-js-directives-difference-controller-link/
 
 On Show View:
 - back button should go on top of screen

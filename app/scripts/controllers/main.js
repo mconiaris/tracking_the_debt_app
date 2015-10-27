@@ -141,7 +141,35 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
 
 
 myApp.controller('ExampleController', ['$scope', function($scope) {
-  $scope.items = ['settings', 'home', 'other'];
+  var currentDollars = function($scope) {
+    $scope.currentDollars.graph = {
+        data: [
+          [1940,6.5,9.5],
+          [1941,8.7,13.7],
+          [1942,14.6,35.1],
+          [1943,24.0,78.6],
+        ],
+        opts: {
+        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+        },
+      };
+  currentDollars.name = 'Current Dollars';
+  };
+
+  var constantDollars = $scope.graph = {
+    data: [
+      [1940,96.3,139.2],
+      [1941,117.4,184.0],
+      [1942,170.2,408.6],
+    ],
+    opts: {
+    labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+    },
+  };
+  constantDollars.name = 'Constant Dollars';
+
+
+  $scope.items = [currentDollars.name, constantDollars.name, 'settings', 'home', 'other'];
   $scope.selection = $scope.items[0];
 }]);
 
@@ -158,7 +186,8 @@ myApp.directive('graph', function() {
     template: "<div id=\"graph\"></div>", // We need a div to attach graph to
     link: function(scope, elem, attrs) {
 
-      var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
+      scope.graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
+
     }
   };
 });
