@@ -141,8 +141,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
 
 
 myApp.controller('ExampleController', ['$scope', function($scope) {
-  var currentDollars = function($scope) {
-    $scope.currentDollars.graph = {
+  var currentDollars = $scope.graph = {
         data: [
           [1940,6.5,9.5],
           [1941,8.7,13.7],
@@ -154,7 +153,6 @@ myApp.controller('ExampleController', ['$scope', function($scope) {
         },
       };
   currentDollars.name = 'Current Dollars';
-  };
 
   var constantDollars = $scope.graph = {
     data: [
