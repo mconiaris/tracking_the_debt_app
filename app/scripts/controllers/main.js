@@ -169,6 +169,7 @@ myApp.controller('ExampleController', ['$scope', function($scope) {
 
   $scope.items = [currentDollars.name, constantDollars.name, 'settings', 'home', 'other'];
   $scope.selection = $scope.items[0];
+  console.log('Selected: ' + $scope.graph.data);
 }]);
 
 
