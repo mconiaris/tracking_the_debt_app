@@ -15,6 +15,7 @@ TODO List:
 - Directives and Controllers in Angular: https://lennilobel.wordpress.com/tag/calling-directive-from-controller/
 - ngSwitch: https://docs.angularjs.org/api/ng/directive/ngSwitch
 - Difference between controller and link: http://jasonmore.net/angular-js-directives-difference-controller-link/
+- Dygraph example: http://jsfiddle.net/9hWQ6/9/
 
 
 Research List:
