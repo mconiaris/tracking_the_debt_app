@@ -118,60 +118,61 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     }
   };
   console.log($scope.graph);
-
-  $scope.currentDollars = function() {
-    console.log("currentDollars button pressed.");
-    $scope.graph = {
-        data: [
-            [1940,6.5,9.5],
-            [1941,8.7,13.7],
-            [1942,14.6,35.1],
-            [1943,24.0,78.6],
-        ],
-        opts: {
-            labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-        }
-    };
-    console.log($scope.graph);
-    console.log('from directive:');
-    console.log(s);
-
-  };
 }]);
 
 
 myApp.controller('ExampleController', ['$scope', function($scope) {
-  var currentDollars = $scope.graph = {
-        data: [
-          [1940,6.5,9.5],
-          [1941,8.7,13.7],
-          [1942,14.6,35.1],
-          [1943,24.0,78.6],
-        ],
-        opts: {
-        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-        },
-      };
-  currentDollars.name = 'Current Dollars';
 
-  var constantDollars = $scope.graph = {
-    data: [
-      [1940,96.3,139.2],
-      [1941,117.4,184.0],
-      [1942,170.2,408.6],
+  $scope.graphs = [
+    { data: [
+      [2016,3568.0,4099.1],
+      [2017,3810.8,4268.6],
+      [2018,4029.9,4443.1],
+      [2019,4226.1,4728.8]
     ],
     opts: {
-    labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-    },
+        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+    }},
+    {data: [
+      [1940,6.5,9.5],
+      [1941,8.7,13.7],
+      [1942,14.6,35.1],
+      [1943,24.0,78.6],
+    ],
+    opts: {
+        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+    }},
+    {data: [
+      [2003,1782.3,2159.9],
+      [2004,1880.1,2292.8],
+      [2005,2153.6,2472.0],
+      [2006,2406.9,2655.0],
+    ],
+    opts: {
+        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+    }}
+  ];
+
+  var currentDollars1 = function() {
+    $scope.graph = $scope.graphs[0];
   };
-  constantDollars.name = 'Constant Dollars';
+
+  var currentDollars2 = function() {
+    $scope.graph = $scope.graphs[1];
+  };
+
+  var currentDollars3 = function() {
+    $scope.graph = $scope.graphs[2];
+  };
+
+  console.log('$scope.graphs[0]');
+  console.log($scope.graphs[0]);
 
 
-  $scope.items = [currentDollars.name, constantDollars.name, 'settings', 'home', 'other'];
+  $scope.items = [currentDollars1(), currentDollars2(), currentDollars3()];
   $scope.selection = $scope.items[0];
-  console.log('Selected: ' + $scope.graph.data);
+  console.log($scope.graph);
 }]);
-
 
 
 myApp.directive('graph', function() {
@@ -185,7 +186,7 @@ myApp.directive('graph', function() {
     template: "<div id=\"graph\"></div>", // We need a div to attach graph to
     link: function(scope, elem, attrs) {
 
-      scope.graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
+      var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
 
     }
   };

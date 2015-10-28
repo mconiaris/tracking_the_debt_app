@@ -11,6 +11,22 @@
   </div>
 </div>
 
+
+<div ng-controller="ExampleController">
+  <select ng-model="selection" ng-options="item for item in items">
+  </select>
+  <code>selection={{selection}}</code>
+  <hr/>
+  <div class="animate-switch-container"
+    ng-switch on="selection">
+      <div class="sanimate-switch" ng-switch-when="currentDollars1()">Current Dollars</div>
+      <div class="animate-switch" ng-switch-when="currentDollars2()">Current Dollars 2</div>
+      <div class="animate-switch" ng-switch-default>default</div>
+  </div>
+  <graph data="graph.data" opts="graph.opts">
+</div>
+
+
 <div class="row marketing">
   <h4>Instructions</h4>
   <p>
