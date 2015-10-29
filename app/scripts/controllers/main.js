@@ -14,10 +14,13 @@ var myApp = angular.module('trackingTheDebtApp')
 });
 
 
+// TODO: Put var graph here?
+
 myApp.controller('GraphCtrl', ['$scope', function($scope) {
 
   $scope.message = "GraphCtrl loaded.";
   console.log($scope.message);
+
 
   $scope.graph = {
     data: [
@@ -111,64 +114,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     }
   };
   console.log($scope.graph);
-}]);
-
-
-myApp.controller('ExampleController', ['$scope', function($scope) {
-
-  $scope.graphs = [
-    { data: [
-      [2016,3568.0,4099.1],
-      [2017,3810.8,4268.6],
-      [2018,4029.9,4443.1],
-      [2019,4226.1,4728.8]
-    ],
-    opts: {
-        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-    }},
-    {data: [
-      [1940,6.5,9.5],
-      [1941,8.7,13.7],
-      [1942,14.6,35.1],
-      [1943,24.0,78.6],
-    ],
-    opts: {
-        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-    }},
-    {data: [
-      [2003,1782.3,2159.9],
-      [2004,1880.1,2292.8],
-      [2005,2153.6,2472.0],
-      [2006,2406.9,2655.0],
-    ],
-    opts: {
-        labels: [ "Fiscal Year", "Receipts", "Outlays" ],
-    }}
-  ];
-
-  var currentDollars1 = function() {
-    $scope.graph = $scope.graphs[0];
-  };
-
-  var currentDollars2 = function() {
-    $scope.graph = $scope.graphs[1];
-  };
-
-  var currentDollars3 = function() {
-    $scope.graph = $scope.graphs[2];
-  };
-
-  console.log('$scope.graphs[0]');
-  console.log($scope.graphs[0]);
-
-
-  $scope.items = [currentDollars1(), currentDollars2(), currentDollars3()];
-  $scope.selection = $scope.items[0];
-  console.log($scope.graph);
-}]);
-
-
-myApp.directive('graph', function() {
+}]).directive('dygraph', function() {
   console.log("From directive.");
   return {
     restrict: 'E', // Use as element
@@ -180,6 +126,10 @@ myApp.directive('graph', function() {
     link: function(scope, elem, attrs) {
 
       var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
+
+      function constantDollars() {
+        console.log('currentDollars function called');
+      };
 
     }
   };
