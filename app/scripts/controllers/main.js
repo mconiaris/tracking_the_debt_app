@@ -21,6 +21,9 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
   $scope.message = "GraphCtrl loaded.";
   console.log($scope.message);
 
+  $scope.items = ['currentDollars', 'home', 'other'];
+  $scope.selection = $scope.items[0];
+
 
   $scope.graph = {
     data: [
@@ -126,6 +129,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
         [1945,45.2,92.7],
       ]
     };
+    console.log($scope.graph);
   };
 
   console.log($scope.graph);
