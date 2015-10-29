@@ -21,6 +21,10 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
   $scope.message = "GraphCtrl loaded.";
   console.log($scope.message);
 
+  $scope.currentDollars = function() {
+    console.log("currentDollars button pressed");
+  };
+
   $scope.graph = {
     data: [
     [1940,6.5,9.5],
@@ -113,7 +117,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     }
   };
   console.log($scope.graph);
-}]).directive('graph', function() {
+}]).directive('dygraph', function() {
   console.log("From directive.");
   return {
     restrict: 'E', // Use as element
@@ -125,6 +129,17 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     link: function(scope, elem, attrs) {
 
       var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
+
+      function constantDollars() {
+        console.log('currentDollars function called');
+        $scope.graph = {
+          data: [
+            [1940,6.5,9.5],
+            [1941,8.7,13.7],
+            [1942,14.6,35.1],
+          ]
+        }
+      };
 
     }
   };
