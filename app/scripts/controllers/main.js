@@ -127,10 +127,6 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
 
       var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
 
-      function constantDollars() {
-        console.log('currentDollars function called');
-      };
-
     }
   };
 });
