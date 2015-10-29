@@ -113,6 +113,21 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
       title: "Receipts & Outlays in Current Dollars: 1940-2019",
     }
   };
+
+  $scope.currentDollars = function() {
+    console.log('currentDollars called');
+    $scope.graph = {
+      data: [
+        [1940,6.5,9.5],
+        [1941,8.7,13.7],
+        [1942,14.6,35.1],
+        [1943,24.0,78.6],
+        [1944,43.7,91.3],
+        [1945,45.2,92.7],
+      ]
+    };
+  };
+
   console.log($scope.graph);
 }]).directive('dygraph', function() {
   console.log("From directive.");
