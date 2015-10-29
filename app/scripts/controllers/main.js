@@ -21,9 +21,6 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
   $scope.message = "GraphCtrl loaded.";
   console.log($scope.message);
 
-  $scope.currentDollars = function() {
-    console.log("currentDollars button pressed");
-  };
 
   $scope.graph = {
     data: [
@@ -132,13 +129,6 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
 
       function constantDollars() {
         console.log('currentDollars function called');
-        $scope.graph = {
-          data: [
-            [1940,6.5,9.5],
-            [1941,8.7,13.7],
-            [1942,14.6,35.1],
-          ]
-        }
       };
 
     }
