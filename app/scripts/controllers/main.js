@@ -113,11 +113,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     }
   };
   console.log($scope.graph);
-}]);
-
-
-
-myApp.directive('graph', function() {
+}]).directive('graph', function() {
   console.log("From directive.");
   return {
     restrict: 'E', // Use as element
