@@ -132,7 +132,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             drawPoints: true,
             xlabel:"Fiscal Year",
             ylabel:"In Billions of Dollars",
-            title: "Receipts & Outlays in Current Dollars: 1940-2019",
+            title: "Receipts & Outlays in Constant Dollars: 1940-2019",
         }
     }
   ];
