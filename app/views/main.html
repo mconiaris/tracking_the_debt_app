@@ -8,17 +8,10 @@
     <button ng-click="currentDollars()">Current Dollars
     </button>
 
-  <select ng-model="selection" ng-options="item for item in items">
-  </select>
-    <div class="animate-switch-container"
-    ng-switch on="selection">
-      <div class="animate-switch" ng-switch-when="currentDollars">Current Dollars</div>
-      <div class="animate-switch" ng-switch-when="home">Home Span</div>
-      <div class="animate-switch" ng-switch-default>default</div>
-  </div>
 
+    <dygraph ng-repeat="graph in graphs" data="graph.data" opts="graph.opts">
 
-    <dygraph ng-repeat="graph in graphs" data="graph.data" opts="graph.opts"></dygraph>
+    </dygraph>
   </div>
 </div>
 
