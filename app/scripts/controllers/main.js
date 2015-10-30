@@ -115,7 +115,8 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             xlabel:"Fiscal Year",
             ylabel:"In Billions of Dollars",
             title: "Receipts & Outlays in Current Dollars: 1940-2019",
-        }
+        },
+        graphType: 'Current Dollars'
     },
     // Constant Dollars Graph
     {
@@ -133,7 +134,8 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             xlabel:"Fiscal Year",
             ylabel:"In Billions of Dollars",
             title: "Receipts & Outlays in Constant Dollars: 1940-2019",
-        }
+        },
+        graphType: 'Constant Dollars'
     }
   ];
 
