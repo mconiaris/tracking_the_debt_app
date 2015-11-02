@@ -5,11 +5,10 @@
 
 <div class="jumbotron">
   <div ng-controller="GraphCtrl">
-    <button ng-click="currentDollars()">Current Dollars
-    </button>
-
-    <div ng-repeat="graph in graphs" ><dygraph data="graph.data" opts="graph.opts"></dygraph></div>
-
+    <div ng-repeat="graph in graphs" >
+      <button ng-click="showDetails = ! showDetails">{{graph.graphType}}</button>
+      <dygraph data="graph.data" opts="graph.opts" ng-show="showDetails"></dygraph>
+    </div>
   </div>
 </div>
 
