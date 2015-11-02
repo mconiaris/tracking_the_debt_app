@@ -8,8 +8,8 @@
     <button ng-click="currentDollars()">Current Dollars
     </button>
 
+    <div ng-repeat="graph in graphs" ><dygraph data="graph.data" opts="graph.opts"></dygraph></div>
 
-    <dygraph ng-repeat="graph in graphs" data="graph.data" opts="graph.opts"></dygraph>
   </div>
 </div>
 
