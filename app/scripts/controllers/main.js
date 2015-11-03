@@ -587,13 +587,6 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     }
   ];
 
-
-  //     console.log("#choices option:selected equals " + $('#choices option:selected').val());
-  //     g.user_attrs_.title = "Surpluses or Deficits as a Percentage of GDP: 1940-2019";
-  //     g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
-  //     g.updateOptions({file: <%= surplus_deficit_gdp_dollars %> });
-  //     g.drawGraph_();
-
   // Function to show or hide particular graph
   $scope.flipMode = function(graphType) {
     $scope.graphs.forEach(function (graph) {
