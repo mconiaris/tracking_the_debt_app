@@ -5,27 +5,11 @@
 
 <div class="jumbotron">
   <div ng-controller="GraphCtrl">
+    <button ng-repeat="graph in graphs" ng-click="flipMode(graph.graphType)">{{graphs[$index].graphType}}</button>
     <div ng-repeat="graph in graphs" >
-      <button ng-click="showDetails = ! showDetails">{{graph.graphType}}</button>
-      <dygraph data="graph.data" opts="graph.opts" ng-show="showDetails"></dygraph>
+      <dygraph data="graph.data" opts="graph.opts" ng-show="graph.shown"></dygraph>
     </div>
   </div>
-</div>
-
-<div ng-controller="GraphCtrl">
-  <select ng-model="graph" ng-options="graph.graphType for graph in graphs">
-  </select>
-
-
-  ngSwitch example: http://stackoverflow.com/questions/16909158/custom-directive-models-do-not-work-in-ng-switch
-  <code>selection={{graph.graphType}}</code>
-  <div ng-switch on="selection">
-      <div ng-switch-when="currentDollars">Current Dollars Div</div>
-      <div ng-switch-when="constantDollars">Constant Dollars Div</div>
-      <div ng-switch-default>default</div>
-    <dygraph data="graph.data" opts="graph.opts"></dygraph>
-  </div>
-
 </div>
 
 <div class="row marketing">
