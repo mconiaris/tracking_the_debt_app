@@ -116,7 +116,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             ylabel:"In Billions of Dollars",
             title: "Receipts & Outlays in Current Dollars: 1940-2019",
         },
-        graphType: 'Current Dollars',
+        graphType: 'Receipts & Outlays (Current Dollars)',
         shown: true
     },
     // Constant Dollars Graph
@@ -210,7 +210,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             ylabel:"In Billions of Dollars",
             title: "Receipts & Outlays in Constant Dollars: 1940-2019",
         },
-        graphType: 'Constant Dollars',
+        graphType: 'Receipts & Outlays (Constant Dollars)',
         shown: false
     },
     {
@@ -303,18 +303,112 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             ylabel:"In Billions of Dollars",
             title: "Receipts & Outlays as Percentage of GDP: 1940-2019",
         },
-        graphType: 'As Pct. of GDP',
+        graphType: 'Receipts & Outlays (Pct. of GDP)',
+        shown: false
+    },
+    {
+        data: [
+            [1940,-2.9],
+            [1941,-4.9],
+            [1942,-20.5],
+            [1943,-54.6],
+            [1944,-47.6],
+            [1945,-47.6],
+            [1946,-15.9],
+            [1947,4.0],
+            [1948,11.8],
+            [1949,0.6],
+            [1950,-3.1],
+            [1951,6.1],
+            [1952,-1.5],
+            [1953,-6.5],
+            [1954,-1.2],
+            [1955,-3.0],
+            [1956,3.9],
+            [1957,3.4],
+            [1958,-2.8],
+            [1959,-12.8],
+            [1960,0.3],
+            [1961,-3.3],
+            [1962,-7.1],
+            [1963,-4.8],
+            [1964,-5.9],
+            [1965,-1.4],
+            [1966,-3.7],
+            [1967,-8.6],
+            [1968,-25.2],
+            [1969,3.2],
+            [1970,-2.8],
+            [1971,-23.0],
+            [1972,-23.4],
+            [1973,-14.9],
+            [1974,-6.1],
+            [1975,-53.2],
+            [1976,-73.7],
+            [1977,-53.7],
+            [1978,-59.2],
+            [1979,-40.7],
+            [1980,-73.8],
+            [1981,-79.0],
+            [1982,-128.0],
+            [1983,-207.8],
+            [1984,-185.4],
+            [1985,-212.3],
+            [1986,-221.2],
+            [1987,-149.7],
+            [1988,-155.2],
+            [1989,-152.6],
+            [1990,-221.0],
+            [1991,-269.2],
+            [1992,-290.3],
+            [1993,-255.1],
+            [1994,-203.2],
+            [1995,-164.0],
+            [1996,-107.4],
+            [1997,-21.9],
+            [1998,69.3],
+            [1999,125.6],
+            [2000,236.2],
+            [2001,128.2],
+            [2002,-157.8],
+            [2003,-377.6],
+            [2004,-412.7],
+            [2005,-318.3],
+            [2006,-248.2],
+            [2007,-160.7],
+            [2008,-458.6],
+            [2009,-1412.7],
+            [2010,-1294.4],
+            [2011,-1299.6],
+            [2012,-1087.0],
+            [2013,-679.5],
+            [2014,-648.8],
+            [2015,-563.6],
+            [2016,-531.1],
+            [2017,-457.8],
+            [2018,-413.3],
+            [2019,-502.7]
+        ],
+        opts: {
+            labels: [ "Fiscal Year", "Surplus/Deficit" ],
+            drawPoints: true,
+            xlabel:"Fiscal Year",
+            ylabel:"Percentage Surplus or Deficit",
+            title: "Surpluses or Deficits in Current Dollars: 1940-2019",
+        },
+        graphType: 'Suplus/Deficit (Current Dollars)',
         shown: false
     }
   ];
 
-  // Receipts & Outlays as Percentage of GDP
-  //   } else if ($('#choices option:selected').val() == "gdp-receipts") {
+
+ // Surpluses or Deficits (Current Dollars)
+  //   } else if ($('#choices option:selected').val() == "current-surpluses") {
   //     console.log("#choices option:selected equals " + $('#choices option:selected').val());
-  //     g.user_attrs_.title = "Receipts & Outlays as a Percentage of GDP: 1940-2019";
-  //     g.user_attrs_.labels = [ "Fiscal Year", "Receipts", "Outlays" ];
-  //     g.updateOptions({file: <%= gdp_dollars %> })
-  //     g.drawGraph_();
+  //     g.user_attrs_.title = "Surpluses or Deficits in Current Dollars: 1940-2019";
+  //     g.user_attrs_.ylabel = "Percentage Surplus or Deficit";
+  //     g.user_attrs_.labels = [ "Fiscal Year", "Surplus/Deficit" ];
+  //     g.updateOptions({file: <%= surplus_deficit_current_dollars %> });
 
   // Function to show or hide particular graph
   $scope.flipMode = function(graphType) {
