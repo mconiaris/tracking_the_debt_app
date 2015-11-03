@@ -597,7 +597,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
   // Function to show or hide particular graph
   $scope.flipMode = function(graphType) {
     $scope.graphs.forEach(function (graph) {
-        if(graphType == graph.graphType){
+        if(graphType === graph.graphType){
             graph.shown = true;
         }
         else{
