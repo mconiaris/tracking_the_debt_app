@@ -116,7 +116,8 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             ylabel:"In Billions of Dollars",
             title: "Receipts & Outlays in Current Dollars: 1940-2019",
         },
-        graphType: 'Current Dollars'
+        graphType: 'Current Dollars',
+        shown: true
     },
     // Constant Dollars Graph
     {
@@ -135,11 +136,23 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             ylabel:"In Billions of Dollars",
             title: "Receipts & Outlays in Constant Dollars: 1940-2019",
         },
-        graphType: 'Constant Dollars'
+        graphType: 'Constant Dollars',
+        shown: false
     }
   ];
 
-
+  // Function to show or hide particular graph
+  $scope.flipMode = function(graphType) {
+    $scope.graphs.forEach(function (graph) {
+        if(graphType == graph.graphType){
+            graph.shown = true;
+        }
+        else{
+            graph.shown = false;
+        }
+    })
+    console.log(graph.graphType + ' button pressed');
+  };
 
 
   $scope.currentDollars = function() {
