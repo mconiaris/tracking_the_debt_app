@@ -596,7 +596,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
         else{
             graph.shown = false;
         }
-    })
+    });
     console.log(graphType + ' button pressed');
   };
 }]).directive('dygraph', function() {
