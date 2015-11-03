@@ -225,7 +225,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             graph.shown = false;
         }
     })
-    console.log(graph.graphType + ' button pressed');
+    console.log(graphType + ' button pressed');
   };
 
 
