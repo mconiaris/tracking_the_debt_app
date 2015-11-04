@@ -6,7 +6,7 @@
 <div class="jumbotron">
   <div ng-controller="GraphCtrl">
     <div class="btn-group" role="group" aria-label="...">
-      <button ng-repeat="graph in graphs" ng-click="flipMode(graph.graphType)" type="button">
+      <button ng-repeat="graph in graphs" ng-click="flipMode(graph.graphType)" type="button" class="btn">
         {{graphs[$index].graphType}}
       </button>
     </div>
