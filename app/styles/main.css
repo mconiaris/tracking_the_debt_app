@@ -112,3 +112,8 @@ div#graph {
   border-color: #004C00;
   border-width: 1px;
 }
+
+/*Button for Graphs*/
+div.btn-group > .btn {
+  float: none;
+}
