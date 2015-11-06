@@ -117,3 +117,7 @@ div#graph {
 div.btn-group > .btn {
   float: none;
 }
+
+.btn {
+    background-color: #60CCCC;
+}
