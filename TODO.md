@@ -1,19 +1,13 @@
 TODO List:
 - Focus on Karma tests.
-- Fix dependency issue that's coming up when running grunt test.
-- Review angular-dygraphs documentation: https://github.com/cdjackson/angular-dygraphs
 - Review Angular Dependency Injection: https://docs.angularjs.org/guide/di
 - Example code to make it work: http://plnkr.co/edit/us9abu9SkFqZVzNGkYQK?p=preview
-- angular-dygraphs: https://github.com/cdjackson/angular-dygraphs
 - Call external JS: http://stackoverflow.com/questions/23697493/call-external-js-file-function-in-angular-js-controller
-- Rewatch Dependency Injection tutorial: https://www.youtube.com/watch?v=2EdP5iBSxTY
-- Dygraphs not working with ng-repeat: http://stackoverflow.com/questions/21468244/dygraphs-not-working-with-ng-repeat
 - Angular Dependency Injection: https://docs.angularjs.org/guide/di
 - Angular Dynamic Templates: http://onehungrymind.com/angularjs-dynamic-templates/
 - Methods in AngularJS directive: http://stackoverflow.com/questions/16881478/how-to-call-a-method-defined-in-an-angularjs-directive
 - Practical guide to Angular Directives: http://www.sitepoint.com/practical-guide-angularjs-directives/
 - Directives and Controllers in Angular: https://lennilobel.wordpress.com/tag/calling-directive-from-controller/
-- ngSwitch: https://docs.angularjs.org/api/ng/directive/ngSwitch
 - Difference between controller and link: http://jasonmore.net/angular-js-directives-difference-controller-link/
 - Dygraph example: http://jsfiddle.net/9hWQ6/9/
 
