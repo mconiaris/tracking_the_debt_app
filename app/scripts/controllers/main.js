@@ -603,8 +603,6 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     $scope.status.isopen = !$scope.status.isopen;
   };
 
-
-
   // Function to show or hide particular graph
   $scope.flipMode = function(graphType) {
     $scope.graphs.forEach(function (graph) {
