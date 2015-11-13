@@ -588,21 +588,6 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
   ];
 
 
-  // Dropdown Button Test
-  $scope.status = {
-    isopen: false
-  };
-
-  $scope.toggled = function(open) {
-    $log.log('Dropdown is now: ', open);
-  };
-
-  $scope.toggleDropdown = function($event) {
-    $event.preventDefault();
-    $event.stopPropagation();
-    $scope.status.isopen = !$scope.status.isopen;
-  };
-
   // Function to show or hide particular graph
   $scope.flipMode = function(graphType) {
     $scope.graphs.forEach(function (graph) {
