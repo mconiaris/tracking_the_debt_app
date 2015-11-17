@@ -16,28 +16,13 @@ var myApp = angular.module('trackingTheDebtApp')
 
 // TODO: Put var graph here?
 
-myApp.controller('GraphCtrl', ['$scope', function($scope, $log) {
+myApp.controller('GraphCtrl', ['$scope', function($scope) {
 
   $scope.message = "GraphCtrl loaded.";
   console.log($scope.message);
 
   $scope.items = ['currentDollars', 'home', 'other'];
   $scope.selection = $scope.items[0];
-
-  $scope.status = {
-    isopen: false
-  };
-
-  $scope.toggled = function(open) {
-    $log.log('Dropdown is now: ', open);
-  };
-
-  $scope.toggleDropdown = function($event) {
-    $event.preventDefault();
-    $event.stopPropagation();
-    $scope.status.isopen = !$scope.status.isopen;
-  };
-
 
   $scope.graphs = [
     {
