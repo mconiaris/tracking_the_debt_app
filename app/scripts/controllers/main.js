@@ -26,6 +26,7 @@ myApp.controller('DropdownCtrl', function ($scope, $log) {
   };
 
   $scope.toggleDropdown = function($event) {
+    console.log('toggleDropdown function called.');
     $event.preventDefault();
     $event.stopPropagation();
     $scope.status.isopen = !$scope.status.isopen;
