@@ -15,11 +15,7 @@ var myApp = angular.module('trackingTheDebtApp')
 
 
 myApp.controller('DropdownCtrl', function ($scope, $log) {
-  $scope.items = [
-    'The first choice!',
-    'And another choice for you.',
-    'but wait! A third!'
-  ];
+  console.log('DropdownCtrl loaded.');
 
   $scope.status = {
     isopen: false
