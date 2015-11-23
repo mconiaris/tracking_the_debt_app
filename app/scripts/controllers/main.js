@@ -23,6 +23,8 @@ myApp.controller('DropdownCtrl', function ($scope, $log) {
 
   $scope.toggled = function(open) {
     $log.log('Dropdown is now: ', open);
+    console.log('toggled function called.');
+
   };
 
   $scope.toggleDropdown = function($event) {
