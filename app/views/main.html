@@ -45,11 +45,15 @@ https://angular-ui.github.io/bootstrap/#/dropdown -->
   <div ng-controller="GraphCtrl">
     <div class="btn-group" role="group" aria-label="...">
       <div class="dropdown dropdown-append-to-body">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle = "dropdown">Dropdown on Body <span class="caret"></span>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle = "dropdown">Graph Choice<span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
+        <li><a href="#">Receipts & Outlays (Current Dollars)</a></li>
+        <li><a href="#">Receipts & Outlays (Constant Dollars)</a></li>
+        <li><a href="#">Recipts & Outlays (Pct. of GDP)</a></li>
+        <li><a href="#">Surplus/Deficit (Current Dollars)</a></li>
+        <li><a href="#">Surplus/Deficit (Constant Dollars)</a></li>
+        <li><a href="#">Surplus/Deficit (Pct. of GDP)</a></li>
     </ul>
 </div>
       <button ng-repeat="graph in graphs" ng-click="flipMode(graph.graphType)" type="button" class="btn">
