@@ -8,14 +8,7 @@ https://angular-ui.github.io/bootstrap/#/dropdown -->
 
 <!-- Why does this work and the Angular one does not? -->
 <!-- http://w3javascript.com/question/angularjs-bootstrap-dropdown-not-working/ -->
-<div class="dropdown dropdown-append-to-body">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle = "dropdown">Dropdown on Body <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-    </ul>
-</div>
+
 
 
 <div ng-controller="DropdownCtrl">
@@ -51,6 +44,14 @@ https://angular-ui.github.io/bootstrap/#/dropdown -->
 <div class="jumbotron">
   <div ng-controller="GraphCtrl">
     <div class="btn-group" role="group" aria-label="...">
+      <div class="dropdown dropdown-append-to-body">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle = "dropdown">Dropdown on Body <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+    </ul>
+</div>
       <button ng-repeat="graph in graphs" ng-click="flipMode(graph.graphType)" type="button" class="btn">
         {{graphs[$index].graphType}}
       </button>
