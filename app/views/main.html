@@ -28,10 +28,7 @@ https://angular-ui.github.io/bootstrap/#/dropdown -->
       </a></li>
         <!-- <li><a href="#">Receipts & Outlays (Current Dollars)</a></li> -->
     </ul>
-</div>
-      <button ng-repeat="graph in graphs" ng-click="flipMode(graph.graphType)" type="button" class="btn">
-        {{graphs[$index].graphType}}
-      </button>
+  </div>
     </div>
     <div ng-repeat="graph in graphs" >
       <dygraph data="graph.data" opts="graph.opts" ng-show="graph.shown"></dygraph>
