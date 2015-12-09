@@ -23,6 +23,9 @@ https://angular-ui.github.io/bootstrap/#/dropdown -->
     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle = "dropdown">Graph Choice<span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu">
+      <li ng-repeat="graph in graphs" ng-click="flipMode(graph.graphType)"  ><a href="#">
+        {{graphs[$index].graphType}}
+      </a></li>
         <li><a href="#">Receipts & Outlays (Current Dollars)</a></li>
         <li><a href="#">Receipts & Outlays (Constant Dollars)</a></li>
         <li><a href="#">Recipts & Outlays (Pct. of GDP)</a></li>
