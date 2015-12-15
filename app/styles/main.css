@@ -33,6 +33,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+/*Override marketing CSS above to center instruction text.*/
+.marketing {
+  padding-left: 150px;
+}
 
 /* Custom page header */
 .header {
