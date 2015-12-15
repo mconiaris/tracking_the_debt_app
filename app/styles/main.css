@@ -119,6 +119,9 @@ div.btn-group > .btn {
   float: none;
 }
 
+div.dropdown {
+  padding-bottom: 1em;
+}
 
 ul.dropdown-menu {
   left:50%;
