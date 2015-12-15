@@ -16,6 +16,10 @@ div.graph-header {
   text-align: center;
 }
 
+div.graph-header.ng-scope h3 {
+  margin-top: 1px;
+}
+
 body {
   padding: 0;
   background-color: #E6E6C6;
