@@ -61,6 +61,7 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 1px;
 }
 .jumbotron .btn {
   font-size: 15px;
@@ -75,6 +76,38 @@ body {
 }
 .marketing p + h4 {
   margin-top: 28px;
+}
+
+div.graph.ng-scope {
+  border-style: solid;
+  border-color: #004C00;
+  border-width: 1px;
+}
+
+/*CSS for graph div created by controller*/
+div#graph {
+  margin: auto;
+  border-style: solid;
+  border-color: #004C00;
+  border-width: 1px;
+}
+
+/*Button for Graphs*/
+div.btn-group > .btn {
+  float: none;
+}
+
+div.dropdown {
+  padding-bottom: 1px;
+}
+
+ul.dropdown-menu {
+  left:50%;
+  margin-left:-140px;
+}
+
+div.row {
+  margin-top: 1em;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -100,30 +133,3 @@ body {
   }
 }
 
-div.graph.ng-scope {
-  border-style: solid;
-  border-color: #004C00;
-  border-width: 1px;
-}
-
-/*CSS for graph div created by controller*/
-div#graph {
-  margin: auto;
-  border-style: solid;
-  border-color: #004C00;
-  border-width: 1px;
-}
-
-/*Button for Graphs*/
-div.btn-group > .btn {
-  float: none;
-}
-
-div.dropdown {
-  padding-bottom: 1em;
-}
-
-ul.dropdown-menu {
-  left:50%;
-  margin-left:-140px;
-}
