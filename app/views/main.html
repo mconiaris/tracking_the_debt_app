@@ -1,0 +1,54 @@
+<!-- http://stackoverflow.com/questions/27810230/ui-bootstrap-drop-down-seems-to-be-not-working-with-version-0-12-0
+
+http://stackoverflow.com/questions/16268606/responsive-dropdown-navbar-with-angular-ui-bootstrap-done-in-the-correct-angula
+
+http://stackoverflow.com/questions/21540903/toggle-button-is-not-working-with-angularjs-and-angular-ui-bootsrap
+
+https://angular-ui.github.io/bootstrap/#/dropdown -->
+
+<!-- Why does this work and the Angular one does not? -->
+<!-- http://w3javascript.com/question/angularjs-bootstrap-dropdown-not-working/ -->
+
+
+
+<div class=graph-header>
+  <h3>Charting U.S. Receipts, Outlays and Deficits <br>From 1940 to the Present</h3>
+  <h4>Summary of Receipts, Outlays, and Surpluses or Deficits</h4>
+</div>
+
+<div class="jumbotron">
+  <div ng-controller="GraphCtrl">
+    <div class="btn-group" role="group" aria-label="...">
+      <div class="dropdown dropdown-append-to-body">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle = "dropdown">Graph Choice<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li ng-repeat="graph in graphs" ng-click="flipMode(graph.graphType)"  >
+            <a href="#/">
+        {{graphs[$index].graphType}}
+            </a>
+          </li>
+        <!-- <li><a href="#">Receipts & Outlays (Current Dollars)</a></li> -->
+        </ul>
+  </div>
+    </div>
+    <div ng-repeat="graph in graphs" >
+      <dygraph data="graph.data" opts="graph.opts" ng-show="graph.shown"></dygraph>
+    </div>
+  </div>
+</div>
+
+<div class="row marketing">
+  <h4>Instructions</h4>
+  <p>
+    Mouse over to highlight individual values. Click and drag to zoom. <br/>Double-clicking will zoom you back out. Shift-drag will pan.
+  </p>
+ <!--  <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p> -->
+</div>
+
+
+
+
