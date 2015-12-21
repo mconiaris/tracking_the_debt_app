@@ -24,7 +24,7 @@ body {
   padding: 0;
   background-color: #FFFFE5;
   background-color: black;
-
+  color: #FFFFE5;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -72,7 +72,7 @@ body {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 1px;
   background-color: #FFFFE5;
-
+  color: black;
 }
 .jumbotron .btn {
   font-size: 15px;
