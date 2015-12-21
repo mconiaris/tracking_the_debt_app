@@ -71,6 +71,8 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 1px;
+  background-color: #FFFFE5;
+
 }
 .jumbotron .btn {
   font-size: 15px;
