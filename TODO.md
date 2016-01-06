@@ -10,6 +10,7 @@ TODO List:
 - Directives and Controllers in Angular: https://lennilobel.wordpress.com/tag/calling-directive-from-controller/
 - Difference between controller and link: http://jasonmore.net/angular-js-directives-difference-controller-link/
 - Dygraph example: http://jsfiddle.net/9hWQ6/9/
+- add /dist to gitignore file. Figure out a way for app to work the app in Heroku without doing this.
 
 
 Research List:
