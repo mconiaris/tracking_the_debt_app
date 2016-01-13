@@ -328,20 +328,6 @@ module.exports = function (grunt) {
     },
 
     // Default
-    // ngtemplates: {
-    //   dist: {
-    //     options: {
-    //       module: 'trackingTheDebtAppApp',
-    //       htmlmin: '<%= htmlmin.dist.options %>',
-    //       usemin: 'scripts/scripts.js'
-    //     },
-    //     cwd: '<%= yeoman.app %>',
-    //     src: 'views/{,*/}*.html',
-    //     dest: '.tmp/templateCache.js'
-    //   }
-    // },
-
-    // Solution from http://www.ngroutes.com/questions/1a0ddff/mean-stack-templates-with-grunt-angular-templates.html
     ngtemplates: {
       dist: {
         options: {
@@ -350,10 +336,24 @@ module.exports = function (grunt) {
           usemin: 'scripts/scripts.js'
         },
         cwd: '<%= yeoman.app %>',
-        src: '**.html',
-        dest: 'templateCache.js'
+        src: 'views/{,*/}*.html',
+        dest: '.tmp/templateCache.js'
       }
     },
+
+    // Solution from http://www.ngroutes.com/questions/1a0ddff/mean-stack-templates-with-grunt-angular-templates.html
+    // ngtemplates: {
+    //   dist: {
+    //     options: {
+    //       module: 'trackingTheDebtAppApp',
+    //       htmlmin: '<%= htmlmin.dist.options %>',
+    //       usemin: 'scripts/scripts.js'
+    //     },
+    //     cwd: '<%= yeoman.app %>',
+    //     src: '**.html',
+    //     dest: 'templateCache.js'
+    //   }
+    // },
 
     // ng-annotate tries to make the code safe for minification automatically
     // by using the Angular long form for dependency injection.
