@@ -12,6 +12,7 @@ TODO List:
 - Dygraph example: http://jsfiddle.net/9hWQ6/9/
 - add /dist to gitignore file. Figure out a way for app to work the app in Heroku without doing this.
 - review htmlmin attributes listed in this link and modify Gruntfile: https://www.npmjs.com/package/grunt-angular-templates
+- Angular Routing explained: http://viralpatel.net/blogs/angularjs-routing-and-views-tutorial-with-example/
 
 
 Research List:
