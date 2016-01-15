@@ -22,6 +22,7 @@ Research List:
 
 Questions:
 - does grunt-angular-templates need to be in dependencies as well as devdependencies?
+- what does bower.json do in comparison to package.json. They seem to conflict.
 
 
 Error List:
