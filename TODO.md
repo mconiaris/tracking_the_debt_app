@@ -14,6 +14,7 @@ TODO List:
 - review htmlmin attributes listed in this link and modify Gruntfile: https://www.npmjs.com/package/grunt-angular-templates
 - Angular Routing explained: http://viralpatel.net/blogs/angularjs-routing-and-views-tutorial-with-example/
 - Understanding Angular's $templateCache: https://thinkster.io/templatecache-tutorial
+- Taking control of your templates using $templateCache: https://egghead.io/lessons/angularjs-taking-control-of-your-templates-using-templatecache
 
 
 Research List:
