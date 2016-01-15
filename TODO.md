@@ -20,6 +20,7 @@ TODO List:
 Research List:
 1. Role of NPM vs. Grunt
 2. Angular/Bootstrap. How is it different from using it seperately?
+- First steps on building a Single Page App with AngularJS: http://helabs.com/blog/2014/06/13/first-steps-on-building-a-spa-with-angularjs/
 
 
 Questions:
