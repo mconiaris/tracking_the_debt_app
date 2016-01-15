@@ -329,6 +329,11 @@ module.exports = function (grunt) {
 
     // Default
     ngtemplates: {
+      app: {
+        options: {
+          prefix: '/'
+        }
+      },
       dist: {
         options: {
           module: 'trackingTheDebtAppApp',
