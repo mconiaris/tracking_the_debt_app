@@ -20,6 +20,10 @@ Research List:
 2. Angular/Bootstrap. How is it different from using it seperately?
 
 
+Questions:
+- does grunt-angular-templates need to be in dependencies as well as devdependencies?
+
+
 Error List:
 1. xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
 2. UNMET PEER DEPENDENCY jasmine-core@*
