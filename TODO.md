@@ -13,8 +13,14 @@ TODO List:
 - add /dist to gitignore file. Figure out a way for app to work the app in Heroku without doing this.
 - review htmlmin attributes listed in this link and modify Gruntfile: https://www.npmjs.com/package/grunt-angular-templates
 - Angular Routing explained: http://viralpatel.net/blogs/angularjs-routing-and-views-tutorial-with-example/
+
+
+Grunt Templates:
+- Stack Overflow: Is there a way to make AngularJS load partials in the beginning and not at when needed?: http://stackoverflow.com/questions/12346690/is-there-a-way-to-make-angularjs-load-partials-in-the-beginning-and-not-at-when
+- grunt-html2js - Compiles AngularJS templates to JavaScript: https://www.npmjs.com/package/grunt-html2js
 - Understanding Angular's $templateCache: https://thinkster.io/templatecache-tutorial
 - Taking control of your templates using $templateCache: https://egghead.io/lessons/angularjs-taking-control-of-your-templates-using-templatecache
+
 
 
 Research List:
