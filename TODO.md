@@ -22,6 +22,10 @@ Grunt Templates:
 - Taking control of your templates using $templateCache: https://egghead.io/lessons/angularjs-taking-control-of-your-templates-using-templatecache
 
 
+TemplateCache doc:
+- https://docs.angularjs.org/api/ng/service/$templateCache
+
+
 
 Research List:
 1. Role of NPM vs. Grunt
