@@ -25,7 +25,7 @@ Grunt Templates:
 TemplateCache doc:
 - https://docs.angularjs.org/api/ng/service/$templateCache
 
-TemplateCache Tutorial:
+Templates Tutorial:
 - https://thinkster.io/templatecache-tutorial
 
 
