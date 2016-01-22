@@ -27,7 +27,8 @@ TemplateCache doc:
 
 Templates Tutorial:
 - https://thinkster.io/templatecache-tutorial
-
+- http://www.codelord.net/2013/06/16/optimizing-angular-templates-with-grunt-on-heroku/
+- https://www.npmjs.com/package/grunt-ng-template
 
 
 Research List:
