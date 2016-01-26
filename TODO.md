@@ -47,3 +47,7 @@ Error List:
 1. xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
 2. UNMET PEER DEPENDENCY jasmine-core@*
 3. UNMET PEER DEPENDENCY phantomjs@>=1.9
+
+
+Heroku Cheatsheet:
+- http://ruten.ca/2012/02/15/heroku-cheatsheet-useful-heroku-commands-reference/
