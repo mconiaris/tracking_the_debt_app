@@ -333,6 +333,7 @@ module.exports = function (grunt) {
         options: {
           module: 'trackingTheDebtAppApp',
           htmlmin: '<%= htmlmin.dist.options %>',
+          prefix: '/',
           usemin: 'scripts/scripts.js'
         },
         cwd: '<%= yeoman.app %>',
