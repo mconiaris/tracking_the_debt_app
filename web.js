@@ -1,6 +1,6 @@
-var gzippo = require('gzippo');
-var express = require('express');
-var morgan = require('morgan');
+var gzippo = require('gzippo'); // Middleware for compression
+var express = require('express'); // plugin for express, a server framework
+var morgan = require('morgan'); // HTTP request logger middleware for node.js
 var app = express();
 
 app.use(morgan('dev'));
