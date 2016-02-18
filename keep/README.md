@@ -1,22 +1,25 @@
-#Tracking the Debt App v0.3
+# tracking-the-debt-app
 
-##What This Is
-This is my final project for [General Assembly](https://generalassemb.ly/new-york-city) August 2014 [Web Development Immersive](https://generalassemb.ly/education/web-development-immersive). It is meant to be a quick and simple demonstration of what I have learned, while giving me some needed additional front-end development experience.
+This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
+version 0.12.1.
 
-##Technical Details
-This app was written in Ruby version ruby 2.1.2 using Ruby on Rails version 4.1.6.
+## Build & development
 
-The heart of the application, the charts, uses the [Dygraphs](http://dygraphs.com/) Javascript library with some jQuery thrown in for convienence.
+Run `grunt` for building and `grunt serve` for preview.
 
-A PosgreSQL version 9.3.5 database is set up and a seed file created, although this verison does not use it. It is my intention to add some dynamic calls that will enable the user to generate charts with limited date ranges. There was not enough time to get that working for this version though.
+## Testing
 
-In a future iteration, I plan on using rspec and Capybara tests.
+Running `grunt test` will run the unit tests with karma.
 
-##How to run the test suite
-Start up a Rails server in the folder of this code and it should run (I hope).
+## Notes
 
-##License
-You may feel free to use and/or modify my work, providing that you keep it open source. Let me know if you do.
+The development of this app was greatly aided by the tutorial found on this page: http://www.sitepoint.com/kickstart-your-angularjs-development-with-yeoman-grunt-and-bower/
 
-##Contact Me
-The best way to contact me is through my [LinkedIn profile](https://www.linkedin.com/in/michaelconiaris). I look forward to hearing from you.
+The bower.json file is used to inform
+the Bower package manager of your projects
+dependencies as well as other metadata.
+
+Bower is a package manager. It will help us
+to quickly find and install our favourite
+CSS frameworks, javascript libraries and
+plugins with just a few simple commands.
