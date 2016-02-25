@@ -167,7 +167,10 @@ module.exports = function (grunt) {
           ]
         }]
       },
-      server: '.tmp'
+      server: '.tmp',
+      options: {
+        force: true
+      },
     },
 
     // Add vendor prefixed styles
@@ -220,7 +223,7 @@ module.exports = function (grunt) {
             }
           }
       }
-    }, 
+    },
 
     // Renames files for browser caching purposes
     filerev: {
