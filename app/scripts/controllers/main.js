@@ -44,5 +44,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     }
   };
 
+  console.log($scope.graph);
+
 
 }]);
