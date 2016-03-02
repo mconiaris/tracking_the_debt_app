@@ -23,6 +23,8 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
   console.log($scope.message);
 
   $scope.graph = {
+    graphType: 'Receipts & Outlays (Current Dollars)',
+    shown: true,
     data: [
       [1940,6.5,9.5],
       [1941,8.7,13.7],
@@ -112,8 +114,6 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
       ylabel: 'In Billions of Dollars',
       title:  'Receipts & Outlays in Current Dollars: 1940-2019',
     },
-    graphType: 'Receipts & Outlays (Current Dollars)',
-    shown: true,
     legend: {
       series: {
         A: {
