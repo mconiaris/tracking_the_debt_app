@@ -106,11 +106,11 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
       [2019,4226.1,4728.8]
     ],
     options: {
-      labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+      labels: [  'Fiscal Year', 'Receipts', 'Outlays' ],
       drawPoints: true,
-      xlabel:"Fiscal Year",
-      ylabel:"In Billions of Dollars",
-      title: "Receipts & Outlays in Current Dollars: 1940-2019",
+      xlabel: 'Fiscal Year',
+      ylabel: 'In Billions of Dollars',
+      title:  'Receipts & Outlays in Current Dollars: 1940-2019',
     },
     graphType: 'Receipts & Outlays (Current Dollars)',
     shown: true,
