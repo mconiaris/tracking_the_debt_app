@@ -117,10 +117,10 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     legend: {
       series: {
         A: {
-          label: 'Series A'
+          label: 'Receipts'
         },
         B: {
-          label: 'Series B',
+          label: 'Outlays',
           format: 3
         }
       }
