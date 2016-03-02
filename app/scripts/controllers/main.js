@@ -22,7 +22,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
   $scope.message = 'GraphCtrl loaded.';
   console.log($scope.message);
 
-  $scope.graph = {
+  var graph = $scope.graph = {
     graphType: 'Receipts & Outlays (Current Dollars)',
     shown: true,
     data: [
@@ -126,7 +126,6 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
       }
     }
   };
-
-  console.log($scope.graph);
-
+console.log(graph);
 }]);
+
