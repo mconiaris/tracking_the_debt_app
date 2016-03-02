@@ -105,7 +105,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
       [2018,4029.9,4443.1],
       [2019,4226.1,4728.8]
     ],
-    opts: {
+    options: {
       labels: [ "Fiscal Year", "Receipts", "Outlays" ],
       drawPoints: true,
       xlabel:"Fiscal Year",
