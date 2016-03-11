@@ -129,9 +129,14 @@ myApp.directive('dygraphs', function() {
         options: '=?' // '?' means optional
     },
     template: "<div id=\"graph\"></div>", // We need a div to attach graph to
-    link: function(scope, elem, attrs) {
+    link: function(scope, elem) {
 
-      var graph = new Dygraph(elem.children()[0], scope.data, scope.options );
+      var graph = new Dygraph(elem.children()[0], scope.data, scope.options);
+      console.log(graph);
+      var options = scope.options;
+      console.log(options);
+      options.xlabel = "WTF";
+      graph.updateOptions(options);
     }
   };
 });
