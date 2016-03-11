@@ -129,3 +129,21 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
 console.log(graph);
 }]);
 
+
+
+myApp.directive('dygraph', function() {
+  console.log("From directive.");
+  return {
+    restrict: 'E', // Use as element
+    scope: { // Isolate scope
+        data: '=', // Two-way bind data to local scope
+        opts: '=?' // '?' means optional
+    },
+    template: "<div id=\"graph\"></div>", // We need a div to attach graph to
+    link: function(scope, elem, attrs) {
+
+      var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
+
+    }
+  };
+});
