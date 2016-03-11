@@ -113,17 +113,6 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
       xlabel: 'Fiscal Year',
       ylabel: 'In Billions of Dollars',
       title:  'Receipts & Outlays in Current Dollars: 1940-2019',
-    },
-    legend: {
-      series: {
-        A: {
-          label: 'Receipts'
-        },
-        B: {
-          label: 'Outlays',
-          format: 3
-        }
-      }
     }
   };
 console.log(graph);
@@ -131,19 +120,23 @@ console.log(graph);
 
 
 
-myApp.directive('ngDygraphs', function() {
+myApp.directive('dygraphs', function() {
   console.log("From directive.");
   return {
     restrict: 'E', // Use as element
     scope: { // Isolate scope
         data: '=', // Two-way bind data to local scope
-        opts: '=?' // '?' means optional
+        options: '=?' // '?' means optional
     },
     template: "<div id=\"graph\"></div>", // We need a div to attach graph to
-    link: function(scope, elem, attrs) {
+    link: function(scope, elem) {
 
-      var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
-
+      var graph = new Dygraph(elem.children()[0], scope.data, scope.options);
+      console.log(graph);
+      var options = scope.options;
+      console.log(options);
+      options.xlabel = "WTF";
+      graph.updateOptions(options);
     }
   };
 });
