@@ -31,7 +31,6 @@ module.exports = function(config) {
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
-      'bower_components/angular-dygraphs/src/angular-dygraphs.js',
       'bower_components/dygraphs/dygraph-combined.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
