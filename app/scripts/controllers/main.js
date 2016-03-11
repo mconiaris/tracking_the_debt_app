@@ -131,7 +131,7 @@ console.log(graph);
 
 
 
-myApp.directive('dygraph', function() {
+myApp.directive('ngDygraphs', function() {
   console.log("From directive.");
   return {
     restrict: 'E', // Use as element
