@@ -113,17 +113,6 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
       xlabel: 'Fiscal Year',
       ylabel: 'In Billions of Dollars',
       title:  'Receipts & Outlays in Current Dollars: 1940-2019',
-    },
-    legend: {
-      series: {
-        A: {
-          label: 'Receipts'
-        },
-        B: {
-          label: 'Outlays',
-          format: 3
-        }
-      }
     }
   };
 console.log(graph);
@@ -131,7 +120,7 @@ console.log(graph);
 
 
 
-myApp.directive('ngDygraphs', function() {
+myApp.directive('dygraphs', function() {
   console.log("From directive.");
   return {
     restrict: 'E', // Use as element
