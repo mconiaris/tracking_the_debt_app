@@ -135,6 +135,9 @@ myApp.directive('dygraphs', function() {
       console.log(graph);
       var options = scope.options;
       console.log(options);
+
+// Notes on clicks and directives.
+// http://stackoverflow.com/questions/24817223/how-to-call-the-directive-on-button-click-inside-custom-directive
       options.xlabel = "WTF";
       graph.updateOptions(options);
     }
