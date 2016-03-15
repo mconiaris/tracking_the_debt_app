@@ -138,6 +138,11 @@ myApp.directive('dygraphs', function() {
 
 // Notes on clicks and directives.
 // http://stackoverflow.com/questions/24817223/how-to-call-the-directive-on-button-click-inside-custom-directive
+
+// Documentation on Scope: https://docs.angularjs.org/guide/scope
+// Plunker example of a directive: http://plnkr.co/edit/JPh3wZ?p=preview
+// How to call a method defined in an AngularJS directive?
+
       options.xlabel = "WTF";
       graph.updateOptions(options);
     }
