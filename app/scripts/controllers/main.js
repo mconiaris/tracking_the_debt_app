@@ -128,9 +128,7 @@ myApp.directive('dygraphs', function() {
         data: '=', // Two-way bind data to local scope
         options: '=?' // '?' means optional
     },
-    template: "<div id=\"graph\"><dygraphs ng-if=\"graph.data.length\" data=\"graph.data\" options=\"graph.options\">" +
-      "<p>Inside dygraph</p>" +
-      "</dygraphs></div>", // We need a div to attach graph to
+    template: "<div id=\"graph\"></div>", // We need a div to attach graph to
     link: function(scope, elem) {
 
       var graph = new Dygraph(elem.children()[0], scope.data, scope.options);
