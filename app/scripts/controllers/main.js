@@ -142,7 +142,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             ylabel:"In Billions of Dollars",
             title: "Receipts & Outlays in Current Dollars: 1940-2019",
         },
-        graphType: 'Receipts & Outlays (Current Dollars)',
+        graphType: 'Receipts-Current',
         shown: true
     },
     // Constant Dollars Graph
@@ -236,7 +236,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             ylabel:"In Billions of Dollars",
             title: "Receipts & Outlays in Constant Dollars: 1940-2019",
         },
-        graphType: 'Receipts & Outlays (Constant Dollars)',
+        graphType: 'Receipts-Constant',
         shown: false
     },
     {
@@ -329,7 +329,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             ylabel:"In Billions of Dollars",
             title: "Receipts & Outlays as Percentage of GDP: 1940-2019",
         },
-        graphType: 'Receipts & Outlays (Pct. of GDP)',
+        graphType: 'Receipts-GDP',
         shown: false
     },
     {
@@ -422,7 +422,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             ylabel:"Percentage Surplus or Deficit",
             title: "Surpluses or Deficits in Current Dollars: 1940-2019",
         },
-        graphType: 'Suplus/Deficit (Current Dollars)',
+        graphType: 'Surplus-Current',
         shown: false
     },
     {
@@ -515,7 +515,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             ylabel:"Percentage Surplus or Deficit",
             title: "Surpluses or Deficits in Constant Dollars: 1940-2019",
         },
-        graphType: 'Suplus/Deficit (Constant Dollars)',
+        graphType: 'Surplus-Constant',
         shown: false
     },
     {
@@ -608,7 +608,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
             ylabel:"Percentage Surplus or Deficit",
             title: "Surpluses or Deficits in as a Pct. of GDP: 1940-2019",
         },
-        graphType: 'Suplus/Deficit (Pct. of GDP)',
+        graphType: 'Surplus-GDP',
         shown: false
     }
   ];
