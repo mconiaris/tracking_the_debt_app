@@ -84,3 +84,7 @@ body {
     border-bottom: 0;
   }
 }
+
+div.ng-scope {
+  background-color: black;
+}
