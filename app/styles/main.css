@@ -85,6 +85,6 @@ body {
   }
 }
 
-div.ng-scope {
+div#graph {
   background-color: black;
 }
