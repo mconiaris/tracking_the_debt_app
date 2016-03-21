@@ -17,6 +17,10 @@ var myApp = angular.module('trackingTheDebtAppApp')
   });
 
 
+  // Directives Tutorial
+  // https://www.codementor.io/angularjs/tutorial/create-dropdown-control
+
+
 myApp.controller('GraphCtrl', ['$scope', function($scope) {
 
   $scope.message = 'GraphCtrl loaded.';
@@ -113,19 +117,38 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
       xlabel: 'Fiscal Year',
       ylabel: 'In Billions of Dollars',
       title:  'Receipts & Outlays in Current Dollars: 1940-2019',
-    },
-    legend: {
-      series: {
-        A: {
-          label: 'Receipts'
-        },
-        B: {
-          label: 'Outlays',
-          format: 3
-        }
-      }
     }
   };
 console.log(graph);
 }]);
 
+
+
+myApp.directive('dygraphs', function() {
+  console.log("From directive.");
+  return {
+    restrict: 'E', // Use as element
+    scope: { // Isolate scope
+        data: '=', // Two-way bind data to local scope
+        options: '=?' // '?' means optional
+    },
+    template: "<div id=\"graph\"></div>", // We need a div to attach graph to
+    link: function(scope, elem) {
+
+      var graph = new Dygraph(elem.children()[0], scope.data, scope.options);
+      console.log(graph);
+      var options = scope.options;
+      console.log(options);
+
+// Notes on clicks and directives.
+// http://stackoverflow.com/questions/24817223/how-to-call-the-directive-on-button-click-inside-custom-directive
+
+// Documentation on Scope: https://docs.angularjs.org/guide/scope
+// Plunker example of a directive: http://plnkr.co/edit/JPh3wZ?p=preview
+// How to call a method defined in an AngularJS directive?
+
+      options.xlabel = "WTF";
+      graph.updateOptions(options);
+    }
+  };
+});
