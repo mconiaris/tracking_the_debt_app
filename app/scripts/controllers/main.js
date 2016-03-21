@@ -17,6 +17,10 @@ var myApp = angular.module('trackingTheDebtAppApp')
   });
 
 
+  // Directives Tutorial
+  // https://www.codementor.io/angularjs/tutorial/create-dropdown-control
+
+
 myApp.controller('GraphCtrl', ['$scope', function($scope) {
 
   $scope.message = 'GraphCtrl loaded.';
