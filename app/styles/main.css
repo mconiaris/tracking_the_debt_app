@@ -85,6 +85,6 @@ body {
   }
 }
 
-div#graph {
+div#graph div {
   background-color: black;
 }
