@@ -1,27 +1,26 @@
-<div class="btn-group" role="group" aria-label="...">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Receipts &#38; Outlays
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#/">In Current Dollars</a></li>
-    <li><a href="#/">In Constant Dollars</a></li>
-    <li><a href="#/">As a Pct. of GDP</a></li>
-  </ul>
-</div>
-<div class="btn-group" role="group" aria-label="...">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Surplus or Deficit
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#/">In Current Dollars</a></li>
-    <li><a href="#/">In Constant Dollars</a></li>
-    <li><a href="#/">As a Pct. of GDP</a></li>
-  </ul>
-</div>
-
 <div ng-controller="GraphCtrl">
+  <div class="btn-group" role="group" aria-label="...">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Receipts &#38; Outlays
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <li><a href="#/">In Current Dollars</a></li>
+      <li><a href="#/">In Constant Dollars</a></li>
+      <li><a href="#/">As a Pct. of GDP</a></li>
+    </ul>
+  </div>
+  <div class="btn-group" role="group" aria-label="...">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Surplus or Deficit
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <li><a href="#/">In Current Dollars</a></li>
+      <li><a href="#/">In Constant Dollars</a></li>
+      <li><a href="#/">As a Pct. of GDP</a></li>
+    </ul>
+  </div>
   <p>This is the dygraph div.</p>
   <dygraphs ng-if="graph.data.length"
     data="graph.data"
