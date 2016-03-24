@@ -638,7 +638,9 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
     link: function(scope, elem, attrs) {
 
       var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
-
+      // console.log(elem.children()[0]);
+      graph.resize(600, 300);
+      console.log(graph.getArea());
     }
   };
 });
