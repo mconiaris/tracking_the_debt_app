@@ -21,7 +21,6 @@
       <li><a href="#/" ng-click="flipMode('Surplus-GDP')">As a Pct. of GDP</a></li>
     </ul>
   </div>
-  <p>This is the dygraph div.</p>
   <div ng-repeat="graph in graphs" >
       <dygraph data="graph.data" opts="graph.opts" ng-show="graph.shown"></dygraph>
     </div>
