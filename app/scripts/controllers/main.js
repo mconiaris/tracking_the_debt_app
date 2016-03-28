@@ -640,6 +640,7 @@ myApp.controller('GraphCtrl', ['$scope', function($scope) {
       var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
       // console.log(elem.children()[0]);
       graph.resize(600, 300);
+      console.log('Directive called.')
       console.log(graph.getArea());
     }
   };
