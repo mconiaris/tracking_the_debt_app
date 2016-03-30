@@ -43,7 +43,7 @@ myApp.controller('DropdownCtrl', function ($scope, $log) {
 });
 
 
-myApp.controller('GraphCtrl', ['$scope', function($scope) {
+myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
 
   $scope.message = "GraphCtrl loaded.";
   console.log($scope.message);
