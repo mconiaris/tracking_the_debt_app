@@ -48,6 +48,8 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
   $scope.message = "GraphCtrl loaded.";
   console.log($scope.message);
 
+  console.log($window);
+
   $scope.items = ['currentDollars', 'home', 'other'];
   $scope.selection = $scope.items[0];
 
