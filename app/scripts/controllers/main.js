@@ -628,7 +628,7 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
     });
     console.log(graphType + ' button pressed');
   };
-}]).directive('dygraph', function() {
+}]).directive('dygraph', function($window) {
   console.log("From directive.");
   return {
     restrict: 'E', // Use as element
@@ -644,6 +644,9 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
       graph.resize(680, 300);
       console.log('Directive called.')
       console.log(graph.getArea());
+
+      var page = angular.element($window);
+      console.log(page.width());
     }
   };
 });
