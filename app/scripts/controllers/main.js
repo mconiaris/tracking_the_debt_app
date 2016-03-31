@@ -647,6 +647,8 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
 
       var page = angular.element($window);
       console.log(page.width());
+
+      graph.resize((page.width()-50), 300);
     }
   };
 });
