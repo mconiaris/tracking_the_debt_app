@@ -650,6 +650,9 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
 
       graph.resize((page.width()-50), 300);
       console.log('page width: ' + page.width());
+
+      var parent = elem.parent();
+      console.log(parent);
     }
   };
 });
