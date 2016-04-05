@@ -68,6 +68,7 @@ module.exports = function (grunt) {
     },
 
     // The actual grunt server settings
+    // Docs: https://github.com/gruntjs/grunt-contrib-connect
     connect: {
       options: {
         port: 9000,
