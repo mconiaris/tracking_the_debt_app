@@ -653,6 +653,11 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
           graph.resize(parent.width(), 300);
       };
       resize();
+
+      var w = angular.element($window);
+        w.bind('resize', function () {
+          resize();
+      });
     }
   };
 });
