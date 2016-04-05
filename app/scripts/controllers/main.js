@@ -652,7 +652,7 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
       console.log('page width: ' + page.width());
 
       var parent = elem.parent();
-      console.log(parent);
+      console.log('Parent width: ' + parent.width());
     }
   };
 });
