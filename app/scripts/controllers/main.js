@@ -646,7 +646,7 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
       console.log(graph.getArea());
 
       var page = angular.element($window);
-      console.log(page.width());
+      console.log('Page width: ' + page.width());
 
       var parent = elem.parent();
       console.log('Parent width: ' + parent.width());
