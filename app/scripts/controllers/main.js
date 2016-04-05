@@ -643,11 +643,16 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
       console.log('Directive called.')
 
       var page = angular.element($window);
-      console.log('Page width: ' + page.width());
 
-      var parent = elem.parent();
-      console.log('Parent width: ' + parent.width());
-      graph.resize(parent.width(), 300);
+      function resize() {
+
+          console.log('Page width: ' + page.width());
+
+          var parent = elem.parent();
+          console.log('Parent width: ' + parent.width());
+          graph.resize(parent.width(), 300);
+      };
+      resize();
     }
   };
 });
