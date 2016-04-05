@@ -643,7 +643,6 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
       // console.log(elem.children()[0]);
       graph.resize(680, 300);
       console.log('Directive called.')
-      console.log(graph.getArea());
 
       var page = angular.element($window);
       console.log('Page width: ' + page.width());
