@@ -80,7 +80,7 @@ module.exports = function (grunt) {
         options: {
           open: {
             target: 'http://localhost:<%= connect.options.port %>',
-            appName: 'chrome'
+            appName: 'Google Chrome'
           },
           middleware: function (connect) {
             return [
