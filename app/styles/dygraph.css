@@ -1,3 +1,7 @@
+div.container div.ng-scope {
+    background-color: white;
+}
+
 .ng-dygraphs .legend {
     width: auto;
     margin: 3px 8px;
