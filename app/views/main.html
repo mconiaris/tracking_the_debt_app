@@ -1,4 +1,6 @@
 <div ng-controller="GraphCtrl">
+
+
   <div class="btn-group" role="group" aria-label="...">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       Receipts &#38; Outlays
@@ -21,6 +23,8 @@
       <li><a href="#/" ng-click="flipMode('Surplus-GDP')">As a Pct. of GDP</a></li>
     </ul>
   </div>
+
+
   <div ng-repeat="graph in graphs" >
       <dygraph data="graph.data" opts="graph.opts" ng-show="graph.shown"></dygraph>
     </div>
