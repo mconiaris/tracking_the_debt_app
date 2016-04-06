@@ -640,7 +640,7 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
     link: function(scope, elem, attrs) {
 
       var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
-      console.log('Directive called.')
+      console.log('Directive called.');
 
       var page = angular.element($window);
 
