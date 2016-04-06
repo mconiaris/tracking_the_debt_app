@@ -657,6 +657,7 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
 
       var w = angular.element($window);
         w.bind('resize', function () {
+          $window.location.reload();
           resize();
       });
     }
