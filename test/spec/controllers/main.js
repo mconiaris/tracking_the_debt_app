@@ -17,7 +17,7 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a message to the scope', function () {
+  it('should attach a message reading \'MainCtrl loaded\' to the scope', function () {
     expect(MainCtrl.message).toBe('MainCtrl loaded');
   });
 });
