@@ -20,6 +20,12 @@ module.exports = function(config) {
 
     // testing framework to use (jasmine/mocha/qunit/...)
     // as well as any additional frameworks (requirejs/chai/sinon/...)
+    // Jasmine is a behavior driven development
+    // framework for JavaScript that has become
+    // the most popular choice for testing Angular
+    // applications. Jasmine provides functions
+    // to help with structuring your tests and
+    // also making assertions.
     frameworks: [
       "jasmine"
     ],
