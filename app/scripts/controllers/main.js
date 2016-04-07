@@ -18,11 +18,7 @@
 // only have access to the $rootScope service.
 var myApp = angular.module('trackingTheDebtAppApp')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    this.message = 'MainCtrl loaded';
   });
 
 
