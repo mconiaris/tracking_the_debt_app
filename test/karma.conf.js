@@ -69,6 +69,13 @@ module.exports = function(config) {
     // the browser(s). It also supports running tests
     // in PhantomJS, a headless webkit browser which
     // is great for running tests as part of a build.
+    // A primary strength of Karma is that there are
+    // plugins that let you run tests in a variety
+    // of real browsers. PhantomJS is a headless
+    // browser perfect for quickly running unit
+    // tests from the command line. Our code will
+    // basically think its running in a real web
+    // browser even though we can't see one.
     browsers: [
       "PhantomJS"
     ],
