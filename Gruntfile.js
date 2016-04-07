@@ -143,6 +143,9 @@ module.exports = function (grunt) {
     },
 
     // Make sure code styles are up to par
+    // JSCS is a code style linter/formatter
+    // for programmatically enforcing your style
+    // guide.
     jscs: {
       options: {
         config: '.jscsrc',
