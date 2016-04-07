@@ -431,6 +431,9 @@ module.exports = function (grunt) {
     karma: {
       unit: {
         configFile: 'test/karma.conf.js',
+        // The singleRun: false option will
+        // tell grunt to keep the karma server up
+        // after a test run.
         singleRun: true
       }
     }

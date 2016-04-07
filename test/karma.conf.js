@@ -59,6 +59,16 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
+
+    // Keeping a browser window & karma server
+    // running during development is productive,
+    // but not a good solution for build processes.
+    // For that reason karma provides a "continuous
+    // integration" mode, which will launch the
+    // specified browser(s), run the tests, and close
+    // the browser(s). It also supports running tests
+    // in PhantomJS, a headless webkit browser which
+    // is great for running tests as part of a build.
     browsers: [
       "PhantomJS"
     ],
