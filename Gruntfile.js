@@ -434,6 +434,10 @@ module.exports = function (grunt) {
         // The singleRun: false option will
         // tell grunt to keep the karma server up
         // after a test run.
+        // The singleRun: true setting will shut
+        // down the Karma server when testing is
+        // complete, which is appropriate for our
+        // single-shot requirement.
         singleRun: true
       }
     }
