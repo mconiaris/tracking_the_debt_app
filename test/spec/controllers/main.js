@@ -21,3 +21,12 @@ describe('Controller: MainCtrl', function () {
     expect(MainCtrl.message).toBe('MainCtrl loaded');
   });
 });
+
+describe('Controller: DropdownCtrl', function() {
+
+  // load the controller's module
+  beforeEach(module('trackingTheDebtAppApp'));
+
+  var DropdownCtrl, scope;
+
+});
