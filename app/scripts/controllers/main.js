@@ -7,6 +7,11 @@
  * # MainCtrl
  * Controller of the trackingTheDebtAppApp
  */
+
+// Controllers are "classes" or "constructor
+// functions" that are responsible for providing
+// the application behavior that supports the
+// declarative markup in the template.
 var myApp = angular.module('trackingTheDebtAppApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
