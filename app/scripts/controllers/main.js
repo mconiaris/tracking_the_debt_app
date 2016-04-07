@@ -51,7 +51,10 @@ myApp.controller('DropdownCtrl', function ($scope, $log) {
   };
 });
 
-
+// Inline array annotation, where we pass an
+// array whose elements consist of a list of
+// strings (the names of the dependencies)
+// followed by the function itself.
 myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
 
   $scope.message = "GraphCtrl loaded.";
