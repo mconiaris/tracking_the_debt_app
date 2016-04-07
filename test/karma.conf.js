@@ -25,6 +25,19 @@ module.exports = function(config) {
     ],
 
     // list of files / patterns to load in the browser
+    // Every JavaScript file listed in the files
+    // array will be loaded (executed) by Karma
+    // into our PhantomJS scenario in the order
+    // listed, just as if they had been added as
+    // <script> elements into a real web page.
+    // Any Jasmine tests that run incidentally
+    // will be recognized by Karma. I make sure
+    // to load (1) angular and it's dependencies,
+    // (2) angular mocks, and then (3) all my app's
+    // source code. Note that the first three
+    // entries are loaded from public/components/
+    // because they are third-party components
+    // installed there by bower.
     files: [
       // bower:js
       'bower_components/jquery/dist/jquery.js',
