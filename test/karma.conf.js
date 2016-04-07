@@ -7,7 +7,12 @@ module.exports = function(config) {
   'use strict';
 
   config.set({
-    // enable / disable watching file and executing tests whenever any file changes
+    // enable / disable watching file and executing
+    // tests whenever any file changes
+    // Setting the autoWatch option to true will
+    // instruct karma to start a server and watch
+    // for changes to files, running tests
+    // automatically
     autoWatch: true,
 
     // base path, that will be used to resolve files and exclude
