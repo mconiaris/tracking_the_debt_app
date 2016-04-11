@@ -37,8 +37,6 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
   $scope.message = "GraphCtrl loaded.";
   console.log($scope.message);
 
-  console.log($window);
-
   $scope.graphs = [
     {
         data: [
