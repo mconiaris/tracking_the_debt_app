@@ -54,8 +54,11 @@ describe('Controller: GraphCtrl', function () {
     it('graphs[0] should be an object', function () {
       expect(scope.graphs[0]).toEqual(jasmine.any(Object));
     });
-    it('graphs[0].data should be an Array', function () {
-      expect(scope.graphs[0].data).toEqual(jasmine.any(Array));
+
+    describe('scope.graphs[0].data', function() {
+      it('graphs[0].data should be an Array', function () {
+        expect(scope.graphs[0].data).toEqual(jasmine.any(Array));
+      });
     });
   });
 });
