@@ -43,10 +43,13 @@ describe('Controller: GraphCtrl', function () {
   it('should attach a message reading \'GraphCtrl loaded.\' to the scope', function () {
     expect(scope.message).toBe('GraphCtrl loaded.');
   });
-  it('should have an array called \'graphs\'', function () {
-    expect(scope.graphs).toEqual(jasmine.any(Array));
-  });
-  it('should should contain an array of six graphs', function () {
-    expect(scope.graphs.length).toEqual(6);
+
+  describe('scope.graphs', function(){
+    it('should have an array called \'graphs\'', function () {
+      expect(scope.graphs).toEqual(jasmine.any(Array));
+    });
+    it('should should contain an array of six graphs', function () {
+      expect(scope.graphs.length).toEqual(6);
+    });
   });
 });
