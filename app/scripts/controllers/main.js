@@ -39,9 +39,6 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
 
   console.log($window);
 
-  $scope.items = ['currentDollars', 'home', 'other'];
-  $scope.selection = $scope.items[0];
-
   $scope.graphs = [
     {
         data: [
