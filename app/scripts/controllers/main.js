@@ -630,8 +630,6 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
 
       function resize() {
 
-          console.log('Page width: ' + page.width());
-
           var parent = elem.parent();
           graph.resize(parent.width(), (parent.height()-50));
       }
