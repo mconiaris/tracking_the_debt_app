@@ -52,7 +52,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs.length).toEqual(6);
     });
     it('graphs[0] should be an object', function () {
-      expect(scope.graphs).toEqual(jasmine.any(Object));
+      expect(scope.graphs[0]).toEqual(jasmine.any(Object));
     });
   });
 });
