@@ -44,6 +44,6 @@ describe('Controller: GraphCtrl', function () {
     expect(scope.message).toBe('GraphCtrl loaded.');
   });
   it('should shold contain an array of six graphs', function () {
-    expect(scope.graphs.size).toEqual(6);
+    expect(scope.graphs.length).toEqual(6);
   });
 });
