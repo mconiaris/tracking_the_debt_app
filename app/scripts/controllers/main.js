@@ -27,7 +27,8 @@ var myApp = angular.module('trackingTheDebtAppApp')
 
 
 myApp.controller('DropdownCtrl', function ($scope, $log) {
-  console.log('DropdownCtrl loaded.');
+  $scope.message = 'DropdownCtrl loaded';
+  console.log($scope.message);
 
   $scope.status = {
     isopen: false
