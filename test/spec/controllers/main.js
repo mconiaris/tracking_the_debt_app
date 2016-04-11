@@ -45,7 +45,7 @@ describe('Controller: GraphCtrl', function () {
   });
 
   describe('scope.graphs', function(){
-    it('should have an array called \'graphs\'', function () {
+    it('should be an array', function () {
       expect(scope.graphs).toEqual(jasmine.any(Array));
     });
     it('should should contain an array of six graphs', function () {
