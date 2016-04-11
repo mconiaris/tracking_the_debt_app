@@ -26,27 +26,7 @@ var myApp = angular.module('trackingTheDebtAppApp')
   // https://www.codementor.io/angularjs/tutorial/create-dropdown-control
 
 
-myApp.controller('DropdownCtrl', function ($scope, $log) {
-  $scope.message = 'DropdownCtrl loaded';
-  console.log($scope.message);
 
-  $scope.status = {
-    isopen: false
-  };
-
-  $scope.toggled = function(open) {
-    $log.log('Dropdown is now: ', open);
-    console.log('toggled function called.');
-
-  };
-
-  $scope.toggleDropdown = function($event) {
-    console.log('toggleDropdown function called.');
-    $event.preventDefault();
-    $event.stopPropagation();
-    $scope.status.isopen = !$scope.status.isopen;
-  };
-});
 
 // Inline array annotation, where we pass an
 // array whose elements consist of a list of
