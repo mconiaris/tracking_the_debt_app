@@ -43,4 +43,7 @@ describe('Controller: GraphCtrl', function () {
   it('should attach a message reading \'GraphCtrl loaded.\' to the scope', function () {
     expect(scope.message).toBe('GraphCtrl loaded.');
   });
+  it('should shold contain an array of six graphs', function () {
+    expect(scope.graphs.size).toEqual(6);
+  });
 });
