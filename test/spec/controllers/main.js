@@ -97,8 +97,8 @@ describe('Controller: GraphCtrl', function () {
       it('data[0][1] attribute should be a Number', function () {
         expect(scope.graphs[1].data[0][1]).toEqual(jasmine.any(Number));
       });
-      it('data[0][1] attribute should equal \'6.5\'', function () {
-        expect(scope.graphs[1].data[0][1]).toEqual(6.5);
+      it('data[0][1] attribute should equal \'96.3\'', function () {
+        expect(scope.graphs[1].data[0][1]).toEqual(96.3);
       });
       it('data[0][2] attribute should be a Number', function () {
         expect(scope.graphs[1].data[0][2]).toEqual(jasmine.any(Number));
