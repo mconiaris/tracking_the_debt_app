@@ -107,5 +107,31 @@ describe('Controller: GraphCtrl', function () {
         expect(scope.graphs[1].data[0][2]).toEqual(139.2);
       });
     });
+    describe('scope.graphs[2].data', function() {
+      it('data attribute should be an Array', function () {
+        expect(scope.graphs[2].data).toEqual(jasmine.any(Array));
+      });
+      it('data[0] attribute should be an Array', function () {
+        expect(scope.graphs[2].data[0]).toEqual(jasmine.any(Array));
+      });
+      it('data[0][0] attribute should be a Number', function () {
+        expect(scope.graphs[2].data[0][0]).toEqual(jasmine.any(Number));
+      });
+      it('data[0][0] attribute should equal \'1940\'', function () {
+        expect(scope.graphs[2].data[0][0]).toEqual(1940);
+      });
+      it('data[0][1] attribute should be a Number', function () {
+        expect(scope.graphs[2].data[0][1]).toEqual(jasmine.any(Number));
+      });
+      it('data[0][1] attribute should equal \'96.3\'', function () {
+        expect(scope.graphs[2].data[0][1]).toEqual(96.3);
+      });
+      it('data[0][2] attribute should be a Number', function () {
+        expect(scope.graphs[2].data[0][2]).toEqual(jasmine.any(Number));
+      });
+      it('data[0][2] attribute should equal \'139.2\'', function () {
+        expect(scope.graphs[2].data[0][2]).toEqual(139.2);
+      });
+    });
   });
 });
