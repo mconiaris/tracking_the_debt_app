@@ -179,6 +179,24 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+  describe('scope.graphs[1].opts.labels[0]', function() {
+    it('should equal \'Fiscal Year\'', function() {
+      expect(scope.graphs[1].opts.labels[0]).toBe('Fiscal Year');
+    });
+  });
+
+  describe('scope.graphs[1].opts.labels[1]', function() {
+    it('should equal \'Receipts\'', function() {
+      expect(scope.graphs[1].opts.labels[1]).toBe('Receipts');
+    });
+  });
+
+  describe('scope.graphs[1].opts.labels[2]', function() {
+    it('should equal \'Outlays\'', function() {
+      expect(scope.graphs[1].opts.labels[2]).toBe('Outlays');
+    });
+  });
+
 
   // graphs[0]
   describe('scope.graphs[2].data', function() {
