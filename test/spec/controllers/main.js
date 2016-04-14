@@ -51,33 +51,33 @@ describe('Controller: GraphCtrl', function () {
     it('should contain six objects', function () {
       expect(scope.graphs.length).toEqual(6);
     });
-    it('graphs[0] should be an object', function () {
+    it('[0] should be an object', function () {
       expect(scope.graphs[0]).toEqual(jasmine.any(Object));
     });
 
-    describe('scope.graphs[0].data', function() {
+    describe('[0].data', function() {
       it('data attribute should be an Array', function () {
         expect(scope.graphs[0].data).toEqual(jasmine.any(Array));
       });
-      it('data[0] attribute should be an Array', function () {
+      it('should be an Array', function () {
         expect(scope.graphs[0].data[0]).toEqual(jasmine.any(Array));
       });
-      it('data[0][0] attribute should be a Number', function () {
+      it('[0] attribute should be a Number', function () {
         expect(scope.graphs[0].data[0][0]).toEqual(jasmine.any(Number));
       });
-      it('data[0][0] attribute should equal \'1940\'', function () {
+      it('[0] attribute should equal \'1940\'', function () {
         expect(scope.graphs[0].data[0][0]).toEqual(1940);
       });
-      it('data[0][1] attribute should be a Number', function () {
+      it('[1] attribute should be a Number', function () {
         expect(scope.graphs[0].data[0][1]).toEqual(jasmine.any(Number));
       });
-      it('data[0][1] attribute should equal \'6.5\'', function () {
+      it('[1] attribute should equal \'6.5\'', function () {
         expect(scope.graphs[0].data[0][1]).toEqual(6.5);
       });
-      it('data[0][2] attribute should be a Number', function () {
+      it('[2] attribute should be a Number', function () {
         expect(scope.graphs[0].data[0][2]).toEqual(jasmine.any(Number));
       });
-      it('data[0][2] attribute should equal \'6.5\'', function () {
+      it('[2] attribute should equal \'6.5\'', function () {
         expect(scope.graphs[0].data[0][2]).toEqual(9.5);
       });
     });
