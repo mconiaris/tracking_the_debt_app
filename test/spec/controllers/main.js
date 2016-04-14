@@ -373,11 +373,14 @@ describe('Controller: GraphCtrl', function () {
   });
 
   // ================================
-  // graphs[4] label tests
+  // graphs[4] option tests
   // ================================
   describe('scope.graphs[4].opts.labels', function() {
     it('should be an Array', function () {
       expect(scope.graphs[4].opts.labels).toEqual(jasmine.any(Array));
+    });
+    it('should have two items', function() {
+      expect(scope.graphs[4].opts.labels.length).toEqual(2);
     });
   });
 
