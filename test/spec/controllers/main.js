@@ -217,6 +217,11 @@ describe('Controller: GraphCtrl', function () {
       it('data[0][1] attribute should equal \'-3.0\'', function () {
         expect(scope.graphs[5].data[0][1]).toEqual(-3.0);
       });
+      describe('scope.graphs[5].opts.labels', function() {
+      it('should be an Array', function () {
+        expect(scope.graphs[5].opts.labels).toEqual(jasmine.any(Array));
+      });
+    });
     });
   });
 });
