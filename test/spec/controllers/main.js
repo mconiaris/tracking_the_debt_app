@@ -57,7 +57,9 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
-  // graphs[0]
+  // ================================
+  // graphs[0] data tests
+  // ================================
   describe('scope.graphs[0].data', function() {
     it('should be an Array', function () {
       expect(scope.graphs[0].data).toEqual(jasmine.any(Array));
@@ -99,6 +101,9 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+  // ================================
+  // graphs[0] option tests
+  // ================================
 
   describe('scope.graphs[0].opts.labels', function() {
     it('should be an Array', function () {
@@ -129,7 +134,9 @@ describe('Controller: GraphCtrl', function () {
 
 
 
-  // graphs[0]
+  // ================================
+  // graphs[0] data tests
+  // ================================
   describe('scope.graphs[1].data', function() {
     it('should be an Array', function () {
       expect(scope.graphs[1].data).toEqual(jasmine.any(Array));
@@ -170,6 +177,9 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
+  // ================================
+  // graphs[0] options tests
+  // ================================
   describe('scope.graphs[1].opts.labels', function() {
     it('should be an Array', function () {
       expect(scope.graphs[1].opts.labels).toEqual(jasmine.any(Array));
@@ -198,7 +208,9 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
-  // graphs[0]
+  // ================================
+  // graphs[0] data tests
+  // ================================
   describe('scope.graphs[2].data', function() {
     it('should be an Array', function () {
       expect(scope.graphs[2].data).toEqual(jasmine.any(Array));
@@ -238,6 +250,9 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+  // ================================
+  // graphs[2] options tests
+  // ================================
   describe('scope.graphs[2].opts.labels', function() {
     it('should be an Array', function () {
       expect(scope.graphs[2].opts.labels).toEqual(jasmine.any(Array));
@@ -248,7 +263,9 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
-  // graphs[3]
+  // ================================
+  // graphs[3] data tests
+  // ================================
   describe('scope.graphs[3].data', function() {
     it('should be an Array', function () {
       expect(scope.graphs[3].data).toEqual(jasmine.any(Array));
@@ -279,14 +296,18 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+  // ================================
+  // graphs[3] option tests
+  // ================================
   describe('scope.graphs[3].opts.labels', function() {
     it('should be an Array', function () {
       expect(scope.graphs[3].opts.labels).toEqual(jasmine.any(Array));
     });
   });
 
-
-  // graphs[4]
+  // ================================
+  // graphs[4] data tests
+  // ================================
   describe('scope.graphs[4].data', function() {
     it('should be an Array', function () {
       expect(scope.graphs[4].data).toEqual(jasmine.any(Array));
@@ -317,6 +338,9 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+  // ================================
+  // graphs[4] label tests
+  // ================================
   describe('scope.graphs[4].opts.labels', function() {
     it('should be an Array', function () {
       expect(scope.graphs[4].opts.labels).toEqual(jasmine.any(Array));
@@ -324,7 +348,9 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
-  // graphs[5]
+  // ================================
+  // graphs[5] data tests
+  // ================================
   describe('scope.graphs[5].data', function() {
     it('should be an Array', function () {
       expect(scope.graphs[5].data).toEqual(jasmine.any(Array));
@@ -355,6 +381,9 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+  // ================================
+  // graphs[5] options tests
+  // ================================
   describe('scope.graphs[5].opts.labels', function() {
     it('should be an Array', function () {
       expect(scope.graphs[5].opts.labels).toEqual(jasmine.any(Array));
