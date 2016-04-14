@@ -384,6 +384,18 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+  describe('scope.graphs[4].opts.labels[0]', function() {
+    it('should equal \'Fiscal Year\'', function() {
+      expect(scope.graphs[4].opts.labels[0]).toBe('Fiscal Year');
+    });
+  });
+
+  describe('scope.graphs[4].opts.labels[1]', function() {
+    it('should equal \'Surplus/Deficit\'', function() {
+      expect(scope.graphs[4].opts.labels[1]).toBe('Surplus/Deficit');
+    });
+  });
+
 
   // ================================
   // graphs[5] data tests
