@@ -169,8 +169,8 @@ describe('Controller: GraphCtrl', function () {
       it('data[0][1] attribute should be a Number', function () {
         expect(scope.graphs[4].data[0][1]).toEqual(jasmine.any(Number));
       });
-      it('data[0][1] attribute should equal \'-2.9\'', function () {
-        expect(scope.graphs[4].data[0][1]).toEqual(-2.9);
+      it('data[0][1] attribute should equal \'-42.9\'', function () {
+        expect(scope.graphs[4].data[0][1]).toEqual(-42.9);
       });
     });
   });
