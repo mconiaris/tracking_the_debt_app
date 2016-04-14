@@ -83,9 +83,12 @@ describe('Controller: GraphCtrl', function () {
     });
 
     describe('scope.graphs[0].opts', function() {
-      it('should be an Array', function () {
-        expect(scope.graphs[0].opts.labels).toEqual(jasmine.any(Array));
+      describe('labels', function() {
+        it('should be an Array', function () {
+          expect(scope.graphs[0].opts.labels).toEqual(jasmine.any(Array));
+        });
       });
+
     });
 
     describe('scope.graphs[1].data', function() {
