@@ -135,7 +135,7 @@ describe('Controller: GraphCtrl', function () {
 
 
   // ================================
-  // graphs[0] data tests
+  // graphs[1] data tests
   // ================================
   describe('scope.graphs[1].data', function() {
     it('should be an Array', function () {
@@ -178,7 +178,7 @@ describe('Controller: GraphCtrl', function () {
 
 
   // ================================
-  // graphs[0] options tests
+  // graphs[1] options tests
   // ================================
   describe('scope.graphs[1].opts.labels', function() {
     it('should be an Array', function () {
@@ -209,7 +209,7 @@ describe('Controller: GraphCtrl', function () {
 
 
   // ================================
-  // graphs[0] data tests
+  // graphs[2] data tests
   // ================================
   describe('scope.graphs[2].data', function() {
     it('should be an Array', function () {
