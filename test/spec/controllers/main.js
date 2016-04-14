@@ -437,5 +437,8 @@ describe('Controller: GraphCtrl', function () {
     it('should be an Array', function () {
       expect(scope.graphs[5].opts.labels).toEqual(jasmine.any(Array));
     });
+    it('should have two items', function() {
+      expect(scope.graphs[5].opts.labels.length).toEqual(2);
+    });
   });
 });
