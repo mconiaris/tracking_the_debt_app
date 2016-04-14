@@ -79,6 +79,7 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+
   describe('scope.graphs[0].data[0][1]', function() {
     it('[0][1] attribute should be a Number', function () {
       expect(scope.graphs[0].data[0][1]).toEqual(jasmine.any(Number));
@@ -88,6 +89,7 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+
   describe('scope.graphs[0].data[0][2]', function() {
     it('[0][2] attribute should be a Number', function () {
       expect(scope.graphs[0].data[0][2]).toEqual(jasmine.any(Number));
@@ -96,6 +98,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[0].data[0][2]).toEqual(9.5);
     });
   });
+
 
   describe('scope.graphs[0].opts.labels', function() {
     it('should be an Array', function () {
@@ -123,6 +126,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[0].opts.labels[2]).toBe('Outlays');
     });
   });
+
 
 
   // graphs[0]
@@ -165,9 +169,13 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+
   describe('scope.graphs[1].opts.labels', function() {
     it('should be an Array', function () {
       expect(scope.graphs[1].opts.labels).toEqual(jasmine.any(Array));
+    });
+    it('should have three items', function() {
+      expect(scope.graphs[1].opts.labels.length).toEqual(3);
     });
   });
 
