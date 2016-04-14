@@ -87,8 +87,10 @@ describe('Controller: GraphCtrl', function () {
         it('should be an Array', function () {
           expect(scope.graphs[0].opts.labels).toEqual(jasmine.any(Array));
         });
+        it('[0] should equal \'Fiscal Year\'', function() {
+          expect(scope.graphs[0].opts.labels[0]).toBe('Fiscal Year');
+        });
       });
-
     });
 
     describe('scope.graphs[1].data', function() {
@@ -118,9 +120,11 @@ describe('Controller: GraphCtrl', function () {
       });
     });
 
-    describe('scope.graphs[1].opts.labels', function() {
-      it('should be an Array', function () {
-        expect(scope.graphs[1].opts.labels).toEqual(jasmine.any(Array));
+    describe('scope.graphs[1].opts', function() {
+      describe('labels', function() {
+        it('should be an Array', function () {
+          expect(scope.graphs[1].opts.labels).toEqual(jasmine.any(Array));
+        });
       });
     });
 
@@ -151,9 +155,11 @@ describe('Controller: GraphCtrl', function () {
       });
     });
 
-    describe('scope.graphs[2].opts.labels', function() {
-      it('should be an Array', function () {
-        expect(scope.graphs[2].opts.labels).toEqual(jasmine.any(Array));
+    describe('scope.graphs[2].opts', function() {
+      describe('labels', function() {
+        it('should be an Array', function () {
+          expect(scope.graphs[2].opts.labels).toEqual(jasmine.any(Array));
+        });
       });
     });
 
@@ -178,9 +184,11 @@ describe('Controller: GraphCtrl', function () {
       });
     });
 
-    describe('scope.graphs[3].opts.labels', function() {
-      it('should be an Array', function () {
-        expect(scope.graphs[3].opts.labels).toEqual(jasmine.any(Array));
+    describe('scope.graphs[3].opts', function() {
+      describe('labels', function() {
+        it('should be an Array', function () {
+          expect(scope.graphs[3].opts.labels).toEqual(jasmine.any(Array));
+        });
       });
     });
 
@@ -205,9 +213,11 @@ describe('Controller: GraphCtrl', function () {
       });
     });
 
-    describe('scope.graphs[4].opts.labels', function() {
-      it('should be an Array', function () {
-        expect(scope.graphs[4].opts.labels).toEqual(jasmine.any(Array));
+    describe('scope.graphs[4].opts', function() {
+      describe('labels', function() {
+        it('should be an Array', function () {
+          expect(scope.graphs[4].opts.labels).toEqual(jasmine.any(Array));
+        });
       });
     });
 
@@ -230,11 +240,14 @@ describe('Controller: GraphCtrl', function () {
       it('data[0][1] attribute should equal \'-3.0\'', function () {
         expect(scope.graphs[5].data[0][1]).toEqual(-3.0);
       });
-      describe('scope.graphs[5].opts.labels', function() {
+
+      describe('scope.graphs[5].opts', function() {
+      describe('labels', function() {
         it('should be an Array', function () {
           expect(scope.graphs[5].opts.labels).toEqual(jasmine.any(Array));
         });
       });
+    });
     });
   });
 });
