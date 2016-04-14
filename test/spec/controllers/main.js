@@ -54,200 +54,266 @@ describe('Controller: GraphCtrl', function () {
     it('[0] should be an object', function () {
       expect(scope.graphs[0]).toEqual(jasmine.any(Object));
     });
+  });
 
-    describe('[0].data', function() {
-      it('data attribute should be an Array', function () {
-        expect(scope.graphs[0].data).toEqual(jasmine.any(Array));
-      });
-      it('should be an Array', function () {
-        expect(scope.graphs[0].data[0]).toEqual(jasmine.any(Array));
-      });
-      it('[0] attribute should be a Number', function () {
-        expect(scope.graphs[0].data[0][0]).toEqual(jasmine.any(Number));
-      });
-      it('[0] attribute should equal \'1940\'', function () {
-        expect(scope.graphs[0].data[0][0]).toEqual(1940);
-      });
-      it('[1] attribute should be a Number', function () {
-        expect(scope.graphs[0].data[0][1]).toEqual(jasmine.any(Number));
-      });
-      it('[1] attribute should equal \'6.5\'', function () {
-        expect(scope.graphs[0].data[0][1]).toEqual(6.5);
-      });
-      it('[2] attribute should be a Number', function () {
-        expect(scope.graphs[0].data[0][2]).toEqual(jasmine.any(Number));
-      });
-      it('[2] attribute should equal \'6.5\'', function () {
-        expect(scope.graphs[0].data[0][2]).toEqual(9.5);
-      });
+
+  // graphs[0]
+  describe('scope.graphs[0].data', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[0].data).toEqual(jasmine.any(Array));
     });
+  });
 
-    describe('[0].opts', function() {
-      describe('.labels', function() {
-        it('should be an Array', function () {
-          expect(scope.graphs[0].opts.labels).toEqual(jasmine.any(Array));
-        });
-        it('[0] should equal \'Fiscal Year\'', function() {
-          expect(scope.graphs[0].opts.labels[0]).toBe('Fiscal Year');
-        });
-      });
+  describe('scope.graphs[0].data[0]', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[0].data[0]).toEqual(jasmine.any(Array));
     });
+  });
 
-    describe('[1].data', function() {
-      it('data attribute should be an Array', function () {
-        expect(scope.graphs[1].data).toEqual(jasmine.any(Array));
-      });
-      it('[0] attribute should be an Array', function () {
-        expect(scope.graphs[1].data[0]).toEqual(jasmine.any(Array));
-      });
-      it('[0] attribute should be a Number', function () {
-        expect(scope.graphs[1].data[0][0]).toEqual(jasmine.any(Number));
-      });
-      it('[0] attribute should equal \'1940\'', function () {
-        expect(scope.graphs[1].data[0][0]).toEqual(1940);
-      });
-      it('[1] attribute should be a Number', function () {
-        expect(scope.graphs[1].data[0][1]).toEqual(jasmine.any(Number));
-      });
-      it('[1] attribute should equal \'96.3\'', function () {
-        expect(scope.graphs[1].data[0][1]).toEqual(96.3);
-      });
-      it('[2] attribute should be a Number', function () {
-        expect(scope.graphs[1].data[0][2]).toEqual(jasmine.any(Number));
-      });
-      it('[2] attribute should equal \'139.2\'', function () {
-        expect(scope.graphs[1].data[0][2]).toEqual(139.2);
-      });
+  describe('scope.graphs[0].data[0][0]', function() {
+    it('[0][0] attribute should be a Number', function () {
+      expect(scope.graphs[0].data[0][0]).toEqual(jasmine.any(Number));
     });
-
-    describe('[1].opts', function() {
-      describe('labels', function() {
-        it('should be an Array', function () {
-          expect(scope.graphs[1].opts.labels).toEqual(jasmine.any(Array));
-        });
-      });
+    it('[0][0] attribute should equal \'1940\'', function () {
+      expect(scope.graphs[0].data[0][0]).toEqual(1940);
     });
+  });
 
-    describe('[2].data', function() {
-      it('data attribute should be an Array', function () {
-        expect(scope.graphs[2].data).toEqual(jasmine.any(Array));
-      });
-      it('data[0] attribute should be an Array', function () {
-        expect(scope.graphs[2].data[0]).toEqual(jasmine.any(Array));
-      });
-      it('data[0][0] attribute should be a Number', function () {
-        expect(scope.graphs[2].data[0][0]).toEqual(jasmine.any(Number));
-      });
-      it('data[0][0] attribute should equal \'1940\'', function () {
-        expect(scope.graphs[2].data[0][0]).toEqual(1940);
-      });
-      it('data[0][1] attribute should be a Number', function () {
-        expect(scope.graphs[2].data[0][1]).toEqual(jasmine.any(Number));
-      });
-      it('data[0][1] attribute should equal \'6.7\'', function () {
-        expect(scope.graphs[2].data[0][1]).toEqual(6.7);
-      });
-      it('data[0][2] attribute should be a Number', function () {
-        expect(scope.graphs[2].data[0][2]).toEqual(jasmine.any(Number));
-      });
-      it('data[0][2] attribute should equal \'9.6\'', function () {
-        expect(scope.graphs[2].data[0][2]).toEqual(9.6);
-      });
+  describe('scope.graphs[0].data[0][1]', function() {
+    it('[0][1] attribute should be a Number', function () {
+      expect(scope.graphs[0].data[0][1]).toEqual(jasmine.any(Number));
     });
-
-    describe('[2].opts', function() {
-      describe('labels', function() {
-        it('should be an Array', function () {
-          expect(scope.graphs[2].opts.labels).toEqual(jasmine.any(Array));
-        });
-      });
+    it('[0][1] attribute should equal \'6.5\'', function () {
+      expect(scope.graphs[0].data[0][1]).toEqual(6.5);
     });
+  });
 
-    describe('[3].data', function() {
-      it('data attribute should be an Array', function () {
-        expect(scope.graphs[3].data).toEqual(jasmine.any(Array));
-      });
-      it('data[0] attribute should be an Array', function () {
-        expect(scope.graphs[3].data[0]).toEqual(jasmine.any(Array));
-      });
-      it('data[0][0] attribute should be a Number', function () {
-        expect(scope.graphs[3].data[0][0]).toEqual(jasmine.any(Number));
-      });
-      it('data[0][0] attribute should equal \'1940\'', function () {
-        expect(scope.graphs[3].data[0][0]).toEqual(1940);
-      });
-      it('data[0][1] attribute should be a Number', function () {
-        expect(scope.graphs[3].data[0][1]).toEqual(jasmine.any(Number));
-      });
-      it('data[0][1] attribute should equal \'-2.9\'', function () {
-        expect(scope.graphs[3].data[0][1]).toEqual(-2.9);
-      });
+  describe('scope.graphs[0].data[0][2]', function() {
+    it('[0][2] attribute should be a Number', function () {
+      expect(scope.graphs[0].data[0][2]).toEqual(jasmine.any(Number));
     });
-
-    describe('[3].opts', function() {
-      describe('labels', function() {
-        it('should be an Array', function () {
-          expect(scope.graphs[3].opts.labels).toEqual(jasmine.any(Array));
-        });
-      });
+    it('[0][2] attribute should equal \'6.5\'', function () {
+      expect(scope.graphs[0].data[0][2]).toEqual(9.5);
     });
+  });
 
-    describe('[4].data', function() {
-      it('data attribute should be an Array', function () {
-        expect(scope.graphs[4].data).toEqual(jasmine.any(Array));
-      });
-      it('data[0] attribute should be an Array', function () {
-        expect(scope.graphs[4].data[0]).toEqual(jasmine.any(Array));
-      });
-      it('data[0][0] attribute should be a Number', function () {
-        expect(scope.graphs[4].data[0][0]).toEqual(jasmine.any(Number));
-      });
-      it('data[0][0] attribute should equal \'1940\'', function () {
-        expect(scope.graphs[4].data[0][0]).toEqual(1940);
-      });
-      it('data[0][1] attribute should be a Number', function () {
-        expect(scope.graphs[4].data[0][1]).toEqual(jasmine.any(Number));
-      });
-      it('data[0][1] attribute should equal \'-42.9\'', function () {
-        expect(scope.graphs[4].data[0][1]).toEqual(-42.9);
-      });
+  describe('scope.graphs[0].opts.labels', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[0].opts.labels).toEqual(jasmine.any(Array));
     });
+  });
 
-    describe('[4].opts', function() {
-      describe('labels', function() {
-        it('should be an Array', function () {
-          expect(scope.graphs[4].opts.labels).toEqual(jasmine.any(Array));
-        });
-      });
+  describe('scope.graphs[0].opts.labels[0]', function() {
+    it('should equal \'Fiscal Year\'', function() {
+      expect(scope.graphs[0].opts.labels[0]).toBe('Fiscal Year');
     });
+  });
 
-    describe('[5].data', function() {
-      it('data attribute should be an Array', function () {
-        expect(scope.graphs[5].data).toEqual(jasmine.any(Array));
-      });
-      it('data[0] attribute should be an Array', function () {
-        expect(scope.graphs[5].data[0]).toEqual(jasmine.any(Array));
-      });
-      it('data[0][0] attribute should be a Number', function () {
-        expect(scope.graphs[5].data[0][0]).toEqual(jasmine.any(Number));
-      });
-      it('data[0][0] attribute should equal \'1940\'', function () {
-        expect(scope.graphs[5].data[0][0]).toEqual(1940);
-      });
-      it('data[0][1] attribute should be a Number', function () {
-        expect(scope.graphs[5].data[0][1]).toEqual(jasmine.any(Number));
-      });
-      it('data[0][1] attribute should equal \'-3.0\'', function () {
-        expect(scope.graphs[5].data[0][1]).toEqual(-3.0);
-      });
 
-      describe('[5].opts', function() {
-      describe('labels', function() {
-        it('should be an Array', function () {
-          expect(scope.graphs[5].opts.labels).toEqual(jasmine.any(Array));
-        });
-      });
+  // graphs[0]
+  describe('scope.graphs[1].data', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[1].data).toEqual(jasmine.any(Array));
     });
+  });
+
+  describe('scope.graphs[1].data[0]', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[1].data[0]).toEqual(jasmine.any(Array));
+    });
+  });
+
+  describe('scope.graphs[1].data[0][0]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[1].data[0][0]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'1940\'', function () {
+      expect(scope.graphs[1].data[0][0]).toEqual(1940);
+    });
+  });
+
+  describe('scope.graphs[1].data[0][1]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[1].data[0][1]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'96.3\'', function () {
+      expect(scope.graphs[1].data[0][1]).toEqual(96.3);
+    });
+  });
+
+  describe('scope.graphs[1].data[0][2]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[1].data[0][2]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'139.2\'', function () {
+      expect(scope.graphs[1].data[0][2]).toEqual(139.2);
+    });
+  });
+
+  describe('scope.graphs[1].opts.labels', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[1].opts.labels).toEqual(jasmine.any(Array));
+    });
+  });
+
+
+  // graphs[0]
+  describe('scope.graphs[2].data', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[2].data).toEqual(jasmine.any(Array));
+    });
+  });
+
+  describe('scope.graphs[2].data[0]', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[2].data[0]).toEqual(jasmine.any(Array));
+    });
+  });
+
+  describe('scope.graphs[2].data[0][0]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[2].data[0][0]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'1940\'', function () {
+      expect(scope.graphs[2].data[0][0]).toEqual(1940);
+    });
+  });
+
+  describe('scope.graphs[2].data[0][1]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[2].data[0][1]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'6.7\'', function () {
+      expect(scope.graphs[2].data[0][1]).toEqual(6.7);
+    });
+  });
+
+  describe('scope.graphs[2].data[0][2]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[2].data[0][2]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'9.6\'', function () {
+      expect(scope.graphs[2].data[0][2]).toEqual(9.6);
+    });
+  });
+
+  describe('scope.graphs[2].opts.labels', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[2].opts.labels).toEqual(jasmine.any(Array));
+    });
+  });
+
+
+  // graphs[3]
+  describe('scope.graphs[3].data', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[3].data).toEqual(jasmine.any(Array));
+    });
+  });
+
+  describe('scope.graphs[3].data[0]', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[3].data[0]).toEqual(jasmine.any(Array));
+    });
+  });
+
+  describe('scope.graphs[3].data[0][0]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[3].data[0][0]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'1940\'', function () {
+      expect(scope.graphs[3].data[0][0]).toEqual(1940);
+    });
+  });
+
+  describe('scope.graphs[3].data[0][1]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[3].data[0][1]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'-2.9\'', function () {
+      expect(scope.graphs[3].data[0][1]).toEqual(-2.9);
+    });
+  });
+
+  describe('scope.graphs[3].opts.labels', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[3].opts.labels).toEqual(jasmine.any(Array));
+    });
+  });
+
+
+  // graphs[4]
+  describe('scope.graphs[4].data', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[4].data).toEqual(jasmine.any(Array));
+    });
+  });
+
+  describe('scope.graphs[4].data[0]', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[4].data[0]).toEqual(jasmine.any(Array));
+    });
+  });
+
+  describe('scope.graphs[4].data[0][0]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[4].data[0][0]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'1940\'', function () {
+      expect(scope.graphs[4].data[0][0]).toEqual(1940);
+    });
+  });
+
+  describe('scope.graphs[4].data[0][1]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[4].data[0][1]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'-42.9\'', function () {
+      expect(scope.graphs[4].data[0][1]).toEqual(-42.9);
+    });
+  });
+
+  describe('scope.graphs[4].opts.labels', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[4].opts.labels).toEqual(jasmine.any(Array));
+    });
+  });
+
+
+  // graphs[5]
+  describe('scope.graphs[5].data', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[5].data).toEqual(jasmine.any(Array));
+    });
+  });
+
+  describe('scope.graphs[5].data[0]', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[5].data[0]).toEqual(jasmine.any(Array));
+    });
+  });
+
+  describe('scope.graphs[5].data[0][0]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[5].data[0][0]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'1940\'', function () {
+      expect(scope.graphs[5].data[0][0]).toEqual(1940);
+    });
+  });
+
+  describe('scope.graphs[5].data[0][1]', function() {
+    it('should be a Number', function () {
+      expect(scope.graphs[5].data[0][1]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'-3.0\'', function () {
+      expect(scope.graphs[5].data[0][1]).toEqual(-3.0);
+    });
+  });
+
+  describe('scope.graphs[5].opts.labels', function() {
+    it('should be an Array', function () {
+      expect(scope.graphs[5].opts.labels).toEqual(jasmine.any(Array));
     });
   });
 });
