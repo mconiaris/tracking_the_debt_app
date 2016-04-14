@@ -112,6 +112,11 @@ describe('Controller: GraphCtrl', function () {
         expect(scope.graphs[1].data[0][2]).toEqual(139.2);
       });
     });
+    describe('scope.graphs[1].opts.labels', function() {
+      it('should be an Array', function () {
+        expect(scope.graphs[1].opts.labels).toEqual(jasmine.any(Array));
+      });
+    });
     describe('scope.graphs[2].data', function() {
       it('data attribute should be an Array', function () {
         expect(scope.graphs[2].data).toEqual(jasmine.any(Array));
