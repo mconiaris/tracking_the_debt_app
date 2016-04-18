@@ -147,6 +147,14 @@ describe('Controller: GraphCtrl', function () {
   // graphs[0] option tests
   // ================================
 
+  describe('graphs [0] opts', function() {
+    describe('drawPoints', function() {
+      it('should be true', function() {
+        expect(scope.graphs[0].opts.drawPoints).toEqual(true);
+      });
+    });
+  });
+
   describe('scope.graphs[0].opts.labels', function() {
     it('should be an Array', function () {
       expect(scope.graphs[0].opts.labels).toEqual(jasmine.any(Array));
