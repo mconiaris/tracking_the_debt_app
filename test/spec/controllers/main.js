@@ -69,6 +69,7 @@ describe('Controller: GraphCtrl', function () {
     expect(scope.message).toBe('GraphCtrl loaded.');
   });
 
+  // toEqual works for simple literals and variables
   describe('scope.graphs', function(){
     it('should be an Array', function () {
       expect(scope.graphs).toEqual(jasmine.any(Array));
