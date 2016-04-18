@@ -60,6 +60,10 @@ describe('Controller: GraphCtrl', function () {
   // A spec with all true expectations is a
   // passing spec. A spec with one or more false
   // expectations is a failing spec.
+  // Expectations are built with the function
+  // expect which takes a value, called the actual.
+  // It is chained with a Matcher function, which
+  // takes the expected value.
   it('should attach a message reading \'GraphCtrl loaded.\' to the scope', function () {
     expect(scope.message).toBe('GraphCtrl loaded.');
   });
