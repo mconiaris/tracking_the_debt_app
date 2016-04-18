@@ -95,6 +95,14 @@ describe('Controller: GraphCtrl', function () {
         }));
       });
     });
+
+    describe('shown', function() {
+      it('should be \'Receipts-Current\'', function() {
+        expect(scope.graphs[0]).toEqual(jasmine.objectContaining({
+          shown: true
+        }));
+      });
+    });
   });
 
 
