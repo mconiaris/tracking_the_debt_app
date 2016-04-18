@@ -87,6 +87,14 @@ describe('Controller: GraphCtrl', function () {
     it('[0] should be an object', function () {
       expect(scope.graphs[0]).toEqual(jasmine.any(Object));
     });
+
+    describe('graphType', function() {
+      it('should be \'Receipts-Current\'', function() {
+        expect(scope.graphs[0]).toEqual(jasmine.objectContaining({
+          graphType: 'Receipts-Current'
+        }));
+      });
+    });
   });
 
 
