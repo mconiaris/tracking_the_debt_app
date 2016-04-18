@@ -64,6 +64,7 @@ describe('Controller: GraphCtrl', function () {
   // expect which takes a value, called the actual.
   // It is chained with a Matcher function, which
   // takes the expected value.
+  // The 'toBe' matcher compares with ==="
   it('should attach a message reading \'GraphCtrl loaded.\' to the scope', function () {
     expect(scope.message).toBe('GraphCtrl loaded.');
   });
