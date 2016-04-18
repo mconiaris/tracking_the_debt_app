@@ -191,6 +191,14 @@ describe('Controller: GraphCtrl', function () {
         }));
       });
     });
+
+    describe('ylabel', function() {
+      it('should be \'In Billions of Dollars\'', function() {
+        expect(scope.graphs[0].opts).toEqual(jasmine.objectContaining({
+          ylabel: 'In Billions of Dollars'
+        }));
+      });
+    });
   });
 
 
