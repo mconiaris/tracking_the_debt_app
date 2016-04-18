@@ -106,6 +106,9 @@ describe('Controller: GraphCtrl', function () {
   });
 
   describe('scope.graphs[0].data[0][0]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[0][0]).toEqual(jasmine.anything());
+    });
     it('should be a Number', function () {
       expect(scope.graphs[0].data[0][0]).toEqual(jasmine.any(Number));
     });
