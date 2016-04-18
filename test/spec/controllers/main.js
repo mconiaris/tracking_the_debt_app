@@ -102,7 +102,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[0].data[0][0]).toEqual(jasmine.any(Number));
     });
     it('[0][0] attribute should equal \'1940\'', function () {
-      expect(scope.graphs[0].data[0][0]).toEqual(1940);
+      expect(scope.graphs[0].data[0][0]).toBe(1940);
     });
   });
 
@@ -112,7 +112,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[0].data[0][1]).toEqual(jasmine.any(Number));
     });
     it('[0][1] attribute should equal \'6.5\'', function () {
-      expect(scope.graphs[0].data[0][1]).toEqual(6.5);
+      expect(scope.graphs[0].data[0][1]).toBe(6.5);
     });
   });
 
@@ -122,7 +122,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[0].data[0][2]).toEqual(jasmine.any(Number));
     });
     it('[0][2] attribute should equal \'6.5\'', function () {
-      expect(scope.graphs[0].data[0][2]).toEqual(9.5);
+      expect(scope.graphs[0].data[0][2]).toBe(9.5);
     });
   });
 
@@ -135,7 +135,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[0].opts.labels).toEqual(jasmine.any(Array));
     });
     it('should have three items', function() {
-      expect(scope.graphs[0].opts.labels.length).toEqual(3);
+      expect(scope.graphs[0].opts.labels.length).toBe(3);
     });
   });
 
@@ -179,7 +179,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[1].data[0][0]).toEqual(jasmine.any(Number));
     });
     it('should equal \'1940\'', function () {
-      expect(scope.graphs[1].data[0][0]).toEqual(1940);
+      expect(scope.graphs[1].data[0][0]).toBe(1940);
     });
   });
 
@@ -188,7 +188,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[1].data[0][1]).toEqual(jasmine.any(Number));
     });
     it('should equal \'96.3\'', function () {
-      expect(scope.graphs[1].data[0][1]).toEqual(96.3);
+      expect(scope.graphs[1].data[0][1]).toBe(96.3);
     });
   });
 
@@ -197,7 +197,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[1].data[0][2]).toEqual(jasmine.any(Number));
     });
     it('should equal \'139.2\'', function () {
-      expect(scope.graphs[1].data[0][2]).toEqual(139.2);
+      expect(scope.graphs[1].data[0][2]).toBe(139.2);
     });
   });
 
@@ -210,7 +210,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[1].opts.labels).toEqual(jasmine.any(Array));
     });
     it('should have three items', function() {
-      expect(scope.graphs[1].opts.labels.length).toEqual(3);
+      expect(scope.graphs[1].opts.labels.length).toBe(3);
     });
   });
 
@@ -253,7 +253,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[2].data[0][0]).toEqual(jasmine.any(Number));
     });
     it('should equal \'1940\'', function () {
-      expect(scope.graphs[2].data[0][0]).toEqual(1940);
+      expect(scope.graphs[2].data[0][0]).toBe(1940);
     });
   });
 
@@ -262,7 +262,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[2].data[0][1]).toEqual(jasmine.any(Number));
     });
     it('should equal \'6.7\'', function () {
-      expect(scope.graphs[2].data[0][1]).toEqual(6.7);
+      expect(scope.graphs[2].data[0][1]).toBe(6.7);
     });
   });
 
@@ -271,7 +271,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[2].data[0][2]).toEqual(jasmine.any(Number));
     });
     it('should equal \'9.6\'', function () {
-      expect(scope.graphs[2].data[0][2]).toEqual(9.6);
+      expect(scope.graphs[2].data[0][2]).toBe(9.6);
     });
   });
 
@@ -283,7 +283,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[2].opts.labels).toEqual(jasmine.any(Array));
     });
     it('should have three items', function() {
-      expect(scope.graphs[2].opts.labels.length).toEqual(3);
+      expect(scope.graphs[2].opts.labels.length).toBe(3);
     });
   });
 
@@ -326,7 +326,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[3].data[0][0]).toEqual(jasmine.any(Number));
     });
     it('should equal \'1940\'', function () {
-      expect(scope.graphs[3].data[0][0]).toEqual(1940);
+      expect(scope.graphs[3].data[0][0]).toBe(1940);
     });
   });
 
@@ -335,7 +335,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[3].data[0][1]).toEqual(jasmine.any(Number));
     });
     it('should equal \'-2.9\'', function () {
-      expect(scope.graphs[3].data[0][1]).toEqual(-2.9);
+      expect(scope.graphs[3].data[0][1]).toBe(-2.9);
     });
   });
 
@@ -347,7 +347,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[3].opts.labels).toEqual(jasmine.any(Array));
     });
     it('should have two items', function() {
-      expect(scope.graphs[3].opts.labels.length).toEqual(2);
+      expect(scope.graphs[3].opts.labels.length).toBe(2);
     });
   });
 
@@ -384,7 +384,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[4].data[0][0]).toEqual(jasmine.any(Number));
     });
     it('should equal \'1940\'', function () {
-      expect(scope.graphs[4].data[0][0]).toEqual(1940);
+      expect(scope.graphs[4].data[0][0]).toBe(1940);
     });
   });
 
@@ -393,7 +393,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[4].data[0][1]).toEqual(jasmine.any(Number));
     });
     it('should equal \'-42.9\'', function () {
-      expect(scope.graphs[4].data[0][1]).toEqual(-42.9);
+      expect(scope.graphs[4].data[0][1]).toBe(-42.9);
     });
   });
 
@@ -405,7 +405,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[4].opts.labels).toEqual(jasmine.any(Array));
     });
     it('should have two items', function() {
-      expect(scope.graphs[4].opts.labels.length).toEqual(2);
+      expect(scope.graphs[4].opts.labels.length).toBe(2);
     });
   });
 
@@ -442,7 +442,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[5].data[0][0]).toEqual(jasmine.any(Number));
     });
     it('should equal \'1940\'', function () {
-      expect(scope.graphs[5].data[0][0]).toEqual(1940);
+      expect(scope.graphs[5].data[0][0]).toBe(1940);
     });
   });
 
@@ -451,7 +451,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[5].data[0][1]).toEqual(jasmine.any(Number));
     });
     it('should equal \'-3.0\'', function () {
-      expect(scope.graphs[5].data[0][1]).toEqual(-3.0);
+      expect(scope.graphs[5].data[0][1]).toBe(-3.0);
     });
   });
 
@@ -463,7 +463,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[5].opts.labels).toEqual(jasmine.any(Array));
     });
     it('should have two items', function() {
-      expect(scope.graphs[5].opts.labels.length).toEqual(2);
+      expect(scope.graphs[5].opts.labels.length).toBe(2);
     });
   });
 
