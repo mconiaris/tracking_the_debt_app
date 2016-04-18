@@ -46,6 +46,17 @@ describe('Controller: GraphCtrl', function () {
     });
   }));
 
+  // Specs are defined by calling the global
+  // Jasmine function it, which, like describe
+  // takes a string and a function. The string
+  // is the title of the spec and the function
+  // is the spec, or test. A spec contains one
+  // or more expectations that test the state
+  // of the code. An expectation in Jasmine is
+  // an assertion that is either true or false.
+  // A spec with all true expectations is a
+  // passing spec. A spec with one or more false
+  // expectations is a failing spec.
   it('should attach a message reading \'GraphCtrl loaded.\' to the scope', function () {
     expect(scope.message).toBe('GraphCtrl loaded.');
   });
