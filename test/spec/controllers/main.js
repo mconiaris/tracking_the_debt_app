@@ -178,10 +178,14 @@ describe('Controller: GraphCtrl', function () {
   describe('graphs [0] opts', function() {
     describe('drawPoints', function() {
       it('should be true', function() {
-        expect(scope.graphs[0].opts.drawPoints).toEqual(true);
+        expect(scope.graphs[0].opts).toEqual(jasmine.objectContaining({
+          drawPoints: true
+        }));
       });
     });
   });
+
+
 
 
   // ================================
