@@ -74,7 +74,7 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs).toEqual(jasmine.any(Array));
     });
     it('should contain six objects', function () {
-      expect(scope.graphs.length).toEqual(6);
+      expect(scope.graphs.length).toBe(6);
     });
     it('[0] should be an object', function () {
       expect(scope.graphs[0]).toEqual(jasmine.any(Object));
