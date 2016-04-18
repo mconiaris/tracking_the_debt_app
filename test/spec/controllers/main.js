@@ -183,6 +183,14 @@ describe('Controller: GraphCtrl', function () {
         }));
       });
     });
+
+    describe('xlabel', function() {
+      it('should be \'Fiscal Year\'', function() {
+        expect(scope.graphs[0].opts).toEqual(jasmine.objectContaining({
+          xlabel: 'Fiscal Year'
+        }));
+      });
+    });
   });
 
 
