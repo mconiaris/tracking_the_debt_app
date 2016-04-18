@@ -32,6 +32,9 @@ describe('Controller: MainCtrl', function () {
 describe('Controller: GraphCtrl', function () {
 
   // load the controller's module
+  // JavaScript scoping rules apply, so variables
+  // declared in a describe are available to any
+  // it block inside the suite.
   beforeEach(module('trackingTheDebtAppApp'));
 
   var GraphCtrl,
