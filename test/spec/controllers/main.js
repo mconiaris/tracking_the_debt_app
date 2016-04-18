@@ -17,6 +17,10 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
+  it('should have a defined scope', function() {
+    expect(scope).toBeDefined();
+  });
+
   it('should attach a message reading \'MainCtrl loaded\' to the scope', function () {
     expect(MainCtrl.message).toBe('MainCtrl loaded');
   });
