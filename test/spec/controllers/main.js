@@ -2,6 +2,9 @@
 
 describe('Controller: MainCtrl', function () {
 
+  // the beforeEach function is called once
+  // before each spec in the describe in which
+  // it is called
   // load the controller's module
   beforeEach(module('trackingTheDebtAppApp'));
 
