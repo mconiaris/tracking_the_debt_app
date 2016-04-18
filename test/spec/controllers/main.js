@@ -199,6 +199,14 @@ describe('Controller: GraphCtrl', function () {
         }));
       });
     });
+
+    describe('title', function() {
+      it('should be \'Receipts & Outlays in Current Dollars: 1940-2019\'', function() {
+        expect(scope.graphs[0].opts).toEqual(jasmine.objectContaining({
+          title: 'Receipts & Outlays in Current Dollars: 1940-2019'
+        }));
+      });
+    });
   });
 
 
