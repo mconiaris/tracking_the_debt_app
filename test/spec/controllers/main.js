@@ -158,10 +158,55 @@ describe('Controller: GraphCtrl', function () {
     it('should be a Number', function () {
       expect(scope.graphs[0].data[0][2]).toEqual(jasmine.any(Number));
     });
-    it('should equal \'6.5\'', function () {
+    it('should equal \'9.5\'', function () {
       expect(scope.graphs[0].data[0][2]).toBe(9.5);
     });
   });
+
+
+  describe('scope.graphs[0].data[10][0]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[10][0]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[10][0]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'1950\'', function () {
+      expect(scope.graphs[0].data[10][0]).toBe(1950);
+    });
+  });
+
+
+  describe('scope.graphs[0].data[10][1]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[10][1]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[10][1]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'39.4\'', function () {
+      expect(scope.graphs[0].data[10][1]).toBe(39.4);
+    });
+  });
+
+
+  describe('scope.graphs[0].data[10][2]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[10][2]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[10][2]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'42.6\'', function () {
+      expect(scope.graphs[0].data[10][2]).toBe(42.6);
+    });
+  });
+
+
+
+
+
+
 
   // ================================
   // graphs[0] option tests
