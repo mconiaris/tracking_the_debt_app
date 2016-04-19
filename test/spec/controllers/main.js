@@ -335,6 +335,27 @@ describe('Controller: GraphCtrl', function () {
 
 
   // ================================
+  // graphs[2] attribute tests
+  // ================================
+
+  describe('scope.graphs[2].graphType', function() {
+    it('should be \'Receipts-Current\'', function() {
+      expect(scope.graphs[2]).toEqual(jasmine.objectContaining({
+        graphType: 'Receipts-GDP'
+      }));
+    });
+  });
+
+  describe('scope.graphs[2].shown', function() {
+    it('should be \'false\'', function() {
+      expect(scope.graphs[2]).toEqual(jasmine.objectContaining({
+        shown: false
+      }));
+    });
+  });
+
+
+  // ================================
   // graphs[2] data tests
   // ================================
   describe('scope.graphs[2].data', function() {
