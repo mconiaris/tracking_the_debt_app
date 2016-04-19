@@ -304,8 +304,10 @@ describe('Controller: GraphCtrl', function () {
 
 
   // ================================
-  // graphs[1] options tests
+  // graphs[1] option tests
   // ================================
+
+
   describe('scope.graphs[1].opts.labels', function() {
     it('should be an Array', function () {
       expect(scope.graphs[1].opts.labels).toEqual(jasmine.any(Array));
@@ -332,6 +334,40 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[1].opts.labels[2]).toBe('Outlays');
     });
   });
+
+  describe('graphs [1] opts', function() {
+    describe('drawPoints', function() {
+      it('should be true', function() {
+        expect(scope.graphs[1].opts).toEqual(jasmine.objectContaining({
+          drawPoints: true
+        }));
+      });
+    });
+
+    describe('xlabel', function() {
+      it('should be \'Fiscal Year\'', function() {
+        expect(scope.graphs[1].opts).toEqual(jasmine.objectContaining({
+          xlabel: 'Fiscal Year'
+        }));
+      });
+    });
+
+    describe('ylabel', function() {
+      it('should be \'In Billions of Dollars\'', function() {
+        expect(scope.graphs[1].opts).toEqual(jasmine.objectContaining({
+          ylabel: 'In Billions of Dollars'
+        }));
+      });
+    });1
+    describe('title', function() {
+      it('should be \'Receipts & Outlays in Constant Dollars: 1940-2019\'', function() {
+        expect(scope.graphs[1].opts).toEqual(jasmine.objectContaining({
+          title: 'Receipts & Outlays in Constant Dollars: 1940-2019'
+        }));
+      });
+    });
+  });
+
 
 
   // ================================
