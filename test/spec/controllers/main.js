@@ -243,6 +243,43 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
+  // scope.graphs[0].data[30]
+  describe('scope.graphs[0].data[30][0]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[30][0]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[30][0]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'1970\'', function () {
+      expect(scope.graphs[0].data[30][0]).toBe(1970);
+    });
+  });
+
+  describe('scope.graphs[0].data[30][1]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[30][1]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[30][1]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'192.8\'', function () {
+      expect(scope.graphs[0].data[30][1]).toBe(192.8);
+    });
+  });
+
+
+  describe('scope.graphs[0].data[30][2]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[30][2]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[30][2]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'195.6\'', function () {
+      expect(scope.graphs[0].data[30][2]).toBe(195.6);
+    });
+  });
 
 
   // ================================
