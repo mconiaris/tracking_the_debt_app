@@ -321,6 +321,44 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
+  // scope.graphs[0].data[50]
+  describe('scope.graphs[0].data[50][0]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[50][0]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[50][0]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'1990\'', function () {
+      expect(scope.graphs[0].data[50][0]).toBe(1990);
+    });
+  });
+
+  describe('scope.graphs[0].data[50][1]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[50][1]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[50][1]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'1032\'', function () {
+      expect(scope.graphs[0].data[50][1]).toBe(1032);
+    });
+  });
+
+
+  describe('scope.graphs[0].data[50][2]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[50][2]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[50][2]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'1253\'', function () {
+      expect(scope.graphs[0].data[50][2]).toBe(1253);
+    });
+  });
+
 
   // ================================
   // graphs[0] option tests
