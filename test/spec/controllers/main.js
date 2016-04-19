@@ -125,6 +125,8 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+
+  // scope.graphs[0].data[0]
   describe('scope.graphs[0].data[0][0]', function() {
     it('should not be null', function() {
       expect(scope.graphs[0].data[0][0]).toEqual(jasmine.anything());
@@ -136,7 +138,6 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[0].data[0][0]).toBe(1940);
     });
   });
-
 
   describe('scope.graphs[0].data[0][1]', function() {
     it('should not be null', function() {
@@ -164,6 +165,7 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
+  // scope.graphs[0].data[10]
   describe('scope.graphs[0].data[10][0]', function() {
     it('should not be null', function() {
       expect(scope.graphs[0].data[10][0]).toEqual(jasmine.anything());
@@ -175,7 +177,6 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[0].data[10][0]).toBe(1950);
     });
   });
-
 
   describe('scope.graphs[0].data[10][1]', function() {
     it('should not be null', function() {
