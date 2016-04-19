@@ -807,8 +807,10 @@ describe('Controller: GraphCtrl', function () {
   });
 
   // ================================
-  // graphs[5] options tests
+  // graphs[5] option tests
   // ================================
+
+
   describe('scope.graphs[5].opts.labels', function() {
     it('should be an Array', function () {
       expect(scope.graphs[5].opts.labels).toEqual(jasmine.any(Array));
@@ -827,6 +829,39 @@ describe('Controller: GraphCtrl', function () {
   describe('scope.graphs[5].opts.labels[1]', function() {
     it('should equal \'Surplus/Deficit\'', function() {
       expect(scope.graphs[5].opts.labels[1]).toBe('Surplus/Deficit');
+    });
+  });
+
+  describe('graphs [5] opts', function() {
+    describe('drawPoints', function() {
+      it('should be true', function() {
+        expect(scope.graphs[5].opts).toEqual(jasmine.objectContaining({
+          drawPoints: true
+        }));
+      });
+    });
+
+    describe('xlabel', function() {
+      it('should be \'Fiscal Year\'', function() {
+        expect(scope.graphs[5].opts).toEqual(jasmine.objectContaining({
+          xlabel: 'Fiscal Year'
+        }));
+      });
+    });
+
+    describe('ylabel', function() {
+      it('should be \'Percentage Surplus or Deficit\'', function() {
+        expect(scope.graphs[5].opts).toEqual(jasmine.objectContaining({
+          ylabel: 'Percentage Surplus or Deficit'
+        }));
+      });
+    });1
+    describe('title', function() {
+      it('should be \'Surpluses or Deficits in as a Pct. of GDP: 1940-2019\'', function() {
+        expect(scope.graphs[5].opts).toEqual(jasmine.objectContaining({
+          title: 'Surpluses or Deficits in as a Pct. of GDP: 1940-2019'
+        }));
+      });
     });
   });
 });
