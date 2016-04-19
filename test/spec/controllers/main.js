@@ -102,7 +102,7 @@ describe('Controller: GraphCtrl', function () {
   });
 
   describe('scope.graphs[0].shown', function() {
-    it('should be \'Receipts-Current\'', function() {
+    it('should be \'true\'', function() {
       expect(scope.graphs[0]).toEqual(jasmine.objectContaining({
         shown: true
       }));
@@ -243,7 +243,7 @@ describe('Controller: GraphCtrl', function () {
   });
 
   describe('scope.graphs[1].shown', function() {
-    it('should be \'Receipts-Current\'', function() {
+    it('should be \'false\'', function() {
       expect(scope.graphs[1]).toEqual(jasmine.objectContaining({
         shown: false
       }));
@@ -436,6 +436,26 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+
+  // ================================
+  // graphs[3] attribute tests
+  // ================================
+
+  describe('scope.graphs[3].graphType', function() {
+    it('should be \'Receipts-Current\'', function() {
+      expect(scope.graphs[3]).toEqual(jasmine.objectContaining({
+        graphType: 'Surplus-Current'
+      }));
+    });
+  });
+
+  describe('scope.graphs[3].shown', function() {
+    it('should be \'false\'', function() {
+      expect(scope.graphs[3]).toEqual(jasmine.objectContaining({
+        shown: false
+      }));
+    });
+  });
 
   // ================================
   // graphs[3] data tests
