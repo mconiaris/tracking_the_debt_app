@@ -230,6 +230,25 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
+  // ================================
+  // graphs[1] attribute tests
+  // ================================
+
+  describe('scope.graphs[1].graphType', function() {
+    it('should be \'Receipts-Current\'', function() {
+      expect(scope.graphs[1]).toEqual(jasmine.objectContaining({
+        graphType: 'Receipts-Constant'
+      }));
+    });
+  });
+
+  describe('scope.graphs[1].shown', function() {
+    it('should be \'Receipts-Current\'', function() {
+      expect(scope.graphs[1]).toEqual(jasmine.objectContaining({
+        shown: false
+      }));
+    });
+  });
 
 
   // ================================
