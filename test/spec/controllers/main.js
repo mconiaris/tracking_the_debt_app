@@ -457,6 +457,7 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+
   // ================================
   // graphs[3] data tests
   // ================================
@@ -517,6 +518,27 @@ describe('Controller: GraphCtrl', function () {
   describe('scope.graphs[3].opts.labels[1]', function() {
     it('should equal \'Surplus/Deficit\'', function() {
       expect(scope.graphs[3].opts.labels[1]).toBe('Surplus/Deficit');
+    });
+  });
+
+
+  // ================================
+  // graphs[4] attribute tests
+  // ================================
+
+  describe('scope.graphs[4].graphType', function() {
+    it('should be \'Receipts-Current\'', function() {
+      expect(scope.graphs[4]).toEqual(jasmine.objectContaining({
+        graphType: 'Surplus-Constant'
+      }));
+    });
+  });
+
+  describe('scope.graphs[4].shown', function() {
+    it('should be \'false\'', function() {
+      expect(scope.graphs[4]).toEqual(jasmine.objectContaining({
+        shown: false
+      }));
     });
   });
 
