@@ -582,7 +582,7 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
-  describe('scope.graphs[2].opts.labels[0]', function() {
+  describe('scope.graphs[3].opts.labels[0]', function() {
     it('should equal \'Fiscal Year\'', function() {
       expect(scope.graphs[3].opts.labels[0]).toBe('Fiscal Year');
     });
@@ -691,6 +691,8 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[4] option tests
   // ================================
+
+
   describe('scope.graphs[4].opts.labels', function() {
     it('should be an Array', function () {
       expect(scope.graphs[4].opts.labels).toEqual(jasmine.any(Array));
@@ -709,6 +711,39 @@ describe('Controller: GraphCtrl', function () {
   describe('scope.graphs[4].opts.labels[1]', function() {
     it('should equal \'Surplus/Deficit\'', function() {
       expect(scope.graphs[4].opts.labels[1]).toBe('Surplus/Deficit');
+    });
+  });
+
+  describe('graphs [4] opts', function() {
+    describe('drawPoints', function() {
+      it('should be true', function() {
+        expect(scope.graphs[4].opts).toEqual(jasmine.objectContaining({
+          drawPoints: true
+        }));
+      });
+    });
+
+    describe('xlabel', function() {
+      it('should be \'Fiscal Year\'', function() {
+        expect(scope.graphs[4].opts).toEqual(jasmine.objectContaining({
+          xlabel: 'Fiscal Year'
+        }));
+      });
+    });
+
+    describe('ylabel', function() {
+      it('should be \'Percentage Surplus or Deficit\'', function() {
+        expect(scope.graphs[4].opts).toEqual(jasmine.objectContaining({
+          ylabel: 'Percentage Surplus or Deficit'
+        }));
+      });
+    });1
+    describe('title', function() {
+      it('should be \'Surpluses or Deficits in Constant Dollars: 1940-2019\'', function() {
+        expect(scope.graphs[4].opts).toEqual(jasmine.objectContaining({
+          title: 'Surpluses or Deficits in Constant Dollars: 1940-2019'
+        }));
+      });
     });
   });
 
