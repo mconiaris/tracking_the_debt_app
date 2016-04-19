@@ -607,6 +607,28 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
+
+  // ================================
+  // graphs[5] attribute tests
+  // ================================
+
+  describe('scope.graphs[5].graphType', function() {
+    it('should be \'Receipts-Current\'', function() {
+      expect(scope.graphs[5]).toEqual(jasmine.objectContaining({
+        graphType: 'Surplus-GDP'
+      }));
+    });
+  });
+
+  describe('scope.graphs[5].shown', function() {
+    it('should be \'false\'', function() {
+      expect(scope.graphs[5]).toEqual(jasmine.objectContaining({
+        shown: false
+      }));
+    });
+  });
+
+
   // ================================
   // graphs[5] data tests
   // ================================
