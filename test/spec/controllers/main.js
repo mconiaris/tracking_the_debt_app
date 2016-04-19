@@ -360,6 +360,83 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
+  // scope.graphs[0].data[60]
+  describe('scope.graphs[0].data[60][0]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[60][0]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[60][0]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'2000\'', function () {
+      expect(scope.graphs[0].data[60][0]).toBe(2000);
+    });
+  });
+
+  describe('scope.graphs[0].data[60][1]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[60][1]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[60][1]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'2025.2\'', function () {
+      expect(scope.graphs[0].data[60][1]).toBe(2025.2);
+    });
+  });
+
+
+  describe('scope.graphs[0].data[60][2]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[60][2]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[60][2]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'1789\'', function () {
+      expect(scope.graphs[0].data[60][2]).toBe(1789);
+    });
+  });
+
+
+  // scope.graphs[0].data[70]
+  describe('scope.graphs[0].data[70][0]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[70][0]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[70][0]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'2010\'', function () {
+      expect(scope.graphs[0].data[70][0]).toBe(2010);
+    });
+  });
+
+  describe('scope.graphs[0].data[70][1]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[70][1]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[70][1]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'2162.7\'', function () {
+      expect(scope.graphs[0].data[70][1]).toBe(2162.7);
+    });
+  });
+
+
+  describe('scope.graphs[0].data[70][2]', function() {
+    it('should not be null', function() {
+      expect(scope.graphs[0].data[70][2]).toEqual(jasmine.anything());
+    });
+    it('should be a Number', function () {
+      expect(scope.graphs[0].data[70][2]).toEqual(jasmine.any(Number));
+    });
+    it('should equal \'3457.1\'', function () {
+      expect(scope.graphs[0].data[70][2]).toBe(3457.1);
+    });
+  });
+
   // ================================
   // graphs[0] option tests
   // ================================
