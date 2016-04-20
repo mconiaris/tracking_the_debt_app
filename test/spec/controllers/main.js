@@ -98,10 +98,11 @@ describe('Controller: GraphCtrl', function () {
   describe('data for graph year', function() {
 
     var graphIndex = 0;
+    var year = 1940;
 
     function yearTest(graphIndex) {
       it('in scope.graphs[0].data[0][' + graphIndex + '] should equal \'1940\'', function () {
-        expect(scope.graphs[0].data[0][graphIndex]).toBe(1940);
+        expect(scope.graphs[0].data[0][graphIndex]).toBe(year);
       });
     }
     yearTest(graphIndex);
