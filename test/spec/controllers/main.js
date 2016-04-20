@@ -97,12 +97,14 @@ describe('Controller: GraphCtrl', function () {
   // http://tosbourn.com/using-loops-in-jasmine/
   describe('data for graph year', function() {
 
-    function yearTest() {
+    var graphIndex = 0;
+
+    function yearTest(graphIndex) {
       it('should equal \'1940\'', function () {
-        expect(scope.graphs[0].data[0][0]).toBe(1940);
+        expect(scope.graphs[0].data[0][graphIndex]).toBe(1940);
       });
     }
-    yearTest();
+    yearTest(graphIndex);
   });
 
   // ================================
