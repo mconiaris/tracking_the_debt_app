@@ -135,6 +135,9 @@ describe('Controller: GraphCtrl', function () {
     it('should be an Array', function () {
       expect(scope.graphs[0].data).toEqual(jasmine.any(Array));
     });
+    it('should have 80 items in it', function() {
+      expect(scope.graphs[0].data.length).toEqual(80);
+    });
   });
 
   describe('scope.graphs[0].data[0]', function() {
@@ -168,7 +171,6 @@ describe('Controller: GraphCtrl', function () {
       expect(scope.graphs[0].data[0][1]).toBe(6.5);
     });
   });
-
 
   describe('scope.graphs[0].data[0][2]', function() {
     it('should not be null', function() {
