@@ -100,7 +100,7 @@ describe('Controller: GraphCtrl', function () {
     var graphIndex = 0;
 
     function yearTest(graphIndex) {
-      it('should equal \'1940\'', function () {
+      it('in scope.graphs[0].data[0][' + graphIndex + '] should equal \'1940\'', function () {
         expect(scope.graphs[0].data[0][graphIndex]).toBe(1940);
       });
     }
