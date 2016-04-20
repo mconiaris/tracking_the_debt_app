@@ -100,13 +100,11 @@ describe('Controller: GraphCtrl', function () {
     var year = 1940;
     var index = 0;
 
-    function testYear () {
-
+    function testYear (graph, year, index) {
+      it('scope.graphs[' + graph + '].data[' + index + '][0] should equal ' + year, function() {
+        expect(scope.graphs[0].data[0][0]).toBe(0);
+      });
     }
-
-    it('scope.graphs[' + graph + '].data[' + index + '][0] should equal ' + year, function() {
-      expect(scope.graphs[0].data[0][0]).toBe(0);
-    });
   });
 
   // ================================
