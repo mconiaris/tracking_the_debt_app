@@ -109,6 +109,7 @@ describe('Controller: GraphCtrl', function () {
 
     for(var x = 0; x < arraySize; x++) {
       yearTest();
+      graphIndex++;
       year++;
     }
   });
