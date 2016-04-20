@@ -99,13 +99,18 @@ describe('Controller: GraphCtrl', function () {
 
     var graphIndex = 0;
     var year = 1940;
+    var arraySize = 80;
 
     function yearTest() {
       it('in scope.graphs[0].data[0][' + graphIndex + '] should equal \'' + year + '\'', function () {
         expect(scope.graphs[0].data[0][graphIndex]).toBe(year);
       });
     }
-    yearTest();
+
+    for(var x = 0; x < arraySize; x++) {
+      yearTest();
+      year++;
+    }
   });
 
   // ================================
