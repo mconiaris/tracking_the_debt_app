@@ -90,7 +90,7 @@ describe('Controller: GraphCtrl', function () {
   });
 
   // ================================
-  // graphs[x].data[x][0] tests
+  // graphs[0].data[x][0] tests
   // ================================
 
 
