@@ -89,10 +89,15 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+
   // ================================
   // graphs[0].data[x][0] tests
   // ================================
 
+  // The original intent was to make one test for
+  // all graphs in a double loop, but I was getting
+  // a timeout error. I've broken it up into six
+  // tests even though they repeat themselves.
 
   // Tutorial: http://tosbourn.com/using-loops-in-jasmine/
   // This test loops through the values of the graphs
