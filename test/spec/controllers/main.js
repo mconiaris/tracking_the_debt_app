@@ -101,14 +101,14 @@ describe('Controller: GraphCtrl', function () {
     var year = 1940;
     var arraySize = 80;
 
-    function yearTest() {
+    function yearTest(graphIndex, year) {
       it('in scope.graphs[0].data[0][' + graphIndex + '] should equal \'' + year + '\'', function () {
         expect(scope.graphs[0].data[0][graphIndex]).toBe(year);
       });
     }
 
     for(var x = 0; x < arraySize; x++) {
-      yearTest();
+      yearTest(graphIndex, year);
       graphIndex++;
       year++;
     }
