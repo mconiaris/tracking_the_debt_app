@@ -1189,6 +1189,33 @@ describe('Controller: GraphCtrl', function () {
 
 
   // ================================
+  // graphs[5].data[x][0] year tests
+  // ================================
+
+  // This test loops through the values of the graphs
+  // data values and confirms that the right value is
+  // present.
+  describe('value of graph year', function() {
+
+    var graphIndex = 0;
+    var year = 1940;
+    var arraySize = 80;
+
+    function yearTest(graphIndex, year) {
+      it('in scope.graphs[5].data[0][' + graphIndex + '] should equal \'' + year + '\'', function () {
+        expect(scope.graphs[5].data[graphIndex][0]).toBe(year);
+      });
+    }
+
+    for(var x = 0; x < arraySize; x++) {
+      yearTest(graphIndex, year);
+      graphIndex++;
+      year++;
+    }
+  });
+
+
+  // ================================
   // graphs[5] data tests
   // ================================
   describe('scope.graphs[5].data', function() {
