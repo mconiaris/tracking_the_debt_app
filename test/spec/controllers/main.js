@@ -94,7 +94,10 @@ describe('Controller: GraphCtrl', function () {
   // ================================
 
 
-  // http://tosbourn.com/using-loops-in-jasmine/
+  // Tutorial: http://tosbourn.com/using-loops-in-jasmine/
+  // This test loops through the values of the graphs
+  // data values and confirms that the right value is
+  // present.
   describe('value of graph year', function() {
 
     var graphIndex = 0;
