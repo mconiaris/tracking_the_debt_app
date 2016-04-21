@@ -95,7 +95,7 @@ describe('Controller: GraphCtrl', function () {
 
 
   // http://tosbourn.com/using-loops-in-jasmine/
-  describe('data for graph year', function() {
+  describe('value of graph year', function() {
 
     var graphIndex = 0;
     var year = 1940;
