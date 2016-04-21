@@ -103,7 +103,7 @@ describe('Controller: GraphCtrl', function () {
 
     function yearTest(graphIndex, year) {
       it('in scope.graphs[0].data[0][' + graphIndex + '] should equal \'' + year + '\'', function () {
-        expect(scope.graphs[0].data[0][graphIndex]).toBe(year);
+        expect(scope.graphs[0].data[graphIndex][0]).toBe(year);
       });
     }
 
