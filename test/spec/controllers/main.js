@@ -91,7 +91,28 @@ describe('Controller: GraphCtrl', function () {
 
 
   // ================================
-  // graphs[0].data[x][0] tests
+  // graphs[0] attribute tests
+  // ================================
+
+  describe('scope.graphs[0].graphType', function() {
+    it('should be \'Receipts-Current\'', function() {
+      expect(scope.graphs[0]).toEqual(jasmine.objectContaining({
+        graphType: 'Receipts-Current'
+      }));
+    });
+  });
+
+  describe('scope.graphs[0].shown', function() {
+    it('should be \'true\'', function() {
+      expect(scope.graphs[0]).toEqual(jasmine.objectContaining({
+        shown: true
+      }));
+    });
+  });
+
+
+  // ================================
+  // graphs[0].data[x][0] year tests
   // ================================
 
   // The original intent was to make one test for
@@ -120,26 +141,6 @@ describe('Controller: GraphCtrl', function () {
       graphIndex++;
       year++;
     }
-  });
-
-  // ================================
-  // graphs[0] attribute tests
-  // ================================
-
-  describe('scope.graphs[0].graphType', function() {
-    it('should be \'Receipts-Current\'', function() {
-      expect(scope.graphs[0]).toEqual(jasmine.objectContaining({
-        graphType: 'Receipts-Current'
-      }));
-    });
-  });
-
-  describe('scope.graphs[0].shown', function() {
-    it('should be \'true\'', function() {
-      expect(scope.graphs[0]).toEqual(jasmine.objectContaining({
-        shown: true
-      }));
-    });
   });
 
 
