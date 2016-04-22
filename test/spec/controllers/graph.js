@@ -21,7 +21,7 @@ describe('Controller: GraphCtrl', function () {
     expect(scope).toBeDefined();
   });
 
-  it('should attach a message reading \'AboutCtrl loaded.\' to the scope', function () {
+  it('should attach a message reading \'GraphCtrl loaded.\' to the scope', function () {
     expect(GraphCtrl.message).toBe('GraphCtrl loaded.');
   });
 });
