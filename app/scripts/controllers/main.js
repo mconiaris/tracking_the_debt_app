@@ -34,7 +34,7 @@ var myApp = angular.module('trackingTheDebtAppApp')
 // followed by the function itself.
 myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
 
-  $scope.message = "GraphCtrl loaded.";
+  $scope.message = 'GraphCtrl loaded.';
   console.log($scope.message);
 
   $scope.graphs = [
