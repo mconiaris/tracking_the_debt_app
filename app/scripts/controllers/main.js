@@ -309,11 +309,11 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
             [2019,19.0,21.3]
         ],
         opts: {
-            labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+            labels: [ 'Fiscal Year', 'Receipts', 'Outlays' ],
             drawPoints: true,
-            xlabel:"Fiscal Year",
-            ylabel:"In Billions of Dollars",
-            title: "Receipts & Outlays as Percentage of GDP: 1940-2019",
+            xlabel:'Fiscal Year',
+            ylabel:'In Billions of Dollars',
+            title: 'Receipts & Outlays as Percentage of GDP: 1940-2019',
         },
         graphType: 'Receipts-GDP',
         shown: false
