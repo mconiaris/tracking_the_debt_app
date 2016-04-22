@@ -613,7 +613,7 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
     console.log(graphType + ' button pressed');
   };
 }]).directive('dygraph', function($window) {
-  console.log("From directive.");
+  console.log('From directive.');
   return {
     restrict: 'E', // Use as element
     scope: { // Isolate scope
