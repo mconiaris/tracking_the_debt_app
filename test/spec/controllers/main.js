@@ -131,6 +131,12 @@ describe('Controller: GraphCtrl', function () {
     var arraySize = 80;
 
     function yearTest(graphIndex, year) {
+      it('should not be null', function() {
+        expect(scope.graphs[0].data[0][0]).toEqual(jasmine.anything());
+      });
+      it('should be a Number', function () {
+        expect(scope.graphs[0].data[0][0]).toEqual(jasmine.any(Number));
+      });
       it('in scope.graphs[0].data[0][' + graphIndex + '] should equal \'' + year + '\'', function () {
         expect(scope.graphs[0].data[graphIndex][0]).toBe(year);
       });
