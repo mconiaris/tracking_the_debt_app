@@ -823,6 +823,7 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
+  // scope.graphs[3].data[0]
   describe('scope.graphs[3].data[0][0]', function() {
     it('should not be null', function() {
       expect(scope.graphs[3].data[0][0]).toEqual(jasmine.anything());
