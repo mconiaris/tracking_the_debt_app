@@ -17,5 +17,7 @@ describe('Controller: AboutCtrl', function () {
     });
   }));
 
-
+  it('should have a defined scope', function() {
+    expect(scope).toBeDefined();
+  });
 });
