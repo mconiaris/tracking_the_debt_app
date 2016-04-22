@@ -620,7 +620,7 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
         data: '=', // Two-way bind data to local scope
         opts: '=?' // '?' means optional
     },
-    template: "<div id=\"graph\"></div>", // We need a div to attach graph to
+    template: '<div id=\'graph\'></div>', // We need a div to attach graph to
     link: function(scope, elem, attrs) {
 
       var graph = new Dygraph(elem.children()[0], scope.data, scope.opts );
