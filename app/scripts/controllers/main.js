@@ -495,11 +495,11 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
             [2019,-417.4]
         ],
         opts: {
-            labels: [ "Fiscal Year", "Surplus/Deficit" ],
+            labels: [ 'Fiscal Year', 'Surplus/Deficit' ],
             drawPoints: true,
-            xlabel:"Fiscal Year",
-            ylabel:"Percentage Surplus or Deficit",
-            title: "Surpluses or Deficits in Constant Dollars: 1940-2019",
+            xlabel:'Fiscal Year',
+            ylabel:'Percentage Surplus or Deficit',
+            title: 'Surpluses or Deficits in Constant Dollars: 1940-2019',
         },
         graphType: 'Surplus-Constant',
         shown: false
