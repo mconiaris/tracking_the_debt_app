@@ -304,15 +304,6 @@ describe('Controller: GraphCtrl', function () {
 
 
   // scope.graphs[0].data[50]
-  describe('scope.graphs[0].data[50][0]', function() {
-    it('should not be null', function() {
-      expect(scope.graphs[0].data[50][0]).toEqual(jasmine.anything());
-    });
-    it('should be a Number', function () {
-      expect(scope.graphs[0].data[50][0]).toEqual(jasmine.any(Number));
-    });
-  });
-
   describe('scope.graphs[0].data[50][1]', function() {
     it('should not be null', function() {
       expect(scope.graphs[0].data[50][1]).toEqual(jasmine.anything());
