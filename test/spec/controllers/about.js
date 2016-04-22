@@ -20,4 +20,8 @@ describe('Controller: AboutCtrl', function () {
   it('should have a defined scope', function() {
     expect(scope).toBeDefined();
   });
+
+  it('should attach a message reading \'AboutCtrl loaded\' to the scope', function () {
+    expect(MainCtrl.message).toBe('AboutCtrl loaded');
+  });
 });
