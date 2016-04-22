@@ -402,11 +402,11 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
             [2019,-502.7]
         ],
         opts: {
-            labels: [ "Fiscal Year", "Surplus/Deficit" ],
+            labels: [ 'Fiscal Year', 'Surplus/Deficit' ],
             drawPoints: true,
-            xlabel:"Fiscal Year",
-            ylabel:"Percentage Surplus or Deficit",
-            title: "Surpluses or Deficits in Current Dollars: 1940-2019",
+            xlabel:'Fiscal Year',
+            ylabel:'Percentage Surplus or Deficit',
+            title: 'Surpluses or Deficits in Current Dollars: 1940-2019',
         },
         graphType: 'Surplus-Current',
         shown: false
