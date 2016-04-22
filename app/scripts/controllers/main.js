@@ -216,11 +216,11 @@ myApp.controller('GraphCtrl', ['$scope', '$window', function($scope, $window) {
             [2019,3509.2,3926.6]
         ],
         opts: {
-            labels: [ "Fiscal Year", "Receipts", "Outlays" ],
+            labels: [ 'Fiscal Year', 'Receipts', 'Outlays' ],
             drawPoints: true,
-            xlabel:"Fiscal Year",
-            ylabel:"In Billions of Dollars",
-            title: "Receipts & Outlays in Constant Dollars: 1940-2019",
+            xlabel:'Fiscal Year',
+            ylabel:'In Billions of Dollars',
+            title: 'Receipts & Outlays in Constant Dollars: 1940-2019',
         },
         graphType: 'Receipts-Constant',
         shown: false
