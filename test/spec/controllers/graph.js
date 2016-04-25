@@ -114,6 +114,26 @@ describe('Controller: GraphCtrl', function () {
     }
   });
 
+  // ================================
+  // graphs[x].data Array confirmation tests
+  // ================================
+
+  describe('graphs', function() {
+
+    var graphIndex = 0;
+
+    function arrayTest(graphIndex) {
+      it('scope.graphs[' + graphIndex + '].data should be an Array', function () {
+        expect(scope.graphs[graphIndex].data).toEqual(jasmine.any(Array));
+      });
+    }
+
+    for(var x = 0; x < 6; x++) {
+      arrayTest(graphIndex);
+      graphIndex++;
+    }
+  });
+
 
   // ================================
   // graphs[0] data tests
