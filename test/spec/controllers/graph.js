@@ -707,6 +707,12 @@ describe('Controller: GraphCtrl', function () {
   // graphs[2] data tests
   // ================================
 
+  describe('scope.graphs[2].data', function() {
+    it('should have 80 items in it', function() {
+      expect(scope.graphs[2].data.length).toEqual(80);
+    });
+  });
+
   // scope.graphs[2].data[0]
   describe('scope.graphs[2].data[0][1]', function() {
     it('should not be null', function() {
