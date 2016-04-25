@@ -50,6 +50,9 @@ describe('Controller: GraphCtrl', function () {
     expect(scope.message).toBe('GraphCtrl loaded.');
   });
 
+  // ================================
+  // scope.graphs tests
+  // ================================
   // toEqual works for simple literals and variables
   describe('scope.graphs', function(){
     it('should be an Array', function () {
