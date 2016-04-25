@@ -51,16 +51,6 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
-  // ================================
-  // flipmode tests
-  // ================================
-  describe('flipmode', function () {
-    var spyEvent;
-
-
-  });
-
-
 
   // ================================
   // scope.graphs tests
