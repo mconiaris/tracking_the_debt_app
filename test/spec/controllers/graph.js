@@ -139,9 +139,6 @@ describe('Controller: GraphCtrl', function () {
   // graphs[0] data tests
   // ================================
   describe('scope.graphs[0].data', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[0].data).toEqual(jasmine.any(Array));
-    });
     it('should have 80 items in it', function() {
       expect(scope.graphs[0].data.length).toEqual(80);
     });
@@ -486,11 +483,6 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[1] data tests
   // ================================
-  describe('scope.graphs[1].data', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[1].data).toEqual(jasmine.any(Array));
-    });
-  });
 
   describe('scope.graphs[1].data[0]', function() {
     it('should be an Array', function () {
@@ -642,12 +634,6 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[2] data tests
   // ================================
-  describe('scope.graphs[2].data', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[2].data).toEqual(jasmine.any(Array));
-    });
-  });
-
   describe('scope.graphs[2].data[0]', function() {
     it('should be an Array', function () {
       expect(scope.graphs[2].data[0]).toEqual(jasmine.any(Array));
@@ -796,12 +782,6 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[3] data tests
   // ================================
-  describe('scope.graphs[3].data', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[3].data).toEqual(jasmine.any(Array));
-    });
-  });
-
   describe('scope.graphs[3].data[0]', function() {
     it('should be an Array', function () {
       expect(scope.graphs[3].data[0]).toEqual(jasmine.any(Array));
@@ -932,12 +912,6 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[4] data tests
   // ================================
-  describe('scope.graphs[4].data', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[4].data).toEqual(jasmine.any(Array));
-    });
-  });
-
   describe('scope.graphs[4].data[0]', function() {
     it('should be an Array', function () {
       expect(scope.graphs[4].data[0]).toEqual(jasmine.any(Array));
@@ -1069,12 +1043,6 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[5] data tests
   // ================================
-  describe('scope.graphs[5].data', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[5].data).toEqual(jasmine.any(Array));
-    });
-  });
-
   describe('scope.graphs[5].data[0]', function() {
     it('should be an Array', function () {
       expect(scope.graphs[5].data[0]).toEqual(jasmine.any(Array));
