@@ -168,12 +168,6 @@ describe('Controller: GraphCtrl', function () {
     });
   });
 
-  describe('scope.graphs[0].data[0]', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[0].data[0]).toEqual(jasmine.any(Array));
-    });
-  });
-
 
   // scope.graphs[0].data[0]
   describe('scope.graphs[0].data[0][1]', function() {
@@ -535,12 +529,6 @@ describe('Controller: GraphCtrl', function () {
   // graphs[1] data tests
   // ================================
 
-  describe('scope.graphs[1].data[0]', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[1].data[0]).toEqual(jasmine.any(Array));
-    });
-  });
-
   // scope.graphs[1].data[0]
   describe('scope.graphs[1].data[0][1]', function() {
     it('should not be null', function() {
@@ -712,11 +700,6 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[2] data tests
   // ================================
-  describe('scope.graphs[2].data[0]', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[2].data[0]).toEqual(jasmine.any(Array));
-    });
-  });
 
   // scope.graphs[2].data[0]
   describe('scope.graphs[2].data[0][1]', function() {
@@ -887,11 +870,6 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[3] data tests
   // ================================
-  describe('scope.graphs[3].data[0]', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[3].data[0]).toEqual(jasmine.any(Array));
-    });
-  });
 
   // scope.graphs[3].data[0]
   describe('scope.graphs[3].data[0][1]', function() {
@@ -1044,11 +1022,6 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[4] data tests
   // ================================
-  describe('scope.graphs[4].data[0]', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[4].data[0]).toEqual(jasmine.any(Array));
-    });
-  });
 
   // scope.graphs[4].data[0]
   describe('scope.graphs[4].data[0][1]', function() {
@@ -1202,11 +1175,6 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[5] data tests
   // ================================
-  describe('scope.graphs[5].data[0]', function() {
-    it('should be an Array', function () {
-      expect(scope.graphs[5].data[0]).toEqual(jasmine.any(Array));
-    });
-  });
 
   // scope.graphs[5].data[0]
   describe('scope.graphs[5].data[0][1]', function() {
