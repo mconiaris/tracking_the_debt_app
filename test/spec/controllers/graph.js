@@ -21,10 +21,6 @@ describe('Controller: GraphCtrl', function () {
     expect(scope).toBeDefined();
   });
 
-  it('should attach a message reading \'GraphCtrl loaded.\' to the scope', function () {
-    expect(scope.message).toBe('GraphCtrl loaded.');
-  });
-
   // Specs are defined by calling the global
   // Jasmine function it, which, like describe
   // takes a string and a function. The string
