@@ -1005,6 +1005,11 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[4].data[x][0] year tests
   // ================================
+  describe('scope.graphs[4].data', function() {
+    it('should have 80 items in it', function() {
+      expect(scope.graphs[4].data.length).toEqual(80);
+    });
+  });
 
   // This test loops through the values of the graphs
   // data values and confirms that the right value is
