@@ -50,6 +50,18 @@ describe('Controller: GraphCtrl', function () {
     expect(scope.message).toBe('GraphCtrl loaded.');
   });
 
+
+  // ================================
+  // flipmode tests
+  // ================================
+  describe('flipmode', function () {
+    var spyEvent;
+
+
+  });
+
+
+
   // ================================
   // scope.graphs tests
   // ================================
