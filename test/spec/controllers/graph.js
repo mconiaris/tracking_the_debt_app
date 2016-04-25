@@ -626,6 +626,12 @@ describe('Controller: GraphCtrl', function () {
     var arraySize = 80;
 
     function yearTest(graphIndex, year) {
+      it('in scope.graphs[2].data[0][' + graphIndex + '] should not be null', function() {
+        expect(scope.graphs[2].data[graphIndex][0]).toEqual(jasmine.anything());
+      });
+      it('in scope.graphs[2].data[0][' + graphIndex + '] should be a Number', function () {
+        expect(scope.graphs[2].data[graphIndex][0]).toEqual(jasmine.any(Number));
+      });
       it('in scope.graphs[2].data[0][' + graphIndex + '] should equal \'' + year + '\'', function () {
         expect(scope.graphs[2].data[graphIndex][0]).toBe(year);
       });
