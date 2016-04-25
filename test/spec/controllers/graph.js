@@ -656,6 +656,27 @@ describe('Controller: GraphCtrl', function () {
 
 
   // ================================
+  // graphs[2].data[x] Array confirmation tests
+  // ================================
+
+  describe('scope.graphs[2].data[x]', function() {
+
+    var graphIndex = 0;
+
+    function arrayTest(graphIndex) {
+      it('scope.graphs[2].data[' + graphIndex + '] should be an Array', function () {
+        expect(scope.graphs[2].data[graphIndex]).toEqual(jasmine.any(Array));
+      });
+    }
+
+    for(var x = 0; x < 80; x++) {
+      arrayTest(graphIndex);
+      graphIndex++;
+    }
+  });
+
+
+  // ================================
   // graphs[2].data[x][0] year tests
   // ================================
 
