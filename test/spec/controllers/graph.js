@@ -706,7 +706,6 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[2] data tests
   // ================================
-
   describe('scope.graphs[2].data', function() {
     it('should have 80 items in it', function() {
       expect(scope.graphs[2].data.length).toEqual(80);
@@ -882,6 +881,11 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // graphs[3] data tests
   // ================================
+  describe('scope.graphs[3].data', function() {
+    it('should have 80 items in it', function() {
+      expect(scope.graphs[3].data.length).toEqual(80);
+    });
+  });
 
   // scope.graphs[3].data[0]
   describe('scope.graphs[3].data[0][1]', function() {
