@@ -1,5 +1,7 @@
 'use strict';
 
+
+// Angular Doc on Tests: https://docs.angularjs.org/guide/unit-testing
 describe('Controller: MainCtrl', function () {
 
   // the beforeEach function is called once
