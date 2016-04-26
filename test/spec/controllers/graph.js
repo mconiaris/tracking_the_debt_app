@@ -1283,7 +1283,7 @@ describe('Controller: GraphCtrl', function () {
           ylabel: 'Percentage Surplus or Deficit'
         }));
       });
-    });1
+    });
     describe('title', function() {
       it('should be \'Surpluses or Deficits in as a Pct. of GDP: 1940-2019\'', function() {
         expect(scope.graphs[5].opts).toEqual(jasmine.objectContaining({
