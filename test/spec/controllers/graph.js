@@ -1128,7 +1128,7 @@ describe('Controller: GraphCtrl', function () {
           ylabel: 'Percentage Surplus or Deficit'
         }));
       });
-    });1
+    });
     describe('title', function() {
       it('should be \'Surpluses or Deficits in Constant Dollars: 1940-2019\'', function() {
         expect(scope.graphs[4].opts).toEqual(jasmine.objectContaining({
