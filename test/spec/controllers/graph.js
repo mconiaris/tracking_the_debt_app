@@ -54,14 +54,8 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // flipmode tests
   // ================================
-  describe('flipMode', function() {
-    graphType = 'Receipts-Constant';
-    scope.flipMode(graphType);
-    it('should be \'Receipts-Current\'', function() {
-      expect(scope.graphs[1]).toEqual(jasmine.objectContaining({
-        graphType: 'Receipts-Constant'
-      }));
-    });
+  xdescribe('flipMode', function() {
+
   });
 
 
