@@ -54,7 +54,9 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // flipmode tests
   // ================================
+  describe('flipmode', function() {
 
+  });
 
 
 
