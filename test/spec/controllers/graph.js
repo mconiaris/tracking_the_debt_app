@@ -51,6 +51,12 @@ describe('Controller: GraphCtrl', function () {
   });
 
 
+  // ================================
+  // flipmode tests
+  // ================================
+
+
+
 
   // ================================
   // scope.graphs tests
