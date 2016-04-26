@@ -636,7 +636,7 @@ describe('Controller: GraphCtrl', function () {
           ylabel: 'In Billions of Dollars'
         }));
       });
-    });1
+    });
     describe('title', function() {
       it('should be \'Receipts & Outlays in Constant Dollars: 1940-2019\'', function() {
         expect(scope.graphs[1].opts).toEqual(jasmine.objectContaining({
