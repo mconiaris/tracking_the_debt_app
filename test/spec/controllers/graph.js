@@ -812,7 +812,7 @@ describe('Controller: GraphCtrl', function () {
           ylabel: 'In Billions of Dollars'
         }));
       });
-    });1
+    });
     describe('title', function() {
       it('should be \'Receipts & Outlays as Percentage of GDP: 1940-2019\'', function() {
         expect(scope.graphs[2].opts).toEqual(jasmine.objectContaining({
