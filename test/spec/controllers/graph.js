@@ -56,7 +56,9 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // Mocking dependencies tutorial: http://www.sitepoint.com/mocking-dependencies-angularjs-tests/
   describe('flipMode', function() {
-
+    it('is defined', function() {
+      expect(scope.flipMode).toBeDefined();
+    });
   });
 
 
