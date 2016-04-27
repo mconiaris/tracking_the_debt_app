@@ -54,6 +54,7 @@ describe('Controller: GraphCtrl', function () {
   // ================================
   // flipmode tests
   // ================================
+  // Mocking dependencies tutorial: http://www.sitepoint.com/mocking-dependencies-angularjs-tests/
   describe('flipMode', function() {
 
   });
