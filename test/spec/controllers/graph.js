@@ -55,6 +55,7 @@ describe('Controller: GraphCtrl', function () {
   // flipmode tests
   // ================================
   // Mocking dependencies tutorial: http://www.sitepoint.com/mocking-dependencies-angularjs-tests/
+  // Stack Overflow on testing functions: http://stackoverflow.com/questions/25617295/how-to-unit-test-javascript-function-which-takes-in-a-parameter-using-jasmine-or
   describe('flipMode', function() {
     it('is defined', function() {
       expect(scope.flipMode).toBeDefined();
