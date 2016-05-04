@@ -30,6 +30,11 @@ body {
   padding-bottom: 19px;
 }
 
+
+div#instructions.container {
+  font-size: 17px;
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;
