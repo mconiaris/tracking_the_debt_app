@@ -30,7 +30,6 @@ body {
   padding-bottom: 19px;
 }
 
-
 div#instructions.container {
   font-size: 17px;
 }
@@ -58,6 +57,7 @@ div#instructions {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 730px;
+    padding-left: 0px;
   }
 
   /* Remove the padding we set earlier */
