@@ -31,7 +31,7 @@ body {
 }
 
 div#instructions.container {
-  font-size: 1.2em;
+  /*font-size: 1.2em;*/
 }
 
 /* Custom page footer */
@@ -50,7 +50,7 @@ div#instructions.container {
 div#instructions {
   background-color: #4d4616;
   color: white;
-  font-size: 14px;
+  font-size: 1.2em;
 }
 
 /* Responsive: Portrait tablets and up */
