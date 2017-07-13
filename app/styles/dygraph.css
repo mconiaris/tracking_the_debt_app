@@ -73,4 +73,7 @@ div.container div.ng-scope {
 .dygraph-legend {
     background-color: #ffffff !important;
 }
+div.dygraph-label.dygraph-xlabel {
+    line-height: 1em;
+}
 
