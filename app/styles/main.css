@@ -1,3 +1,7 @@
 /*===============
 Main Page
 =================*/
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
