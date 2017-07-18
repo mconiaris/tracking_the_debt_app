@@ -34,11 +34,10 @@
         </div> <!-- field -->
       </div> <!-- col -->
     </div> <!-- graph-buttons -->
-  </div> <!-- Container -->
-
-  <div class="container">
-    <div ng-repeat="graph in graphs" >
-      <dygraph data="graph.data" opts="graph.opts" ng-show="graph.shown"></dygraph>
-    </div>
-  </div>
+    <div class="row" id="dygraph">
+      <div ng-repeat="graph in graphs" >
+        <dygraph data="graph.data" opts="graph.opts" ng-show="graph.shown"></dygraph>
+      </div> <!-- graphs -->
+    </div> <!-- dygraph section -->
+  </div> <!-- container -->
 </div> <!-- GraphCtrl -->
