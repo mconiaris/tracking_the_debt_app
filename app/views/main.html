@@ -1,13 +1,13 @@
 <div ng-controller="GraphCtrl">
-  <div class="container" id="instructions">
-    <div class="row justify-content-center">
+  <div class="container">
+    <div class="row justify-content-center" id="instructions">
       <div class="col">
         <p>This graph is a data visualization of the income and outlays of the U.S. government since 1940. Mouse over to highlight individual values Using a mouse or trackpad, click and drag on chose values to zoom in closer to them. Double-clicking on the graph will zoom you back out. Shift-drag will pan.
         </p>
       </div>
-    </div>
-    <div class="row text-center">
-      <div class="col" id="graph-section">
+    </div> <!-- instructions -->
+    <div class="row text-center" id="graph-buttons">
+      <div class="col">
         <div class="field">
           <div class="btn-group" role="group" aria-label="...">
             <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -32,13 +32,13 @@
             </ul>
           </div> <!-- btn group -->
         </div> <!-- field -->
-      </div> <!-- Graph Section -->
-    </div> <!-- instructions -->
-  </div> <!-- GraphCtrl -->
+      </div> <!-- col -->
+    </div> <!-- graph-buttons -->
+  </div> <!-- Container -->
 
   <div class="container">
     <div ng-repeat="graph in graphs" >
       <dygraph data="graph.data" opts="graph.opts" ng-show="graph.shown"></dygraph>
     </div>
   </div>
-</div>
+</div> <!-- GraphCtrl -->
