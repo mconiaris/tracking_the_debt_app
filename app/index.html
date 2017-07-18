@@ -20,31 +20,36 @@
 
     <!-- endbuild -->
   </head>
+
+
   <noscript>
     <p>This Website's graph requires Javascript, which your browser does not support.</p>
   </noscript>
+
+
   <body ng-app="trackingTheDebtAppApp">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+    <div class="container-fluid">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+    <!-- Header -->
+      <header>
+        <div class="navbar navbar-inverse bg-primary" role="navigation">
+          <div class="navbar-header bg-primary">
+
+            <button type="button" class="navbar-toggle collapsed bg-primary" data-toggle="collapse" data-target="#js-navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-
-            <a class="navbar-brand" href="#/">Tracking the Debt</a>
+        <a class="navbar-brand" href="#/">Tracking the Debt</a>
           </div>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+          <div class="collapse navbar-collapse bg-primary" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Home</a></li>
@@ -53,18 +58,21 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </header> <!-- header -->
 
-    <div class="container">
-      <div ng-view=""></div>
-    </div>
 
-    <div class="footer">
-      <div class="container">
+      <!-- Partials -->
+      <div class="page-content">
+        <div ng-view=""></div>
+      </div> <!-- page-content -->
+
+
+      <!-- Footer -->
+      <div class="footer text-center">
         <p><span class="glyphicon glyphicon-copyright-mark"></span> <a href="http://www.michaelconiaris.com/">Michael Coniaris Awesomeness</a> <span class="glyphicon glyphicon-globe"></span></p>
-      </div>
-    </div>
+      </div> <!-- footer -->
+      
+    </div> <!-- container -->
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

@@ -1,42 +1,43 @@
 <div ng-controller="GraphCtrl">
-
-  <div class="container" id="instructions">
-    <div class="col">
-      <p>This graph is a data visualization of the income and outlays of the U.S. government since 1940. Mouse over to highlight individual values Using a mouse or trackpad, click and drag on chose values to zoom in closer to them. Double-clicking on the graph will zoom you back out. Shift-drag will pan.
-      </p>
-    </div>
-
-    <div class="container" id="graph-section">
-      <div class="field col-md-6 col-md-offset-3 col-sx-6 col-xs-offset-3">
-        <div class="btn-group" role="group" aria-label="...">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        Receipts &#38; Outlays
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#/" id='Receipts-Current' ng-click="flipMode('Receipts-Current')">In Current Dollars</a></li>
-            <li><a href="#/" id='Receipts-Constant' ng-click="flipMode('Receipts-Constant')">In Constant Dollars</a></li>
-            <li><a href="#/" ng-click="flipMode('Receipts-GDP')">As a Pct. of GDP</a></li>
-          </ul>
-        </div>
-        <div class="btn-group" role="group" aria-label="...">
-          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        Surplus or Deficit
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#/" ng-click="flipMode('Surplus-Current')">In Current Dollars</a></li>
-            <li><a href="#/" ng-click="flipMode('Surplus-Constant')">In Constant Dollars</a></li>
-            <li><a href="#/" ng-click="flipMode('Surplus-GDP')">As a Pct. of GDP</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="container">
-    <div ng-repeat="graph in graphs" >
-      <dygraph data="graph.data" opts="graph.opts" ng-show="graph.shown"></dygraph>
-    </div>
-  </div>
-</div>
+    <div class="row justify-content-center" id="instructions">
+      <div class="col">
+        <p>This graph is a data visualization of the income and outlays of the U.S. government since 1940. Mouse over to highlight individual values Using a mouse or trackpad, click and drag on chose values to zoom in closer to them. Double-clicking on the graph will zoom you back out. Shift-drag will pan.
+        </p>
+      </div>
+    </div> <!-- instructions -->
+    <div class="row text-center" id="graph-buttons">
+      <div class="col">
+        <div class="field">
+          <div class="btn-group" role="group" aria-label="...">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Receipts &#38; Outlays
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#/" id='Receipts-Current' ng-click="flipMode('Receipts-Current')">In Current Dollars</a></li>
+              <li><a href="#/" id='Receipts-Constant' ng-click="flipMode('Receipts-Constant')">In Constant Dollars</a></li>
+              <li><a href="#/" ng-click="flipMode('Receipts-GDP')">As a Pct. of GDP</a></li>
+            </ul>
+          </div> <!-- btn-group -->
+          <div class="btn-group" role="group" aria-label="...">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Surplus or Deficit
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#/" ng-click="flipMode('Surplus-Current')">In Current Dollars</a></li>
+              <li><a href="#/" ng-click="flipMode('Surplus-Constant')">In Constant Dollars</a></li>
+              <li><a href="#/" ng-click="flipMode('Surplus-GDP')">As a Pct. of GDP</a></li>
+            </ul>
+          </div> <!-- btn group -->
+        </div> <!-- field -->
+      </div> <!-- col -->
+    </div> <!-- graph-buttons -->
+    <div class="row" id="dygraph">
+      <div ng-repeat="graph in graphs" >
+        <dygraph data="graph.data" opts="graph.opts" ng-show="graph.shown"></dygraph>
+      </div> <!-- graphs -->
+    </div> <!-- dygraph section -->
+  </div> <!-- container -->
+</div> <!-- GraphCtrl -->
