@@ -22,6 +22,17 @@ var myApp = angular.module('trackingTheDebtAppApp')
   });
 
 
+// Changes active class when navbar item is clicked.
+$('.nav li').click(function(e) {
+
+    $('.nav li').removeClass('active');
+
+    var $this = $(this);
+    if (!$this.hasClass('active')) {
+        $this.addClass('active');
+    }
+});
+
   // Directives Tutorial
   // https://www.codementor.io/angularjs/tutorial/create-dropdown-control
 
